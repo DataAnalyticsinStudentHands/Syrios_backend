@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_frame_txt_t_m_pic_l_r_s",
+  "info": {
+    "name": " Txt:(T,M),Pic:(L,R)",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_top": {
+      "type": "richtext"
+    },
+    "text_middle": {
+      "type": "richtext"
+    },
+    "picture_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "picture_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "actions": {
+      "collection": "actions"
+    }
+  }
+}

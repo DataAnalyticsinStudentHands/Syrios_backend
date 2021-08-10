@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visitors_stories",
+  "info": {
+    "name": "visitorStories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "story_name": {
+      "type": "string",
+      "required": true
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.title"
+      ]
+    }
+  }
+}

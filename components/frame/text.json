@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_frame_texts",
+  "info": {
+    "name": "Text",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_grouping_component_picture_mult_picture_caption_s",
+  "info": {
+    "name": "picture:(multPicture, caption)",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MultiplePicture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "richtext"
+    }
+  }
+}

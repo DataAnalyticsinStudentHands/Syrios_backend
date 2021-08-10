@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "intro_stories",
+  "info": {
+    "name": "IntroStory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.title",
+        "frame.txt-mt-mb-pic-l-r-f",
+        "frame.end-frame-txt-t-m",
+        "frame.alb-l-r-txt-m-t",
+        "frame.txt-tr-mr-b-pic-l",
+        "frame.text",
+        "frame.txt-t-m-pic-l-r"
+      ]
+    }
+  }
+}

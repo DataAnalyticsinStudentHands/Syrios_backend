@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_frame_txt_mt_mb_pic_l_r_f_s",
+  "info": {
+    "name": "Txt:(T,B),Pic(L,R,F)",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_middle_top": {
+      "type": "richtext"
+    },
+    "text_middle_bottom": {
+      "type": "richtext"
+    },
+    "Picture_left_leftFlipped": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "Picture_right_rightFlipped": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "actions": {
+      "collection": "actions"
+    }
+  }
+}

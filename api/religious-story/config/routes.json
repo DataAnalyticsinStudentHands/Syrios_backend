@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/religious-stories",
+      "handler": "religious-story.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/religious-stories/count",
+      "handler": "religious-story.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/religious-stories/:id",
+      "handler": "religious-story.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/religious-stories",
+      "handler": "religious-story.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/religious-stories/:id",
+      "handler": "religious-story.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/religious-stories/:id",
+      "handler": "religious-story.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

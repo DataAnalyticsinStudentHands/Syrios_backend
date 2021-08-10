@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_frame_titles",
+  "info": {
+    "name": "title",
+    "icon": "underline",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

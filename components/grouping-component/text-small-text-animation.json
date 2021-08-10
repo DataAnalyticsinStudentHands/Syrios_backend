@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_grouping_component_text_small_text_animation_s",
+  "info": {
+    "name": "Text:(smallText,animation)",
+    "icon": "angle-double-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

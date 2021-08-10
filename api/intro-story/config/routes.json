@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/intro-story",
+      "handler": "intro-story.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/intro-story",
+      "handler": "intro-story.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/intro-story",
+      "handler": "intro-story.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "economic_stories",
+  "info": {
+    "name": " EconomicStories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "story_name": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.title"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/economic-stories",
+      "handler": "economic-stories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/economic-stories/count",
+      "handler": "economic-stories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/economic-stories/:id",
+      "handler": "economic-stories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/economic-stories",
+      "handler": "economic-stories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/economic-stories/:id",
+      "handler": "economic-stories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/economic-stories/:id",
+      "handler": "economic-stories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

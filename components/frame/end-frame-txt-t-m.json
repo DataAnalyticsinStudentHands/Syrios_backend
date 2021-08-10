@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_frame_end_frame_txt_t_m_s",
+  "info": {
+    "name": "EndFrame_Txt:(T,M)",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "text_top": {
+      "type": "richtext"
+    },
+    "text_middle": {
+      "type": "text"
+    },
+    "actions": {
+      "collection": "actions"
+    }
+  }
+}
