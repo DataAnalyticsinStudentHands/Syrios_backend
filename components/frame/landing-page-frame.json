@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_frame_landing_page_frames",
+  "info": {
+    "name": "LandingPageFrame",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "LandingParagraph": {
+      "type": "richtext"
+    },
+    "IntroductionParagraph": {
+      "type": "richtext"
+    },
+    "TellMeAStoryParagraph": {
+      "type": "richtext"
+    },
+    "LetMeExploreParagraph": {
+      "type": "richtext"
+    }
+  }
+}
