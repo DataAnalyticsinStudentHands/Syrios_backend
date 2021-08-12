@@ -12,17 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Zone": {
+    "zone": {
       "type": "dynamiczone",
       "components": [
         "frame.title",
-        "frame.txt-mt-mb-pic-l-r-f",
         "frame.end-frame-txt-t-m",
-        "frame.alb-l-r-txt-m-t",
         "frame.txt-tr-mr-b-pic-l",
         "frame.text",
-        "frame.txt-t-m-pic-l-r",
-        "frame.landing-page-frame"
+        "frame.landing-page-frame",
+        "frame.compare-picture-flip",
+        "frame.compare4-buttons-many-pics",
+        "frame.compare-picture-sizes",
+        "frame.compare-pic2-buttons"
       ]
     }
   }

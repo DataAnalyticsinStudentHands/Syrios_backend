@@ -2,12 +2,13 @@
   "collectionName": "components_frame_texts",
   "info": {
     "name": "Text",
-    "icon": "air-freshener"
+    "icon": "air-freshener",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
-      "type": "richtext"
+      "type": "text"
     }
   }
 }
