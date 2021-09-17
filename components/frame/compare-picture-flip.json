@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_frame_compare_picture_flips",
+  "info": {
+    "name": "ComparePictureFlip",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_top": {
+      "type": "richtext"
+    },
+    "text_bottom": {
+      "type": "richtext"
+    },
+    "picture_left_front": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "picture_left_back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "picture_right_front": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "picture_right_back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "flip_button_name": {
+      "type": "string"
+    }
+  }
+}

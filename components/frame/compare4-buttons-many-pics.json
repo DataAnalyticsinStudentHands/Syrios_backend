@@ -1,0 +1,77 @@
+{
+  "collectionName": "components_frame_compare4_buttons_many_pics",
+  "info": {
+    "name": "Compare4ButtonsManyPics",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "text_top": {
+      "type": "text"
+    },
+    "button1": {
+      "type": "string"
+    },
+    "button2": {
+      "type": "string"
+    },
+    "button3": {
+      "type": "string"
+    },
+    "button4": {
+      "type": "string"
+    },
+    "button1_text_middle": {
+      "type": "richtext"
+    },
+    "button2_text_middle": {
+      "type": "richtext"
+    },
+    "button3_text_middle": {
+      "type": "richtext"
+    },
+    "button4_text_middle": {
+      "type": "richtext"
+    },
+    "button1_alb_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button1_alb_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button2_alb_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button2_alb_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button3_alb_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button3_alb_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button4_alb_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    },
+    "button4_alb_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.picture-mult-picture-caption"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_grouping_component_compare_pic2_buttons",
+  "info": {
+    "name": "ComparePic2Buttons",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_top": {
+      "type": "text"
+    },
+    "button1": {
+      "type": "string"
+    },
+    "button2": {
+      "type": "string"
+    },
+    "button1_text_middle": {
+      "type": "text"
+    },
+    "button2_text_middle": {
+      "type": "text"
+    },
+    "button1_picture_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "button1_picture_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "button2_picture_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    },
+    "button2_picture_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "grouping-component.text-small-animation"
+    }
+  }
+}
