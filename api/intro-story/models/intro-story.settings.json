@@ -2,8 +2,7 @@
   "kind": "singleType",
   "collectionName": "intro_stories",
   "info": {
-    "name": "IntroStory",
-    "description": ""
+    "name": "IntroStory"
   },
   "options": {
     "increments": true,
@@ -15,15 +14,15 @@
     "zone": {
       "type": "dynamiczone",
       "components": [
-        "frame.title",
         "frame.end-frame-txt-t-m",
+        "frame.compare-pic2-buttons",
+        "frame.compare-picture-flip",
+        "frame.landing-page-frame",
         "frame.txt-tr-mr-b-pic-l",
         "frame.text",
-        "frame.landing-page-frame",
-        "frame.compare-picture-flip",
         "frame.compare4-buttons-many-pics",
-        "frame.compare-picture-sizes",
-        "frame.compare-pic2-buttons"
+        "frame.title",
+        "frame.compare-picture-sizes"
       ]
     }
   }
