@@ -4,8 +4,7 @@ Strapi is a frontend GUI interface to update the Syrios backend so that the Syri
 
 # Installation
 
-Download the most recent version of the Syrios database and import it via Studio3T
-
+Download the most recent version of the Syrios database (agz file) and import it.
 clone
 `npm install`
 
