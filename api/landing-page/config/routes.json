@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/intro-story",
-      "handler": "intro-story.find",
+      "path": "/landing-page",
+      "handler": "landing-page.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/intro-story",
-      "handler": "intro-story.update",
+      "path": "/landing-page",
+      "handler": "landing-page.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/intro-story",
-      "handler": "intro-story.delete",
+      "path": "/landing-page",
+      "handler": "landing-page.delete",
       "config": {
         "policies": []
       }
