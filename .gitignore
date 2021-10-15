@@ -1,2 +1,5 @@
 build
 node_modules
+
+.cache
+.strapi-updater.json
