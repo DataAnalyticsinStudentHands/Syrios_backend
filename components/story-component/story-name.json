@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_story_component_story_names",
+  "info": {
+    "name": "story_name",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "story_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "story_name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 512
+    },
+    "city": {
+      "type": "string"
+    },
+    "political": {
+      "type": "string"
+    },
+    "economic": {
+      "type": "string"
+    },
+    "socio_cultural": {
+      "type": "string"
+    }
+  }
+}

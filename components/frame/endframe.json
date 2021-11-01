@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_frame_endframes",
+  "info": {
+    "name": "endframe",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
