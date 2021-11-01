@@ -2,16 +2,30 @@
   "collectionName": "components_frame_titles",
   "info": {
     "name": "title",
-    "icon": "underline",
-    "description": ""
+    "icon": "address-book"
   },
   "options": {},
   "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
     "title": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "text"
+    },
     "caption": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }

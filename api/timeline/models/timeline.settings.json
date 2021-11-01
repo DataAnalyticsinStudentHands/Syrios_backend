@@ -11,12 +11,5 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {
-    "zone": {
-      "type": "dynamiczone",
-      "components": [
-        "timeline.start-and-end-timeline-info"
-      ]
-    }
-  }
+  "attributes": {}
 }

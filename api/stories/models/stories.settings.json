@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "political_stories",
+  "collectionName": "stories",
   "info": {
-    "name": "politicalStories",
+    "name": "Stories",
     "description": ""
   },
   "options": {
@@ -12,14 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "story_name": {
-      "type": "string",
+    "story_info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "story-component.story-name",
       "required": true
     },
     "zone": {
       "type": "dynamiczone",
       "components": [
-        "frame.title"
+        "frame.title",
+        "frame.endframe"
       ]
     }
   }
