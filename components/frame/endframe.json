@@ -2,12 +2,14 @@
   "collectionName": "components_frame_endframes",
   "info": {
     "name": "endframe",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }

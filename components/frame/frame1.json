@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_frame_frame1s",
+  "info": {
+    "name": "frame1",
+    "icon": "yin-yang",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sub_text_1": {
+      "type": "richtext"
+    },
+    "sub_text_2": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "main_text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

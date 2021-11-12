@@ -22,7 +22,10 @@
       "type": "dynamiczone",
       "components": [
         "frame.title",
-        "frame.endframe"
+        "frame.endframe",
+        "frame.frame1",
+        "frame.frame2",
+        "frame.frame3"
       ]
     }
   }

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_frame_frame2s",
+  "info": {
+    "name": "frame2",
+    "icon": "yen-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sub_text": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image",
+      "required": false
+    },
+    "main_text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

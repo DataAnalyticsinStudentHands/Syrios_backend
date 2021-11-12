@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_frame_titles",
+  "collectionName": "components_subcomponent_images",
   "info": {
-    "name": "title",
-    "icon": "address-book",
+    "name": "image",
+    "icon": "adjust",
     "description": ""
   },
   "options": {},
@@ -19,16 +19,17 @@
       "required": true,
       "pluginOptions": {}
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "subtitle": {
-      "type": "text",
-      "required": true
-    },
     "caption": {
-      "type": "richtext",
+      "type": "richtext"
+    },
+    "light_blue_caption_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "light_blue_background": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }

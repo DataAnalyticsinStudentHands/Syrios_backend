@@ -1,9 +1,9 @@
 module.exports = {
     apps: [
       {
-        name: 'Syrios Backend',
+        name: 'Syrios Strapi Backend',
         script: 'npm',
-        args: 'start',
+        args: 'run develop',
       },
     ],
   };

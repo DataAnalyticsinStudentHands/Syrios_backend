@@ -11,12 +11,12 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "story_name": {
@@ -26,16 +26,20 @@
       "maxLength": 512
     },
     "city": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "political": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "economic": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "socio_cultural": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

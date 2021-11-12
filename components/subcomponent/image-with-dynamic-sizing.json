@@ -1,12 +1,15 @@
 {
-  "collectionName": "components_frame_titles",
+  "collectionName": "components_subcomponent_image_with_dynamic_sizings",
   "info": {
-    "name": "title",
-    "icon": "address-book",
+    "name": "image_with_dynamic_sizing",
+    "icon": "air-freshener",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "brief_detail": {
+      "type": "string"
+    },
     "image": {
       "model": "file",
       "via": "related",
@@ -19,17 +22,11 @@
       "required": true,
       "pluginOptions": {}
     },
-    "title": {
-      "type": "string",
-      "required": true
+    "link": {
+      "type": "string"
     },
-    "subtitle": {
-      "type": "text",
-      "required": true
-    },
-    "caption": {
-      "type": "richtext",
-      "required": true
+    "ui_size": {
+      "model": "ui-sizes"
     }
   }
 }
