@@ -18,7 +18,9 @@
       "type": "component",
       "repeatable": true,
       "component": "subcomponent.image-with-dynamic-sizing",
-      "required": true
+      "required": true,
+      "min": 1,
+      "max": 12
     },
     "background": {
       "model": "file",

@@ -8,7 +8,8 @@
   "options": {},
   "attributes": {
     "brief_detail": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 64
     },
     "image": {
       "model": "file",
@@ -25,7 +26,8 @@
     "link": {
       "type": "string"
     },
-    "ui_size": {
+    "size": {
+      "private": true,
       "model": "ui-sizes"
     }
   }

@@ -26,7 +26,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponent.image",
-      "required": false
+      "required": true
     },
     "main_text": {
       "type": "text",
