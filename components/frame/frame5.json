@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_frame_frame5s",
+  "info": {
+    "name": "frame5",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "text"
+    },
+    "image_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image",
+      "required": true
+    },
+    "image_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    }
+  }
+}

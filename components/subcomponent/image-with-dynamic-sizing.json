@@ -27,8 +27,17 @@
       "type": "string"
     },
     "size": {
-      "private": true,
-      "model": "ui-sizes"
+      "type": "enumeration",
+      "enum": [
+        "very_small",
+        "small",
+        "medium",
+        "big",
+        "very_big",
+        "gigantic"
+      ],
+      "required": true,
+      "default": "small"
     }
   }
 }

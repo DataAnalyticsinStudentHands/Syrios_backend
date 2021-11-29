@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_frame_frame4s",
+  "info": {
+    "name": "frame4",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quote1": {
+      "type": "richtext",
+      "required": true
+    },
+    "quote2": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "sub_quote1": {
+      "type": "string"
+    },
+    "sub_quote2": {
+      "type": "string"
+    }
+  }
+}
