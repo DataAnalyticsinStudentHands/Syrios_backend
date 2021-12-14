@@ -2,15 +2,39 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/timeline",
+      "path": "/timelines",
       "handler": "timeline.find",
       "config": {
         "policies": []
       }
     },
     {
+      "method": "GET",
+      "path": "/timelines/count",
+      "handler": "timeline.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timelines/:id",
+      "handler": "timeline.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timelines",
+      "handler": "timeline.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
-      "path": "/timeline",
+      "path": "/timelines/:id",
       "handler": "timeline.update",
       "config": {
         "policies": []
@@ -18,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/timeline",
+      "path": "/timelines/:id",
       "handler": "timeline.delete",
       "config": {
         "policies": []

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "how_to_read_a_coins",
+  "info": {
+    "name": "HowToReadACoin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.frame1",
+        "frame.frame2",
+        "frame.frame3",
+        "frame.frame4",
+        "frame.frame5",
+        "frame.endframe",
+        "frame.title",
+        "frame.dynamic-frame1"
+      ]
+    }
+  }
+}

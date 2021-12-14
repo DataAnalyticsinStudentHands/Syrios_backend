@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "story_info": {
-      "type": "component",
-      "repeatable": false,
-      "component": "story-component.story-name",
-      "required": true
-    },
     "zone": {
       "type": "dynamiczone",
       "components": [
@@ -29,6 +23,23 @@
         "frame.frame4",
         "frame.frame5"
       ]
+    },
+    "story_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 64
+    },
+    "story_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
