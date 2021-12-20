@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_frame_frame8s",
+  "info": {
+    "name": "frame8",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "richtext"
+    },
+    "sub_quote": {
+      "type": "richtext"
+    },
+    "image_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    }
+  }
+}

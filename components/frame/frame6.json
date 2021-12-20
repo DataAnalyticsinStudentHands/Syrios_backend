@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_frame_frame6s",
+  "info": {
+    "name": "frame6",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub_author": {
+      "type": "string"
+    },
+    "sub_text": {
+      "type": "richtext"
+    }
+  }
+}

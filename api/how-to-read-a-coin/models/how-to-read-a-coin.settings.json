@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -20,9 +20,9 @@
         "frame.frame3",
         "frame.frame4",
         "frame.frame5",
+        "frame.interactive-frame1",
         "frame.endframe",
-        "frame.title",
-        "frame.dynamic-frame1"
+        "frame.title"
       ]
     }
   }

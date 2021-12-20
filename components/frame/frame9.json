@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_frame_frame9s",
+  "info": {
+    "name": "frame9",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "image_mid": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "image_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_frame_frame7s",
+  "info": {
+    "name": "frame7",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "richtext"
+    },
+    "sub_text1": {
+      "type": "richtext"
+    },
+    "sub_text2": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    }
+  }
+}
