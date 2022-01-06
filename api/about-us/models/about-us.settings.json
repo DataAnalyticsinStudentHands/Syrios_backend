@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutuses",
+  "info": {
+    "name": "AboutUs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "past_student_research_assistants": {
+      "type": "richtext",
+      "required": true
+    },
+    "project_directors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.about-us-contributors",
+      "required": true,
+      "min": 1
+    },
+    "digital_media_and_content_team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.about-us-contributors",
+      "required": true,
+      "min": 1
+    },
+    "acknowledgements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.rich-text",
+      "required": true,
+      "min": 1
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

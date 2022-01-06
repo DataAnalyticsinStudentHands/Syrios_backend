@@ -25,7 +25,8 @@
         "frame.frame6",
         "frame.frame7",
         "frame.frame8",
-        "frame.frame9"
+        "frame.frame9",
+        "frame.interactive-frame1"
       ]
     },
     "story_name": {
@@ -44,6 +45,11 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "credits_and_references": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.credits-and-references"
     }
   }
 }

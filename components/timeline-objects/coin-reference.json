@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_timeline_objects_coin_references",
+  "info": {
+    "name": "coin_ref_tree",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "parent": {
+      "model": "timeline-objects"
+    },
+    "child": {
+      "model": "timeline-objects"
+    }
+  }
+}

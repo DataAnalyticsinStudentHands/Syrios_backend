@@ -24,6 +24,11 @@
         "frame.endframe",
         "frame.title"
       ]
+    },
+    "credits_and_references": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.credits-and-references"
     }
   }
 }

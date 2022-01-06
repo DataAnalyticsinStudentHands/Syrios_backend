@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_timeline_objects_coin_reference_singulars",
+  "info": {
+    "name": "coin_ref_singular",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin_reference": {
+      "model": "timeline-objects"
+    }
+  }
+}

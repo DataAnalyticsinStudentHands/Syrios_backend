@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_miscellaneous_credits_and_references",
+  "info": {
+    "name": "Credits&References",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "source_material_references": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.rich-text",
+      "max": 15
+    },
+    "read_more_references": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.rich-text",
+      "max": 15
+    }
+  }
+}
