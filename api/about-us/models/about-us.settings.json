@@ -44,6 +44,16 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
