@@ -1,0 +1,77 @@
+{
+  "collectionName": "components_frame_interactive_frame2s",
+  "info": {
+    "name": "Interactive_frame2",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_left_front": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image_left_back": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image_right_front": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image_right_back": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "text_mid_top": {
+      "type": "text"
+    },
+    "text_mid_bot": {
+      "type": "text"
+    },
+    "text_left_front": {
+      "type": "richtext"
+    },
+    "text_left_back": {
+      "type": "richtext"
+    },
+    "text_right_front": {
+      "type": "richtext"
+    },
+    "text_right_back": {
+      "type": "richtext"
+    }
+  }
+}

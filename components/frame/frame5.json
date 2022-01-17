@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "caption": {
+    "main_caption": {
       "type": "text"
     },
     "image_left": {

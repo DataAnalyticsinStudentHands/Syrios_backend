@@ -10,7 +10,11 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "zone": {
       "type": "dynamiczone",
@@ -26,13 +30,26 @@
         "frame.frame7",
         "frame.frame8",
         "frame.frame9",
-        "frame.interactive-frame1"
-      ]
+        "frame.interactive-frame1",
+        "frame.interactive-frame2",
+        "frame.interactive-frame3",
+        "frame.interactive-frame4"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "story_name": {
       "type": "string",
       "required": true,
-      "maxLength": 64
+      "maxLength": 64,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "story_image": {
       "model": "file",
@@ -44,12 +61,21 @@
       ],
       "plugin": "upload",
       "required": true,
-      "pluginOptions": {}
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "credits_and_references": {
       "type": "component",
       "repeatable": false,
-      "component": "miscellaneous.credits-and-references"
+      "component": "miscellaneous.credits-and-references",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

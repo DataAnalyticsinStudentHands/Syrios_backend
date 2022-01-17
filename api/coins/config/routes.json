@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/timeline-objects",
-      "handler": "timeline-objects.find",
+      "path": "/coins",
+      "handler": "coins.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/timeline-objects/count",
-      "handler": "timeline-objects.count",
+      "path": "/coins/count",
+      "handler": "coins.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/timeline-objects/:id",
-      "handler": "timeline-objects.findOne",
+      "path": "/coins/:id",
+      "handler": "coins.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/timeline-objects",
-      "handler": "timeline-objects.create",
+      "path": "/coins",
+      "handler": "coins.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/timeline-objects/:id",
-      "handler": "timeline-objects.update",
+      "path": "/coins/:id",
+      "handler": "coins.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/timeline-objects/:id",
-      "handler": "timeline-objects.delete",
+      "path": "/coins/:id",
+      "handler": "coins.delete",
       "config": {
         "policies": []
       }

@@ -18,19 +18,7 @@
       "repeatable": false,
       "component": "subcomponent.image"
     },
-    "main_text_before": {
-      "type": "richtext"
-    },
-    "main_text_between": {
-      "type": "richtext"
-    },
-    "main_text_after": {
-      "type": "richtext"
-    },
-    "main_text_b1": {
-      "type": "richtext"
-    },
-    "main_text_b2": {
+    "main_text": {
       "type": "richtext"
     }
   }

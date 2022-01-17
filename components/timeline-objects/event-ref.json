@@ -1,15 +1,11 @@
 {
-  "collectionName": "components_timeline_objects_coin_reference_singulars",
+  "collectionName": "components_timeline_objects_event_refs",
   "info": {
-    "name": "coin_ref_singular",
-    "icon": "allergies",
-    "description": ""
+    "name": "event_ref",
+    "icon": "angle-up"
   },
   "options": {},
   "attributes": {
-    "coin": {
-      "model": "coins"
-    },
     "x": {
       "type": "integer",
       "required": true,
@@ -19,6 +15,9 @@
     "y": {
       "type": "integer",
       "required": true
+    },
+    "event": {
+      "model": "event"
     }
   }
 }

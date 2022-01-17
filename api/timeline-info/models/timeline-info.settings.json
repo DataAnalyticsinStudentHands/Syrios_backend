@@ -19,7 +19,8 @@
       "type": "dynamiczone",
       "components": [
         "timeline-objects.coin-reference",
-        "timeline-objects.coin-reference-singular"
+        "timeline-objects.coin-reference-singular",
+        "timeline-objects.event-ref"
       ]
     }
   }
