@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,7 +19,7 @@
     "detail": {
       "type": "richtext"
     },
-    "cultural_connections": {
+    "TypeCategory": {
       "type": "richtext"
     },
     "tags": {

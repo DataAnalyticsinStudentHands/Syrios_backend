@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_frame_testframes",
+  "info": {
+    "name": "testframe",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_link": {
+      "type": "string"
+    },
+    "image_json_link": {
+      "type": "richtext"
+    }
+  }
+}

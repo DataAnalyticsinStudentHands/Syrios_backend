@@ -33,7 +33,8 @@
         "frame.interactive-frame1",
         "frame.interactive-frame2",
         "frame.interactive-frame3",
-        "frame.interactive-frame4"
+        "frame.interactive-frame4",
+        "frame.testframe"
       ],
       "pluginOptions": {
         "i18n": {
@@ -47,7 +48,7 @@
       "maxLength": 64,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
