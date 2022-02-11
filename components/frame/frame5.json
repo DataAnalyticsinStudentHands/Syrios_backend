@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "main_caption": {
-      "type": "text"
-    },
     "image_left": {
       "type": "component",
       "repeatable": false,
@@ -19,7 +16,29 @@
     "image_right": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "text_middle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.text",
+      "required": true
+    },
+    "title": {
+      "type": "text"
     }
   }
 }

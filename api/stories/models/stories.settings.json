@@ -34,7 +34,8 @@
         "frame.interactive-frame2",
         "frame.interactive-frame3",
         "frame.interactive-frame4",
-        "frame.testframe"
+        "frame.testframe",
+        "frame.testframe2"
       ],
       "pluginOptions": {
         "i18n": {

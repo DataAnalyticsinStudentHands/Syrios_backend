@@ -2,27 +2,44 @@
   "collectionName": "components_frame_frame9s",
   "info": {
     "name": "frame9",
-    "icon": "angle-double-left"
+    "icon": "angle-double-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "image_left": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
     "image_mid": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
     "image_right": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

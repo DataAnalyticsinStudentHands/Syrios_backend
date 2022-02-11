@@ -10,8 +10,20 @@
     "image_link": {
       "type": "string"
     },
-    "image_json_link": {
-      "type": "richtext"
+    "wiki_data": {
+      "type": "text"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

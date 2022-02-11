@@ -1,15 +1,14 @@
 {
-  "collectionName": "components_frame_endframes",
+  "collectionName": "components_frame_testframe2s",
   "info": {
-    "name": "endframe",
-    "icon": "address-card",
+    "name": "testframe2",
+    "icon": "ankh",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "richtext",
-      "required": true
+    "wiki_data": {
+      "type": "text"
     },
     "background": {
       "model": "file",

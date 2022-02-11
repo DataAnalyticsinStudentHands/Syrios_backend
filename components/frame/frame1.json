@@ -7,19 +7,19 @@
   },
   "options": {},
   "attributes": {
-    "sub_text_1": {
+    "sub_text_left": {
       "type": "richtext",
       "maxLength": 320
     },
-    "sub_text_2": {
+    "sub_text_right": {
       "type": "richtext"
     },
     "background": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
@@ -29,6 +29,9 @@
     "main_text": {
       "type": "text",
       "required": true
+    },
+    "caption_text_right": {
+      "type": "richtext"
     }
   }
 }

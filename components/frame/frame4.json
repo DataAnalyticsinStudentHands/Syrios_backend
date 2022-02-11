@@ -18,19 +18,19 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
-    "sub_quote1": {
-      "type": "string"
+    "author1": {
+      "type": "richtext"
     },
-    "sub_quote2": {
-      "type": "string"
+    "author2": {
+      "type": "richtext"
     }
   }
 }

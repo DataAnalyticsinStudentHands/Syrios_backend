@@ -13,7 +13,20 @@
     "component": {
       "type": "component",
       "repeatable": true,
-      "component": "subcomponent.interactive-frame4-component"
+      "component": "subcomponent.interactive-frame4-component",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
