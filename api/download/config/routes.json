@@ -23,6 +23,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/download/send_email",
+      "handler": "Email.index",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
