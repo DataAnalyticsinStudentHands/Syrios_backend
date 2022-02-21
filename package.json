@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && strapi develop",
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && strapi start",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && strapi build",
-    "strapi": "export SET NODE_OPTIONS=--openssl-legacy-provider && strapi"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/provider-email-nodemailer": "^4.0.7",
