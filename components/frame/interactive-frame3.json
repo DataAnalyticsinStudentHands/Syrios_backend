@@ -11,77 +11,37 @@
       "type": "string"
     },
     "image_left_front": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
     },
     "image_left_back": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "image_right_front": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "image_right_back": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
     },
     "text_mid_front": {
-      "type": "richtext"
-    },
-    "text_left_front": {
-      "type": "richtext"
-    },
-    "text_left_back": {
-      "type": "richtext"
-    },
-    "text_right_front": {
-      "type": "richtext"
-    },
-    "text_right_back": {
       "type": "richtext"
     },
     "text_mid_back": {
       "type": "richtext"
     },
+    "image_right_front": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "image_right_back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
     "background": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",

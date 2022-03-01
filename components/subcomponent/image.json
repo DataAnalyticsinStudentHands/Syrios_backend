@@ -31,6 +31,18 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "very_small",
+        "small",
+        "medium",
+        "big",
+        "very_big",
+        "gigantic"
+      ],
+      "required": true
     }
   }
 }

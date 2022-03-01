@@ -8,77 +8,37 @@
   "options": {},
   "attributes": {
     "image_left_front": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
     },
     "image_left_back": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "sub_text_middle_top": {
+      "type": "richtext"
+    },
+    "sub_text_middle_bottom": {
+      "type": "richtext"
     },
     "image_right_front": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
     },
     "image_right_back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image"
+    },
+    "bakcground": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "text_mid_top": {
-      "type": "text"
-    },
-    "text_mid_bot": {
-      "type": "text"
-    },
-    "text_left_front": {
-      "type": "richtext"
-    },
-    "text_left_back": {
-      "type": "richtext"
-    },
-    "text_right_front": {
-      "type": "richtext"
-    },
-    "text_right_back": {
-      "type": "richtext"
-    },
-    "background": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
         "files",
-        "images",
         "videos"
       ],
       "plugin": "upload",

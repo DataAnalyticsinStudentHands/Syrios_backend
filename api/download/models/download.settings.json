@@ -30,8 +30,17 @@
       "required": false,
       "pluginOptions": {}
     },
-    "email": {
+    "sendFrom": {
       "type": "string"
+    },
+    "replayTo": {
+      "type": "string"
+    },
+    "emailSubject": {
+      "type": "text"
+    },
+    "emailText": {
+      "type": "richtext"
     }
   }
 }
