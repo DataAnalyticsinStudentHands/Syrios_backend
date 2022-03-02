@@ -15,22 +15,10 @@ const Wrapper = styled.div`
 
 const configuration = {
   toolbar: [
-    'heading',
-    '|',
-    'bold',
-    'italic',
-    'link',
-    'bulletedList',
-    'numberedList',
-    '|',
-    'indent',
-    'outdent',
-    '|',
-    'blockQuote',
-    'insertTable',
-    'mediaEmbed',
-    'undo',
-    'redo',
+    'heading','|',
+    'bold','italic','link','bulletedList','numberedList','|',
+    'indent','outdent','|',
+    'blockQuote','insertTable','mediaEmbed','undo','redo','|',
   ],
 };
 
