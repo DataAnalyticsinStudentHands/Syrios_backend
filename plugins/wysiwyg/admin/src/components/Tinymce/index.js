@@ -12,6 +12,7 @@ const TinyEditor = ({ onChange, name, value }) => {
       }}
 
       outputFormat='html'
+      // outputFormat='text'
 
       init={{
         selector: 'textarea#custom-toolbar-menu-button',
@@ -32,16 +33,40 @@ const TinyEditor = ({ onChange, name, value }) => {
       
           /* example, adding a toolbar menu button */
           editor.ui.registry.addMenuButton('customInsert', {
-            // text: 'customInsert',
+            text: 'customLinks',
             icon:'plus',
             fetch: function (callback) {
               var items = [
                 {
                   type: 'menuitem',
-                  text: 'Example',
+                  text: 'NOMISMA Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent('&nbsp;You clicked this examle');
+                    editor.insertContent("&nbsp;<a class='NOMISMALink' href='#'>Edit the NOMISMA link</a>");
+                  }
+                },
+                {
+                  type: 'menuitem',
+                  text: 'Glossery Link',
+                  icon:'link',
+                  onAction: function () {
+                    editor.insertContent("&nbsp;<a class='GlosseryLink' href='#'>Edit the Glossery link</a>");
+                  }
+                },
+                {
+                  type: 'menuitem',
+                  text: 'external Link',
+                  icon:'link',
+                  onAction: function () {
+                    editor.insertContent("&nbsp;<a class='externalLink' href='#'>Edit the external link</a>");
+                  }
+                },
+                {
+                  type: 'menuitem',
+                  text: 'internal Link',
+                  icon:'link',
+                  onAction: function () {
+                    editor.insertContent("&nbsp;<a class='internalLink' href='#'>Edit the internal link</a>");
                   }
                 },
                 // {
