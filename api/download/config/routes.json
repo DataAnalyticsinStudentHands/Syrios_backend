@@ -26,8 +26,8 @@
     },
     {
       "method": "POST",
-      "path": "/download/send_email",
-      "handler": "Email.index",
+      "path": "/download",
+      "handler": "download.send",
       "config": {
         "policies": []
       }
