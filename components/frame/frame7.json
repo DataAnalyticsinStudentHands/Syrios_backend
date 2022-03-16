@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "sub_text_right_bottom": {
+    "cap_text_right_bottom": {
       "type": "richtext"
     },
-    "sub_text_bottom": {
+    "cap_text_bottom": {
       "type": "richtext"
     },
     "image": {
@@ -34,10 +34,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "title": {
-      "type": "richtext"
+    "main_text": {
+      "type": "text"
     },
-    "title_caption": {
+    "cap_text_top": {
       "type": "richtext"
     }
   }

@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "main_text": {
       "type": "string"
     },
-    "component": {
+    "image_component": {
       "type": "component",
       "repeatable": true,
       "component": "subcomponent.interactive-frame4-component",

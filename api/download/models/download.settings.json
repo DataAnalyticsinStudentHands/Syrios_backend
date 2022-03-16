@@ -29,18 +29,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "sendFrom": {
-      "type": "string"
-    },
-    "replayTo": {
-      "type": "string"
-    },
-    "emailSubject": {
-      "type": "text"
-    },
-    "emailText": {
-      "type": "richtext"
     }
   }
 }

@@ -11,10 +11,10 @@
       "type": "text",
       "required": true
     },
-    "text_front": {
+    "sub_text_middle_front": {
       "type": "richtext"
     },
-    "text_back": {
+    "sub_text_middle_back": {
       "type": "richtext",
       "required": false,
       "maxLength": 400

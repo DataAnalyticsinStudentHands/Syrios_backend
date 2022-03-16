@@ -13,13 +13,10 @@
       "component": "subcomponent.image",
       "required": true
     },
-    "title": {
-      "type": "string"
+    "main_text": {
+      "type": "text"
     },
-    "sub_author": {
-      "type": "string"
-    },
-    "sub_text": {
+    "sub_text_right": {
       "type": "richtext",
       "required": true
     },
@@ -34,6 +31,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "cap_text_right": {
+      "type": "richtext"
     }
   }
 }

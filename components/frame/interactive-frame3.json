@@ -8,33 +8,38 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "image_left_front": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
     "image_left_back": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
-    "text_mid_front": {
+    "sub_text_mid_front": {
       "type": "richtext"
     },
-    "text_mid_back": {
+    "sub_text_mid_back": {
       "type": "richtext"
     },
     "image_right_front": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
     "image_right_back": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponent.image"
+      "component": "subcomponent.image",
+      "required": true
     },
     "background": {
       "model": "file",

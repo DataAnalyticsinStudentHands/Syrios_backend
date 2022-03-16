@@ -7,11 +7,11 @@
   },
   "options": {},
   "attributes": {
-    "quote1": {
+    "sub_text_left": {
       "type": "richtext",
       "required": true
     },
-    "quote2": {
+    "sub_text_right": {
       "type": "richtext"
     },
     "background": {
@@ -26,10 +26,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "author1": {
+    "cap_text_left": {
       "type": "richtext"
     },
-    "author2": {
+    "cap_text_right": {
       "type": "richtext"
     }
   }

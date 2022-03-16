@@ -1,40 +1,34 @@
 {
-  "collectionName": "components_frame_frame8s",
+  "collectionName": "components_frame_frame10s",
   "info": {
-    "name": "frame8",
-    "icon": "angle-double-down",
+    "name": "frame10",
+    "icon": "archway",
     "description": ""
   },
   "options": {},
   "attributes": {
     "main_text": {
-      "type": "text"
-    },
-    "sub_text_right": {
-      "type": "richtext"
-    },
-    "cap_text_right": {
-      "type": "richtext"
-    },
-    "image_left": {
-      "type": "component",
-      "repeatable": false,
-      "component": "subcomponent.image",
+      "type": "text",
       "required": true
+    },
+    "leftOrRight": {
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "background": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
-    "image_top": {
+    "image": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponent.image-only"

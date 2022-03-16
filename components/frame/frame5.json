@@ -37,7 +37,7 @@
       "component": "subcomponent.text",
       "required": true
     },
-    "title": {
+    "main_text": {
       "type": "text"
     }
   }

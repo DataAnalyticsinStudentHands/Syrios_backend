@@ -7,9 +7,9 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
+    "main_text": {
+      "type": "text",
+      "required": false
     },
     "image_left": {
       "type": "component",

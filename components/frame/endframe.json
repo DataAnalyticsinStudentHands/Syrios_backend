@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "text": {
+    "sub_text": {
       "type": "richtext",
       "required": true
     },
