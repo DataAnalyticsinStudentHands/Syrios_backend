@@ -9,9 +9,7 @@ let transporter = nodemailer.createTransport({
 module.exports={
   async send(ctx){
     transporter.sendmail({
-      from: "Syrios Site Watcher <dashadmin@uh.edu>",
       to: 'shaotianhao1997@gmail.com',
-      subject: 'Message',
       text: 'I hope this message gets delivered!'
   }, (err, info) => {
       console.log(info.envelope);
