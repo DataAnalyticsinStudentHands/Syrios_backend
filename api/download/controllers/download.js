@@ -1,22 +1,23 @@
 'use strict'
 
-const nodemailer = require("nodemailer");
-let transporter = nodemailer.createTransport({
-  sendmail: true,
-  newline: 'unix',
-  path: '/usr/sbin/sendmail'
-});
-module.exports={
-  async send(ctx){
-    transporter.sendmail({
-      to: 'shaotianhao1997@gmail.com',
-      text: 'I hope this message gets delivered!'
-  }, (err, info) => {
-      console.log(info.envelope);
-      console.log(info.messageId);
-  })
-  }
-}
+module.exports = {
+  // GET /hello
+  send: async ctx => {
+
+    // Send an email to validate his subscriptions.
+    strapi.services.download.send(
+      'shaotianhao1997@gmail.com', 
+      'shaotianhao1997@gmail.com', 
+      'Welcome', 
+      '...'
+    );
+
+    // Send response to the server.
+    ctx.send({
+      ok: true,
+    });
+  },
+};
 
 // module.exports = {
 //   async send(ctx) {
