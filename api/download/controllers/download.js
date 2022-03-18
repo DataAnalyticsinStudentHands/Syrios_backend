@@ -3,13 +3,14 @@
 module.exports = {
   // GET /hello
   send: async ctx => {
+    const from =ctx.request.body.from
+    const fullName =ctx.request.body.fullName
 
-    // Send an email to validate his subscriptions.
     strapi.services.download.send(
+      from, 
       'shaotianhao1997@gmail.com', 
-      'shaotianhao1997@gmail.com', 
-      'Welcome', 
-      '...'
+      'Strapi Download Data', 
+      `${fullName} request download data, and the email is ${from}`
     );
 
     // Send response to the server.
@@ -41,12 +42,4 @@ module.exports = {
 //       ctx.send({ error: 'Error sending email' })
 //     }
 //   }
-// }
-
-// module.exports={
-//   let transporter = nodemailer.createTransport({
-//     sendmail: true,
-//     newline: 'unix',
-//     path: '/usr/sbin/sendmail'
-// });
 // }
