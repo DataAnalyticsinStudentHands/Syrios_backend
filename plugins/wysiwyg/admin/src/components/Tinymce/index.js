@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Editor } from "@tinymce/tinymce-react";
+
 const TinyEditor = ({ onChange, name, value }) => {
   return (
     <Editor
-      apiKey="API Key"
+      apiKey= {process.env.Tiny_API}
       value={value}
       tagName={name}
       onEditorChange={(editorContent) => {
         onChange({ target: { name, value: editorContent } });
       }}
-
-      outputFormat='html'
-      // outputFormat='text'
+      // outputFormat="text"
+      outputFormat="html"
 
       init={{
         selector: 'textarea#custom-toolbar-menu-button',
@@ -42,7 +42,7 @@ const TinyEditor = ({ onChange, name, value }) => {
                   text: 'NOMISMA Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='NOMISMALink' href='#'>Edit the NOMISMA link</a>");
+                    editor.insertContent("&nbsp;<a class='NOMISMALink' href='#'>NOMISMA link</a><sup><em class='demo-icon icon-coin-scale NOMISMAIcon'>&#xe817;</em></sup>&nbsp;");
                   }
                 },
                 {
@@ -50,7 +50,7 @@ const TinyEditor = ({ onChange, name, value }) => {
                   text: 'Glossery Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='GlosseryLink' href='#'>Edit the Glossery link</a>");
+                    editor.insertContent("&nbsp;<a class='GlosseryLink' href='#'>Glossery link</a><em class='demo-icon icon-coin-scale GlosseryIcon'>&#xe818;</em>&nbsp;");
                   }
                 },
                 {
@@ -58,7 +58,7 @@ const TinyEditor = ({ onChange, name, value }) => {
                   text: 'external Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='externalLink' href='#'>Edit the external link</a>");
+                    editor.insertContent("&nbsp;<a class='externalLink' href='#'>External link</a>&nbsp;");
                   }
                 },
                 {
@@ -66,7 +66,7 @@ const TinyEditor = ({ onChange, name, value }) => {
                   text: 'internal Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='internalLink' href='#'>Edit the internal link</a>");
+                    editor.insertContent("&nbsp;<a class='internalLink' href='#'>Internal link</a>&nbsp;");
                   }
                 },
                 // {
