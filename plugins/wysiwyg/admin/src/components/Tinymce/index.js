@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Editor } from "@tinymce/tinymce-react";
 
-const TinyEditor = ({ onChange, name, value }) => {
+const TinyEditor = ({ onChange, name, value }) => {  
   return (
     <Editor
       apiKey= {process.env.Tiny_API}
@@ -13,6 +13,7 @@ const TinyEditor = ({ onChange, name, value }) => {
       }}
       // outputFormat="text"
       outputFormat="html"
+      
 
       init={{
         selector: 'textarea#custom-toolbar-menu-button',
@@ -69,43 +70,6 @@ const TinyEditor = ({ onChange, name, value }) => {
                     editor.insertContent("&nbsp;<a class='internalLink' href='#'>Internal link</a>&nbsp;");
                   }
                 },
-                // {
-                //   type: 'nestedmenuitem',
-                //   text: 'Menu item 2',
-                //   // icon: 'user',
-                //   getSubmenuItems: function () {
-                //     return [
-                //       {
-                //         type: 'menuitem',
-                //         text: 'Sub menu item 1',
-                //         // icon: 'unlock',
-                //         onAction: function () {
-                //           editor.insertContent('&nbsp;<em>You clicked Sub menu item 1!</em>');
-                //         }
-                //       },
-                //       {
-                //         type: 'menuitem',
-                //         text: 'Sub menu item 2',
-                //         // icon: 'lock',
-                //         onAction: function () {
-                //           editor.insertContent('&nbsp;<em>You clicked Sub menu item 2!</em>');
-                //         }
-                //       }
-                //     ];
-                //   }
-                // },
-                // {
-                //   type: 'togglemenuitem',
-                //   text: 'Toggle menu item',
-                //   onAction: function () {
-                //     toggleState = !toggleState;
-                //     editor.insertContent('&nbsp;<em>You toggled a menuitem ' + (toggleState ? 'on' : 'off') + '</em>');
-                //   },
-                //   onSetup: function (api) {
-                //     api.setActive(toggleState);
-                //     return function() {};
-                //   }
-                // }
               ];
               callback(items);
             }
