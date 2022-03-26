@@ -14,7 +14,6 @@ const TinyEditor = ({ onChange, name, value }) => {
       // outputFormat="text"
       outputFormat="html"
       
-
       init={{
         selector: 'textarea#custom-toolbar-menu-button',
         plugins: [
@@ -40,10 +39,26 @@ const TinyEditor = ({ onChange, name, value }) => {
               var items = [
                 {
                   type: 'menuitem',
-                  text: 'NOMISMA Link',
+                  text: 'External Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='NOMISMALink' href='#'>NOMISMA link</a><sup><em class='demo-icon icon-coin-scale NOMISMAIcon'>&#xe817;</em></sup>&nbsp;");
+                    editor.insertContent(`&nbsp;
+                                          <a class='Link ExternalLink' href='#'>
+                                            External link
+                                            <em class='demo-icon icon-coin-scale Icon ExternalIcon'>&#xe818;</em>
+                                          </a>&nbsp;`);
+                  }
+                },
+                {
+                  type: 'menuitem',
+                  text: 'NOMISMA',
+                  icon:'link',
+                  onAction: function () {
+                    editor.insertContent(`&nbsp;
+                                          <a class='Link NomisamaLink' href='#'>
+                                            NOMISMA link 
+                                            <em class='demo-icon icon-coin-scale Icon NomisamaIcon'>&#xe814;</em>
+                                          </a>&nbsp;`);
                   }
                 },
                 {
@@ -51,23 +66,29 @@ const TinyEditor = ({ onChange, name, value }) => {
                   text: 'Glossery Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='GlosseryLink' href='#'>Glossery link</a><em class='demo-icon icon-coin-scale GlosseryIcon'>&#xe818;</em>&nbsp;");
+                    editor.insertContent(`&nbsp;
+                                          <a class='Link GlossaryLink' href='#'>
+                                            Glossery link 
+                                            <sup>
+                                              <em class='demo-icon icon-coin-scale Icon GlosseryIcon'>
+                                                &#xe817;
+                                              </em>
+                                            </sup>
+                                          </a>&nbsp;`);
                   }
                 },
                 {
                   type: 'menuitem',
-                  text: 'external Link',
+                  text: 'Internal Link',
                   icon:'link',
                   onAction: function () {
-                    editor.insertContent("&nbsp;<a class='externalLink' href='#'>External link</a>&nbsp;");
-                  }
-                },
-                {
-                  type: 'menuitem',
-                  text: 'internal Link',
-                  icon:'link',
-                  onAction: function () {
-                    editor.insertContent("&nbsp;<a class='internalLink' href='#'>Internal link</a>&nbsp;");
+                    editor.insertContent(`&nbsp;
+                                          <a class='Link InternalLink' href='#'>
+                                            Internal link
+                                            <sup class='InternalNumber'>
+                                              [1]
+                                            </sup>
+                                          </a>&nbsp;`);
                   }
                 },
               ];
