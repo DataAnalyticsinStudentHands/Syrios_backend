@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponent_short_texts",
+  "info": {
+    "name": "short_text",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

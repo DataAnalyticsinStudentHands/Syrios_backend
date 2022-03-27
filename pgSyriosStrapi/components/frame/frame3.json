@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_frame_frame3s",
+  "info": {
+    "name": "frame3",
+    "icon": "x-ray",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "sub_text": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.image-with-dynamic-sizing",
+      "required": true,
+      "min": 1,
+      "max": 12
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

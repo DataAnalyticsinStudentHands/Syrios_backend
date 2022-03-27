@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_frame_interactive_frame4s",
+  "info": {
+    "name": "Interactive_frame4",
+    "icon": "angle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "string"
+    },
+    "image_component": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.interactive-frame4-component",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

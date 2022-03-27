@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "TypeCategory": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "string",
+      "default": "None",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "default": "#f8f8ff"
+    }
+  }
+}

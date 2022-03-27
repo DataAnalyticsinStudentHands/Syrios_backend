@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelines",
+  "info": {
+    "name": "timeline",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "y_date": {
+      "type": "decimal",
+      "required": true
+    },
+    "start_roman_x": {
+      "type": "decimal",
+      "default": 0
+    },
+    "end_roman_x": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "start_greekhellenistic_x": {
+      "type": "decimal",
+      "default": 0
+    },
+    "end_greekhellenistic_x": {
+      "type": "decimal",
+      "default": 0
+    },
+    "start_easternstates_x": {
+      "type": "decimal",
+      "default": 0
+    },
+    "end_easternstates_x": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

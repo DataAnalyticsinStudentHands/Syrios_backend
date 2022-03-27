@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_frame_frame10s",
+  "info": {
+    "name": "frame10",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "leftOrRight": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image-only"
+    }
+  }
+}

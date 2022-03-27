@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "timeline_infos",
+  "info": {
+    "name": "TimelineInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timeline_description": {
+      "type": "richtext"
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "timeline-objects.coin-reference",
+        "timeline-objects.coin-reference-singular",
+        "timeline-objects.event-ref"
+      ]
+    }
+  }
+}

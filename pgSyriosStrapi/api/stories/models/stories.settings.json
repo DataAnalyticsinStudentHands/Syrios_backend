@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "name": "Stories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.title",
+        "frame.endframe",
+        "frame.frame1",
+        "frame.frame2",
+        "frame.frame3",
+        "frame.frame4",
+        "frame.frame5",
+        "frame.frame6",
+        "frame.frame7",
+        "frame.frame8",
+        "frame.frame9",
+        "frame.interactive-frame1",
+        "frame.interactive-frame2",
+        "frame.interactive-frame3",
+        "frame.interactive-frame4",
+        "frame.testframe",
+        "frame.testframe2",
+        "frame.frame10",
+        "frame.interactive-frame5"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "story_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 64,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "story_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "credits_and_references": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.credits-and-references",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

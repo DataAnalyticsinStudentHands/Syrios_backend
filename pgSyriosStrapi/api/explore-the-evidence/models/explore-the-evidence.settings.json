@@ -1,0 +1,82 @@
+{
+  "kind": "singleType",
+  "collectionName": "explore_the_evidences",
+  "info": {
+    "name": "ExploreTheEvidence",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sort_coins_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "sort_coins_title": {
+      "type": "string",
+      "required": true,
+      "default": "SORT COINS"
+    },
+    "sort_coins_caption": {
+      "type": "richtext",
+      "required": false
+    },
+    "map_coins_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "map_coins_title": {
+      "type": "string",
+      "required": true,
+      "default": "MAP COINS"
+    },
+    "map_coins_caption": {
+      "type": "richtext"
+    },
+    "coin_timeline_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "coin_timeline_title": {
+      "type": "string",
+      "required": true,
+      "default": "COIN TIMELINE"
+    },
+    "coin_timeline_caption": {
+      "type": "richtext"
+    },
+    "download_dataset_title": {
+      "type": "string",
+      "default": "DOWNLOAD THE DATASET",
+      "required": true
+    },
+    "download_dataset_caption": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_frame_interactive_frame5s",
+  "info": {
+    "name": "Interactive_frame5",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text_front": {
+      "type": "text",
+      "required": true
+    },
+    "sub_text_right_front": {
+      "type": "richtext",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "main_text_back": {
+      "type": "text"
+    },
+    "sub_text_right_back": {
+      "type": "richtext"
+    },
+    "image_left_front": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image-only"
+    },
+    "image_left_back": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.image-only"
+    }
+  }
+}

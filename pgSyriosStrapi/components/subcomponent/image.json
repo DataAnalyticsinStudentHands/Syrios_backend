@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_subcomponent_images",
+  "info": {
+    "name": "image",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "light_blue_caption_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "light_blue_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "very_small",
+        "small",
+        "medium",
+        "big",
+        "very_big",
+        "gigantic"
+      ],
+      "required": true
+    }
+  }
+}

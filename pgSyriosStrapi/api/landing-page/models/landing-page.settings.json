@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "name": "LandingPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shortDescription": {
+      "type": "string"
+    },
+    "LandingParagraph": {
+      "type": "richtext"
+    },
+    "videoLink": {
+      "type": "string"
+    }
+  }
+}

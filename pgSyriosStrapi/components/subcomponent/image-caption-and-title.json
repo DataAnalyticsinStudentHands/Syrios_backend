@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_subcomponent_image_caption_and_titles",
+  "info": {
+    "name": "image_caption_and_title",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "richtext"
+    }
+  }
+}
