@@ -22,7 +22,18 @@
         "frame.frame5",
         "frame.interactive-frame1",
         "frame.endframe",
-        "frame.title"
+        "frame.title",
+        "frame.frame6",
+        "frame.frame7",
+        "frame.frame10",
+        "frame.frame8",
+        "frame.frame9",
+        "frame.interactive-frame2",
+        "frame.interactive-frame3",
+        "frame.interactive-frame4",
+        "frame.interactive-frame5",
+        "frame.testframe2",
+        "frame.testframe"
       ]
     },
     "credits_and_references": {

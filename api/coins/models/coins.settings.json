@@ -85,10 +85,6 @@
       "type": "string",
       "default": "Unknown"
     },
-    "Diameter": {
-      "type": "integer",
-      "default": -1
-    },
     "Era": {
       "type": "string",
       "default": "Unknown"
@@ -116,6 +112,9 @@
     "CatalogueDate": {
       "type": "string",
       "default": "N/A"
+    },
+    "Diameter": {
+      "type": "string"
     }
   }
 }
