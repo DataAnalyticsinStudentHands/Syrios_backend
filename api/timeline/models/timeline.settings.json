@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelines",
+  "info": {
+    "name": "timeline",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ydate": {
+      "type": "integer",
+      "required": true
+    },
+    "startromanx": {
+      "type": "integer"
+    },
+    "endromanx": {
+      "type": "integer"
+    },
+    "startgreekhellenisticx": {
+      "type": "integer"
+    },
+    "endgreekhellenisticx": {
+      "type": "integer"
+    },
+    "starteasternstatesx": {
+      "type": "integer"
+    },
+    "endeasternstatesx": {
+      "type": "integer"
+    }
+  }
+}

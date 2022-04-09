@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_frame_frame6s",
+  "info": {
+    "name": "frame6",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "miantext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "bluetexts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.subcaptextwithbluebg"
+    },
+    "yellowtext": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

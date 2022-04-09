@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponent_shorttextcomponents",
+  "info": {
+    "name": "shorttextcomponent",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

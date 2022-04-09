@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_frame_frame2s",
+  "info": {
+    "name": "frame2",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "maintext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

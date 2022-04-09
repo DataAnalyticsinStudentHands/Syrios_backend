@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "howtoreadacoins",
+  "info": {
+    "name": "howtoreadacoin"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "creditsandreferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.creditsandreferences"
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.frame1",
+        "frame.interactiveframe1"
+      ],
+      "required": true,
+      "min": 1
+    }
+  }
+}

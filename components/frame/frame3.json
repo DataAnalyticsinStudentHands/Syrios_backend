@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_frame_frame3s",
+  "info": {
+    "name": "frame3",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.imagedetaillinkandsize"
+    },
+    "maintext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

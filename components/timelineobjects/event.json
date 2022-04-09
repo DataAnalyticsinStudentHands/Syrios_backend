@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_timelineobjects_events",
+  "info": {
+    "name": "event",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "event": {
+      "model": "event"
+    },
+    "x": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "y": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

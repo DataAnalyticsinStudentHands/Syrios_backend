@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_frame_frame5s",
+  "info": {
+    "name": "frame5",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "miantext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "imageleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "textmiddle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.subcaptextwithbluebg"
+    },
+    "imageright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

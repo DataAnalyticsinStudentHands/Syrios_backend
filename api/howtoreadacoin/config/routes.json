@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/howtoreadacoin",
+      "handler": "howtoreadacoin.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/howtoreadacoin",
+      "handler": "howtoreadacoin.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/howtoreadacoin",
+      "handler": "howtoreadacoin.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

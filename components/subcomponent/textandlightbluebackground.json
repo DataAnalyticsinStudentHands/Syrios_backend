@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_subcomponent_textandlightbluebackgrounds",
+  "info": {
+    "name": "textandlightbluebackground",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "lightbluecaptionbackground": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

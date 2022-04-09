@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_subcomponent_imagecaptionandtitles",
+  "info": {
+    "name": "imagecaptionandtitle",
+    "icon": "arrow-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "richtext"
+    }
+  }
+}

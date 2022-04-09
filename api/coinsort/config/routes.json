@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coinsort",
+      "handler": "coinsort.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coinsort",
+      "handler": "coinsort.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coinsort",
+      "handler": "coinsort.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_subcomponent_creditsandreferences",
+  "info": {
+    "name": "creditsandreferences",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sourcematerialreferences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.richtextcomponent"
+    },
+    "readmorereferences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.richtextcomponent"
+    }
+  }
+}

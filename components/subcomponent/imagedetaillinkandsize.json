@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_subcomponent_imagedetaillinkandsizes",
+  "info": {
+    "name": "imagedetaillinkandsize",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ]
+    },
+    "briefdetail": {
+      "type": "string"
+    }
+  }
+}

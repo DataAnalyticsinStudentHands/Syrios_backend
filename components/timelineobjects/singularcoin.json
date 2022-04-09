@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_timelineobjects_singularcoins",
+  "info": {
+    "name": "singularcoin",
+    "icon": "angle-left"
+  },
+  "options": {},
+  "attributes": {
+    "coin": {
+      "model": "coin"
+    },
+    "x": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "y": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

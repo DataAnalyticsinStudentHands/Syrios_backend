@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_miscellaneous_aboutuscontributors",
+  "info": {
+    "name": "aboutuscontributors",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "type": "richtext",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "name": "story"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "storyname": {
+      "type": "string",
+      "required": true
+    },
+    "storyimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "creditsandreferences": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.creditsandreferences"
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "frame.frame1",
+        "frame.interactiveframe1"
+      ]
+    }
+  }
+}

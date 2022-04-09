@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_subcomponent_imagecaptionsizingandbluebackgrounds",
+  "info": {
+    "name": "imagecomponent",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "default": "xs",
+      "required": true
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "lightbluecaptionbackground": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "lightbluebackground": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "timelineinfos",
+  "info": {
+    "name": "timelineinfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timeline_description": {
+      "type": "richtext",
+      "default": "Scroll down to explore the history of Antioch, as told by its coins.",
+      "required": true
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "timelineobjects.singularcoin",
+        "timelineobjects.connectedcoins",
+        "timelineobjects.event"
+      ],
+      "required": false
+    }
+  }
+}

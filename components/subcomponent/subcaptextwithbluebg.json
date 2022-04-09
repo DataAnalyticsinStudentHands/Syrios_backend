@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_subcomponent_subcaptextwithbluebgs",
+  "info": {
+    "name": "subcaptextwithbluebg",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "subtext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "bluebg": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

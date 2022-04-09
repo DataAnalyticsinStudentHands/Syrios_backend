@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_frame_interactiveframe1s",
+  "info": {
+    "name": "interactiveframe1",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "maintext": {
+      "type": "text",
+      "required": true
+    },
+    "textmiddlefront": {
+      "type": "richtext"
+    },
+    "textmiddleback": {
+      "type": "richtext"
+    },
+    "imageleftfront": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "imagerightfront": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "imageleftback": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "imagerightback": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

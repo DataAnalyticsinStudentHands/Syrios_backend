@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_timelineobjects_connectedcoins",
+  "info": {
+    "name": "connectedcoins",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "parent": {
+      "model": "coin"
+    },
+    "parentx": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "parenty": {
+      "type": "integer",
+      "required": true
+    },
+    "child": {
+      "model": "coin"
+    },
+    "childx": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "childy": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

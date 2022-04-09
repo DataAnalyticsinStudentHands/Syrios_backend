@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutuses",
+  "info": {
+    "name": "aboutus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "projectdirectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.aboutuscontributors",
+      "required": true,
+      "min": 1
+    },
+    "digitalmediaandcontentteam": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.aboutuscontributors",
+      "required": true,
+      "min": 1
+    },
+    "paststudentresearchassistants": {
+      "type": "richtext"
+    },
+    "acknowledgments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.richtextcomponent"
+    }
+  }
+}

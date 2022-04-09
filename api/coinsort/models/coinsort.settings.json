@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "coinsorts",
+  "info": {
+    "name": "coinsort",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "COIN SORT"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_frame_frame1s",
+  "info": {
+    "name": "frame1",
+    "icon": "angle-double-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subcapleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.subcaptextwithbluebg"
+    },
+    "subcapright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.subcaptextwithbluebg"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "maintext": {
+      "type": "richtext"
+    }
+  }
+}

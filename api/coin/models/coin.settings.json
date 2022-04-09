@@ -1,0 +1,124 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coins",
+  "info": {
+    "name": "coin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "obverseFile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "reverseFile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Image": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ObverseType": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "OverseLegend": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ReverseType": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ReverseLegend": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Region": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Material": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "State": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Denomination": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Mint": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Diameter": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "IssuingAuthority": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "TypeCategory": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Era": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "FromDate": {
+      "type": "integer",
+      "default": 40000
+    },
+    "Date": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ToDate": {
+      "type": "integer",
+      "default": 40000
+    },
+    "CatalogueDate": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "SourceImage": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "RightsHolder": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Bibliography": {
+      "type": "string",
+      "default": "N/A"
+    }
+  }
+}
