@@ -1,0 +1,8 @@
+build
+node_modules
+public/uploads
+
+.cache
+.strapi-updater.json
+.env
+.package-lock.json
