@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@tinymce/tinymce-react": "^4.0.0",
     "knex": "0.21.18",
     "pg": "8.5.1",
     "strapi": "3.6.8",
