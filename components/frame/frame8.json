@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_frame_frame8s",
+  "info": {
+    "name": "frame8",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "maintext": {
+      "type": "richtext"
+    },
+    "subtextright": {
+      "type": "richtext"
+    },
+    "captextright": {
+      "type": "richtext"
+    },
+    "imagetop": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imageandsize"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    }
+  }
+}
