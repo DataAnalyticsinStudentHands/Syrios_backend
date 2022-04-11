@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_storyframe_oneimagecomponents",
+  "info": {
+    "name": "oneimage",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "imagecomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

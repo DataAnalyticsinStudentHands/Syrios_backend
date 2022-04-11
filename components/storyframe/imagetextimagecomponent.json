@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_storyframe_imagetextimagecomponents",
+  "info": {
+    "name": "imagetextimage",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "imageleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "textmiddle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.textcomponent"
+    },
+    "imageright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

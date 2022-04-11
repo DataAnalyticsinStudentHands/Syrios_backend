@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_storyframe_oneimagetwotextcomponents",
+  "info": {
+    "name": "oneimagetwotext",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "imageleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "simapletextright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.simapletextcomponent"
+    },
+    "textright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.textcomponent"
+    },
+    "switchcomponent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "default": "half",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

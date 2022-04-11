@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_frame_interactiveframe3s",
+  "info": {
+    "name": "interactiveframe3",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "miantext": {
+      "type": "richtext"
+    },
+    "imageleftfront": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "imageleftback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "subtextmidfront": {
+      "type": "richtext"
+    },
+    "subtextmidback": {
+      "type": "richtext"
+    },
+    "imagerightfront": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "imagerightback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

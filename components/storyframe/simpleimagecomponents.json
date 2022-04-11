@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_storyframe_simpleimagecomponents",
+  "info": {
+    "name": "simpleimage",
+    "icon": "ankh",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "storycomponent.simpleimagecomponent"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

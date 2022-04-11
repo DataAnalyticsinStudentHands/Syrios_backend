@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "stories",
   "info": {
-    "name": "story"
+    "name": "story",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -34,7 +35,24 @@
       "type": "dynamiczone",
       "components": [
         "frame.frame1",
-        "frame.interactiveframe1"
+        "frame.interactiveframe1",
+        "frame.frame2",
+        "frame.interactiveframe2",
+        "frame.frame3",
+        "frame.interactiveframe3",
+        "frame.frame5",
+        "frame.interactiveframe5",
+        "frame.frame6",
+        "frame.interactivefrmae4",
+        "frame.endframe",
+        "frame.titleframe",
+        "storyframe.simpleimagecomponents",
+        "storyframe.threeimagecomponent",
+        "storyframe.oneimagetwotextcomponent",
+        "storyframe.oneimagecomponent",
+        "storyframe.imagetextimagecomponent",
+        "storyframe.oneimageonetextcomponent",
+        "storyframe.2textcomponentframe"
       ]
     }
   }

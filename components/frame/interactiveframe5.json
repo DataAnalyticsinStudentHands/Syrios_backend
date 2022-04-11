@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_frame_interactiveframe5s",
+  "info": {
+    "name": "interactiveframe5",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "maintextfront": {
+      "type": "richtext"
+    },
+    "maintextback": {
+      "type": "richtext"
+    },
+    "subtextfront": {
+      "type": "richtext"
+    },
+    "subtextback": {
+      "type": "richtext"
+    },
+    "imageleftfront": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imageandsize"
+    },
+    "imageleftback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponent.imageandsize"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

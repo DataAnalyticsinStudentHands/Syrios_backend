@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_storyframe_interactiveframe1s",
+  "info": {
+    "name": "interactiveframe1",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    }
+  }
+}

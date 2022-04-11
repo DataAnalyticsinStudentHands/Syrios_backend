@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_storyframe_2textcomponentframes",
+  "info": {
+    "name": "twotext",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.textcomponent"
+    },
+    "textright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.textcomponent"
+    },
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

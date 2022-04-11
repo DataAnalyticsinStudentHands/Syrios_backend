@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_frame_endframes",
+  "info": {
+    "name": "endframe",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "subtext": {
+      "type": "richtext"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

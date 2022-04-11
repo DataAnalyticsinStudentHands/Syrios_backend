@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_subcomponent_simpleimagecomponents",
+  "info": {
+    "name": "simpleimagecomponent",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ]
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "captioncolor": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "gold"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_storycomponent_simapletextcomponents",
+  "info": {
+    "name": "simapletext",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "textcolor": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "gold"
+      ],
+      "required": true,
+      "default": "black"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_storycomponent_simpleimagecomponents",
+  "info": {
+    "name": "simpleimage",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "imagesize": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ],
+      "default": "s",
+      "required": true
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "textcolor": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "gold"
+      ],
+      "required": true,
+      "default": "black"
+    }
+  }
+}

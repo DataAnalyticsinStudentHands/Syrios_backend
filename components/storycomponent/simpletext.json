@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_storycomponent_simpletexts",
+  "info": {
+    "name": "simpletext",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "textcolor": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "gold"
+      ],
+      "required": true,
+      "default": "black"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_storycomponent_headcomponents",
+  "info": {
+    "name": "head",
+    "icon": "angle-double-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "maintext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

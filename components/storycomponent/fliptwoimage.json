@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_storycomponent_fliptwoimages",
+  "info": {
+    "name": "fliptwoimage",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "imageleftfront": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "imageleftback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "imagerightfront": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "imagerightback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    }
+  }
+}

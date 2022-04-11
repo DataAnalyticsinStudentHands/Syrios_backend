@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_storyframe_threeimagecomponents",
+  "info": {
+    "name": "threeimage",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "imageleft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "imagemiddle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "imageright": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

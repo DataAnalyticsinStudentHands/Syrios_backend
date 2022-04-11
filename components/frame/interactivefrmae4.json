@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_frame_interactivefrmae4s",
+  "info": {
+    "name": "interactiveframe4",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "miantext": {
+      "type": "richtext"
+    },
+    "imagecomponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponent.imagecaptionsizingandbluebackground"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

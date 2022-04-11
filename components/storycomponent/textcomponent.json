@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_storycomponent_textcomponents",
+  "info": {
+    "name": "text",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtext": {
+      "type": "richtext"
+    },
+    "captext": {
+      "type": "richtext"
+    },
+    "bgcolor": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "bluebg",
+        "yellowbg"
+      ],
+      "default": "none",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_storyframe_oneimageonetextcomponents",
+  "info": {
+    "name": "oneimageonetext",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.headcomponent"
+    },
+    "imagecomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.imagecomponent"
+    },
+    "textcomponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storycomponent.textcomponent"
+    },
+    "switchcomponent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "gridcomponent": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "default": "half",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
