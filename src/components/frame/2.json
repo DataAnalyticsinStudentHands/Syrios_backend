@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_frame_2s",
+  "info": {
+    "displayName": "2",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-size-caption-lightblue",
+      "required": true
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

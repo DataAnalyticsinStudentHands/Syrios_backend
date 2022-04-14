@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_frame_4s",
+  "info": {
+    "displayName": "4",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

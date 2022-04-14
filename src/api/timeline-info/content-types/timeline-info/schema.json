@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "timeline_infos",
+  "info": {
+    "singularName": "timeline-info",
+    "pluralName": "timeline-infos",
+    "displayName": "timeline_info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "default": "Scroll down to explore the history of Antioch, as told by its coins.",
+      "required": true
+    }
+  }
+}

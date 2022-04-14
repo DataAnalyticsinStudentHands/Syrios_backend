@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_subcomponents_image_size_caption_lightblues",
+  "info": {
+    "displayName": "image_size_caption_lightblue",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "required": true,
+      "default": "S"
+    },
+    "caption": {
+      "type": "richtext",
+      "required": false
+    },
+    "light_blue_caption_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "light_blue_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

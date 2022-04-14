@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_frame_8s",
+  "info": {
+    "displayName": "8",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_top": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-size-caption-lightblue"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

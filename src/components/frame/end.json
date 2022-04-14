@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_frame_ends",
+  "info": {
+    "displayName": "end",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

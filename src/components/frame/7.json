@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_frame_7s",
+  "info": {
+    "displayName": "7",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "upper_right": {
+      "type": "richtext"
+    },
+    "lower_right": {
+      "type": "richtext"
+    },
+    "bottom": {
+      "type": "richtext"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

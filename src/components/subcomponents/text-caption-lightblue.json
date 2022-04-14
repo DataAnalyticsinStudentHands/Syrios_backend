@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_subcomponents_text_caption_lightblues",
+  "info": {
+    "displayName": "text_caption_lightblue",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "light_blue_background": {
+      "type": "boolean"
+    }
+  }
+}

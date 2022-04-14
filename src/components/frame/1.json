@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_frame_1s",
+  "info": {
+    "displayName": "1",
+    "icon": "angle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    }
+  }
+}

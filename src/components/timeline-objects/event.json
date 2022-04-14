@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_timeline_objects_events",
+  "info": {
+    "displayName": "event",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event"
+    },
+    "x": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "y": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

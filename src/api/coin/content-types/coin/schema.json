@@ -1,0 +1,114 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coins",
+  "info": {
+    "singularName": "coin",
+    "pluralName": "coins",
+    "displayName": "coin"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Bibliography": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ReverseType": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Image": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Region": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Mint": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "State": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Date": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "FromtDate": {
+      "type": "integer"
+    },
+    "ToDate": {
+      "type": "integer"
+    },
+    "Material": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Denomination": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ObverseLegend": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ReverseLegend": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "SourceImage": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "RightsHolder": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "ObverseType": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "TypeCategory": {
+      "type": "text",
+      "required": false
+    },
+    "IssuingAuthority": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Diameter": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "Era": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "CatalogueDate": {
+      "type": "string"
+    },
+    "obverseFile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "reverseFile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

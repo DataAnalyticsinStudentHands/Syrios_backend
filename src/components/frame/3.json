@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_frame_3s",
+  "info": {
+    "displayName": "3",
+    "icon": "ankh"
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.image-size-link-detail"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_frame_6s",
+  "info": {
+    "displayName": "6",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-size-caption-lightblue"
+    },
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

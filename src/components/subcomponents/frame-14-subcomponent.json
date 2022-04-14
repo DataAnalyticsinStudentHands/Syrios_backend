@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_subcomponents_frame_14_subcomponents",
+  "info": {
+    "displayName": "frame_14_subcomponent",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "button_name": {
+      "type": "string",
+      "required": true
+    },
+    "images_left": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "left": {
+      "type": "richtext"
+    },
+    "mid": {
+      "type": "richtext"
+    },
+    "images_right": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "right": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "coin_sorts",
+  "info": {
+    "singularName": "coin-sort",
+    "pluralName": "coin-sorts",
+    "displayName": "coin_sort",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "COIN SORT",
+      "required": true
+    }
+  }
+}

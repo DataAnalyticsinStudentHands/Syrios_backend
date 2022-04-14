@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_subcomponents_image_size_link_details",
+  "info": {
+    "displayName": "image_size_link_detail",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "default": "S",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "breif_detail": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponents_rich_text_components",
+  "info": {
+    "displayName": "rich_text_component",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

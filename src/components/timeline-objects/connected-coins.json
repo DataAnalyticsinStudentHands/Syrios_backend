@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_timeline_objects_connected_coins",
+  "info": {
+    "displayName": "connected_coins",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "coin_a": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "coin_a_x": {
+      "type": "integer",
+      "max": 100,
+      "required": true,
+      "min": 0
+    },
+    "coin_a_y": {
+      "type": "integer",
+      "required": true
+    },
+    "coin_b": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "coin_b_x": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "coin_b_y": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

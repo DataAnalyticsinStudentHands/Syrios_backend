@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponents_short_text_components",
+  "info": {
+    "displayName": "short_text_component",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_frame_15s",
+  "info": {
+    "displayName": "15",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "main_text_front": {
+      "type": "text",
+      "required": true
+    },
+    "main_text_back": {
+      "type": "text",
+      "required": true
+    },
+    "right_front": {
+      "type": "richtext"
+    },
+    "right_back": {
+      "type": "richtext"
+    },
+    "left_front": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "left_back": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

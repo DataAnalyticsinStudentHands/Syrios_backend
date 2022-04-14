@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_miscellaneous_explore_the_evidence_subcomponents",
+  "info": {
+    "displayName": "explore_the_evidence_subcomponent",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

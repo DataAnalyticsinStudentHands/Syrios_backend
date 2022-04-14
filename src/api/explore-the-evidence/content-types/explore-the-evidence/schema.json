@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "explore_the_evidences",
+  "info": {
+    "singularName": "explore-the-evidence",
+    "pluralName": "explore-the-evidences",
+    "displayName": "explore_the_evidence",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true,
+      "default": "Explore the Evidence"
+    },
+    "sort": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent",
+      "required": true
+    },
+    "map": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent",
+      "required": true
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent",
+      "required": true
+    },
+    "download_title": {
+      "type": "richtext",
+      "default": "DOWNLOAD THE DATASET",
+      "required": true
+    },
+    "download_caption": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

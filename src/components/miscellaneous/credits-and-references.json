@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_miscellaneous_credits_and_references",
+  "info": {
+    "displayName": "credits_and_references",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "source_material": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.rich-text-component"
+    },
+    "read_more": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.rich-text-component"
+    }
+  }
+}
