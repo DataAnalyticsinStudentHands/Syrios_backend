@@ -4,7 +4,8 @@
   "info": {
     "singularName": "timeline-info",
     "pluralName": "timeline-infos",
-    "displayName": "timeline_info"
+    "displayName": "timeline_info",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,14 @@
       "type": "richtext",
       "default": "Scroll down to explore the history of Antioch, as told by its coins.",
       "required": true
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "timeline-objects.coin",
+        "timeline-objects.connected-coins",
+        "timeline-objects.event"
+      ]
     }
   }
 }
