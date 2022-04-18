@@ -4,10 +4,11 @@
   "info": {
     "singularName": "coin",
     "pluralName": "coins",
-    "displayName": "coin"
+    "displayName": "coin",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -96,19 +97,20 @@
       "type": "string"
     },
     "obverseFile": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
-    },
-    "reverseFile": {
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "reverseFile": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

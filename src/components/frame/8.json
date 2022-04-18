@@ -19,7 +19,7 @@
       "type": "text",
       "required": true
     },
-    "text": {
+    "text8": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.text-caption-lightblue"
@@ -27,15 +27,16 @@
     "left": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.image-size-caption-lightblue"
+      "component": "subcomponents.image-size-caption-lightblue",
+      "required": true
     },
     "background": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

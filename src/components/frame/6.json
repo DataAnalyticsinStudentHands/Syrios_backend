@@ -2,7 +2,8 @@
   "collectionName": "components_frame_6s",
   "info": {
     "displayName": "6",
-    "icon": "arrow-alt-circle-down"
+    "icon": "arrow-alt-circle-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,25 +11,24 @@
       "type": "text",
       "required": true
     },
-    "image": {
+    "image6": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.image-size-caption-lightblue"
+      "component": "subcomponents.image-size-caption-lightblue",
+      "required": true
     },
-    "text": {
+    "text6": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.text-caption-lightblue"
     },
     "background": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

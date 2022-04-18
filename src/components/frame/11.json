@@ -2,7 +2,8 @@
   "collectionName": "components_frame_11s",
   "info": {
     "displayName": "11",
-    "icon": "allergies"
+    "icon": "allergies",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,45 +17,47 @@
     "text_back": {
       "type": "richtext"
     },
-    "left_front": {
-      "allowedTypes": [
-        "images"
-      ],
+    "left_front11": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "right_front": {
-      "allowedTypes": [
-        "images"
-      ],
+    "right_front11": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "left_back": {
-      "allowedTypes": [
-        "images"
-      ],
+    "left_back11": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "right_back": {
-      "allowedTypes": [
-        "images"
-      ],
+    "right_back11": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "background": {
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
       "type": "media",
-      "multiple": false,
-      "required": false
+      "multiple": false
     }
   }
 }

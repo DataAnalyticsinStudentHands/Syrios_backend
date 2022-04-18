@@ -20,6 +20,13 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.text-caption-lightblue"
+    },
+    "background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

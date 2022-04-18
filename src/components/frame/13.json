@@ -2,7 +2,8 @@
   "collectionName": "components_frame_13s",
   "info": {
     "displayName": "13",
-    "icon": "arrow-circle-down"
+    "icon": "arrow-circle-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,13 +11,13 @@
       "type": "text",
       "required": true
     },
-    "left_front": {
+    "left_front13": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
       "required": true
     },
-    "left_back": {
+    "left_back13": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
@@ -28,24 +29,25 @@
     "mid_back": {
       "type": "richtext"
     },
-    "right_front": {
+    "right_front13": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
       "required": true
     },
-    "right_back": {
+    "right_back13": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
       "required": true
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
