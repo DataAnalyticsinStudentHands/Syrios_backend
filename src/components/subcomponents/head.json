@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_subcomponents_heads",
+  "info": {
+    "displayName": "head",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "headmain": {
+      "type": "richtext"
+    },
+    "headcaption": {
+      "type": "richtext"
+    },
+    "updownswitch": {
+      "type": "boolean"
+    }
+  }
+}

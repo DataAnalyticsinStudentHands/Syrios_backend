@@ -2,28 +2,28 @@
   "collectionName": "components_frame_3s",
   "info": {
     "displayName": "3",
-    "icon": "ankh"
+    "icon": "ankh",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "main_text": {
-      "type": "text",
-      "required": true
-    },
-    "text": {
-      "type": "richtext"
-    },
     "images": {
       "type": "component",
       "repeatable": true,
       "component": "subcomponents.image-size-link-detail"
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
     }
   }
 }

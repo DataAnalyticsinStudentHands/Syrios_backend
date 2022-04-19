@@ -7,10 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "main_text": {
-      "type": "text",
-      "required": true
-    },
     "left": {
       "type": "component",
       "repeatable": false,
@@ -22,11 +18,22 @@
       "component": "subcomponents.text-caption-lightblue"
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "updownswitch": {
+      "type": "boolean",
+      "default": false
+    },
+    "headmain": {
+      "type": "richtext"
+    },
+    "headcaption": {
+      "type": "richtext"
     }
   }
 }

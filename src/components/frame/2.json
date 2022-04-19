@@ -7,13 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "main_text": {
-      "type": "text",
-      "required": true
-    },
-    "text": {
-      "type": "richtext"
-    },
     "image2": {
       "type": "component",
       "repeatable": false,
@@ -27,6 +20,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "head": {
+      "displayName": "head",
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
     }
   }
 }
