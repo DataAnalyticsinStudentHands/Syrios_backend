@@ -25,15 +25,10 @@
         "images"
       ]
     },
-    "updownswitch": {
-      "type": "boolean",
-      "default": false
-    },
-    "headmain": {
-      "type": "richtext"
-    },
-    "headcaption": {
-      "type": "richtext"
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
     }
   }
 }

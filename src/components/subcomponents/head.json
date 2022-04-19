@@ -2,17 +2,18 @@
   "collectionName": "components_subcomponents_heads",
   "info": {
     "displayName": "head",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "headmain": {
+    "head_main": {
       "type": "richtext"
     },
-    "headcaption": {
+    "head_caption": {
       "type": "richtext"
     },
-    "updownswitch": {
+    "updown_switch": {
       "type": "boolean"
     }
   }
