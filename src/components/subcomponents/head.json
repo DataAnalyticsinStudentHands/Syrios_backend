@@ -14,7 +14,9 @@
       "type": "richtext"
     },
     "updown_switch": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   }
 }
