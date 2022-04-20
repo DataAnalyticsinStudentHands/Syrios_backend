@@ -21,7 +21,7 @@ module.exports = createCoreController('api::how-to-read-a-coin.how-to-read-a-coi
         'zone.image',
         // All background elements
         'zone.background',
-        // Frame 1's, Frame 4's, Frame 5's, left and right components
+        // Frame 1's, Frame 5's, left and right components
         'zone.left',
         'zone.right',
         // Frame 2's image component
@@ -31,6 +31,13 @@ module.exports = createCoreController('api::how-to-read-a-coin.how-to-read-a-coi
         // Frame 3's multiple images
         'zone.images',
         'zone.images.image',
+        // Frame 4's three image
+        'zone.image_left',
+        'zone.image_left.image',
+        'zone.image_middle',
+        'zone.image_middle.image',
+        'zone.image_right',
+        'zone.image_right.image',
         // Frame 5's image component inside of left and right, and middle text
         'zone.left.image',
         'zone.right.image',

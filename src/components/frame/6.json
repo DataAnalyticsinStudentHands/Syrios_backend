@@ -7,10 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "main_text": {
-      "type": "text",
-      "required": true
-    },
     "image6": {
       "type": "component",
       "repeatable": false,
@@ -29,6 +25,26 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
+    },
+    "left_right_switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "required": true,
+      "default": "half"
     }
   }
 }

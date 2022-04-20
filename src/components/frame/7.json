@@ -7,26 +7,48 @@
   },
   "options": {},
   "attributes": {
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
     },
-    "upper_right": {
-      "type": "richtext"
+    "left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-size-caption-lightblue"
     },
-    "lower_right": {
-      "type": "richtext"
+    "text7": {
+      "displayName": "text_style",
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-style"
     },
-    "bottom": {
-      "type": "richtext"
+    "right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-caption-lightblue"
+    },
+    "left_right_switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "default": "half",
+      "required": true
     },
     "background": {
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
       "type": "media",
       "multiple": false

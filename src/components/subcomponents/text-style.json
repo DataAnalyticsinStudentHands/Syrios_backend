@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_subcomponents_text_styles",
+  "info": {
+    "displayName": "text_style",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "text_style": {
+      "type": "enumeration",
+      "enum": [
+        "OrangeText MainText",
+        "BlueText BigSubText",
+        "BlueText SubText",
+        "GrayText CaptionText"
+      ],
+      "default": "OrangeText MainText",
+      "required": true
+    }
+  }
+}
