@@ -7,10 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "main_text": {
-      "type": "text",
-      "required": true
-    },
     "left": {
       "type": "component",
       "repeatable": false,
