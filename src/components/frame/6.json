@@ -41,7 +41,10 @@
       "enum": [
         "half",
         "third",
-        "quarter"
+        "quarter",
+        "two",
+        "three",
+        "four"
       ],
       "required": true,
       "default": "half"

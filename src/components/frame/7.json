@@ -38,20 +38,24 @@
       "enum": [
         "half",
         "third",
-        "quarter"
+        "quarter",
+        "two",
+        "three",
+        "four"
       ],
       "default": "half",
       "required": true
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

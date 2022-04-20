@@ -2,22 +2,35 @@
   "collectionName": "components_subcomponents_text_styles",
   "info": {
     "displayName": "text_style",
-    "icon": "adjust"
+    "icon": "adjust",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
       "type": "richtext"
     },
-    "text_style": {
+    "text_color": {
       "type": "enumeration",
       "enum": [
-        "OrangeText MainText",
-        "BlueText BigSubText",
-        "BlueText SubText",
-        "GrayText CaptionText"
+        "OrangeText",
+        "BlueText",
+        "GrayText",
+        "BlackText",
+        "DarkBlueText"
       ],
-      "default": "OrangeText MainText",
+      "default": "BlueText",
+      "required": true
+    },
+    "font_size": {
+      "type": "enumeration",
+      "enum": [
+        "MainText",
+        "BigSubText ",
+        "SubText",
+        "CaptionText"
+      ],
+      "default": "SubText",
       "required": true
     }
   }
