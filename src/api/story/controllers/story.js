@@ -62,6 +62,8 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.text6',
         'zone.image6',
         'zone.image6.image',
+        // Frame 7
+        'zone.text7',
         // Frame 8's text element
         'zone.text8',
         // Frame 9's middle image component
