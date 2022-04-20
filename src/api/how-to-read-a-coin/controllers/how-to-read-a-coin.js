@@ -27,6 +27,7 @@ module.exports = createCoreController('api::how-to-read-a-coin.how-to-read-a-coi
         // Frame 2's image component
         'zone.image2',
         'zone.image2.image',
+        'zone.head',
         // Frame 3's multiple images
         'zone.images',
         'zone.images.image',

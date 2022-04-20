@@ -2,17 +2,18 @@
   "collectionName": "components_subcomponents_image_size_link_details",
   "info": {
     "displayName": "image_size_link_detail",
-    "icon": "angle-down"
+    "icon": "angle-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "size": {
       "type": "enumeration",
@@ -31,7 +32,7 @@
     "link": {
       "type": "string"
     },
-    "breif_detail": {
+    "brief_detail": {
       "type": "string"
     }
   }
