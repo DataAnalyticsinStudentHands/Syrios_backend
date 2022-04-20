@@ -17,6 +17,11 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "light_yellow_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
