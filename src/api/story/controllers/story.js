@@ -98,6 +98,8 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         // Frame 15's images
         'zone.left_front',
         'zone.left_back',
+        'zone.left_front.image',
+        'zone.left_back.image',
       ],
 
       // If a request with a different populate strategy, it'll replace the default population strategy
