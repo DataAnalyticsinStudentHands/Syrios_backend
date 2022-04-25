@@ -10,12 +10,14 @@
     "left": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-caption-lightblue"
+      "component": "subcomponents.text-caption-lightblue",
+      "required": true
     },
     "right": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-caption-lightblue"
+      "component": "subcomponents.text-caption-lightblue",
+      "required": true
     },
     "background": {
       "type": "media",

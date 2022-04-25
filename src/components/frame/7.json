@@ -10,23 +10,27 @@
     "head": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     },
     "left": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.image-size-caption-lightblue"
+      "component": "subcomponents.image-size-caption-lightblue",
+      "required": true
     },
     "text7": {
       "displayName": "text_style",
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-style"
+      "component": "subcomponents.text-style",
+      "required": true
     },
     "right": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-caption-lightblue"
+      "component": "subcomponents.text-caption-lightblue",
+      "required": true
     },
     "left_right_switch": {
       "type": "boolean",

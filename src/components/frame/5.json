@@ -16,7 +16,8 @@
     "middle": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-caption-lightblue"
+      "component": "subcomponents.text-caption-lightblue",
+      "required": true
     },
     "right": {
       "type": "component",
@@ -35,7 +36,8 @@
     "head": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     }
   }
 }

@@ -10,7 +10,9 @@
     "images": {
       "type": "component",
       "repeatable": true,
-      "component": "subcomponents.image-size-link-detail"
+      "component": "subcomponents.image-size-link-detail",
+      "required": true,
+      "max": 6
     },
     "background": {
       "type": "media",
@@ -23,7 +25,8 @@
     "head": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     }
   }
 }

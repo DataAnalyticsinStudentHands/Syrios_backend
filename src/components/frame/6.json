@@ -16,7 +16,8 @@
     "text6": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.text-caption-lightblue"
+      "component": "subcomponents.text-caption-lightblue",
+      "required": true
     },
     "background": {
       "type": "media",
@@ -29,7 +30,8 @@
     "head": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     },
     "left_right_switch": {
       "type": "boolean",
