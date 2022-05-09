@@ -190,18 +190,45 @@
       "required": true
     },
     "obverse_file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "reverse_file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "source_image": {
+      "type": "string"
+    },
+    "stable_id": {
+      "type": "string"
+    },
+    "wikidata": {
+      "type": "string"
+    },
+    "is_image": {
+      "type": "boolean",
+      "required": true
+    },
+    "right_holder": {
+      "type": "string",
+      "default": "N/A",
+      "required": true
+    },
+    "ref1": {
+      "type": "string",
+      "required": false
+    },
+    "ref2": {
+      "type": "string"
     }
   }
 }
