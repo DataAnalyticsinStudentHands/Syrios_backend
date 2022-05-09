@@ -214,7 +214,7 @@
     "wikidata": {
       "type": "string"
     },
-    "is_image": {
+    "is_real_coin_image": {
       "type": "boolean",
       "required": true
     },
