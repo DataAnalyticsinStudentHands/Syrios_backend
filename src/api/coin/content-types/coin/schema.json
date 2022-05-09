@@ -12,105 +12,196 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "coin_id": {
+      "type": "string",
+      "required": true
+    },
+    "modern_country": {
+      "type": "enumeration",
+      "enum": [
+        "Syria",
+        "Israel",
+        "Turkey",
+        "Iraq",
+        "Jordan",
+        "N/A"
+      ],
+      "default": "N/A",
+      "required": true
+    },
+    "ancient_territory": {
+      "type": "enumeration",
+      "enum": [
+        "Syria",
+        "Mesopotamia ",
+        "N/A"
+      ],
+      "default": "N/A",
+      "required": true
+    },
+    "mint": {
+      "type": "enumeration",
+      "enum": [
+        "Antioch",
+        "N/A"
+      ],
+      "required": true,
+      "default": "N/A"
+    },
+    "mint_nomisma_uri": {
       "type": "string"
     },
-    "Bibliography": {
-      "type": "string",
-      "default": "N/A"
+    "mint_modern_name": {
+      "type": "enumeration",
+      "enum": [
+        "Antakya",
+        "N/A"
+      ],
+      "default": "N/A",
+      "required": true
     },
-    "ReverseType": {
-      "type": "string",
-      "default": "N/A"
+    "longitude": {
+      "type": "decimal",
+      "max": 180,
+      "min": -180
     },
-    "Image": {
-      "type": "string",
-      "default": "N/A"
+    "latitude": {
+      "type": "decimal",
+      "max": 90,
+      "min": -90
     },
-    "Region": {
+    "date_range": {
       "type": "string",
-      "default": "N/A"
+      "required": true,
+      "default": "Uncertain"
     },
-    "Mint": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "State": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "Date": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "FromtDate": {
+    "from_date": {
       "type": "integer"
     },
-    "ToDate": {
+    "to_date": {
       "type": "integer"
     },
-    "Material": {
+    "material": {
+      "type": "enumeration",
+      "enum": [
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Orichalcum",
+        "Uncertain"
+      ],
+      "default": "Uncertain",
+      "required": true
+    },
+    "denomination": {
+      "type": "enumeration",
+      "enum": [
+        "Tetradrachm",
+        "Radiate",
+        "Denarius",
+        "Stater",
+        "Uncertain"
+      ],
+      "default": "Uncertain",
+      "required": true
+    },
+    "diameter": {
+      "type": "integer"
+    },
+    "governing_power": {
+      "type": "enumeration",
+      "enum": [
+        "Roman Republic",
+        "Seleucid",
+        "Ptolemaic",
+        "Parthian",
+        "Alexander the Great",
+        "Attalid",
+        "Hasmonean",
+        "Armenian",
+        "Roman Principate",
+        "Sasanian",
+        "Palmyrene",
+        "Herodian",
+        "Nabataean",
+        "Emesene",
+        "Commagenian",
+        "N/A"
+      ],
+      "default": "N/A",
+      "required": true
+    },
+    "issuing_authority": {
+      "type": "enumeration",
+      "enum": [
+        "Royal",
+        "Imperial",
+        "Provincial",
+        "Civic",
+        "Uncertain"
+      ],
+      "default": "Uncertain",
+      "required": true
+    },
+    "obverse_type": {
       "type": "string",
-      "default": "N/A"
+      "default": "N/A",
+      "required": true
     },
-    "Denomination": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "ObverseLegend": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "ReverseLegend": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "SourceImage": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "RightsHolder": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "ObverseType": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "TypeCategory": {
-      "type": "text",
-      "required": false
-    },
-    "IssuingAuthority": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "Diameter": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "Era": {
-      "type": "string",
-      "default": "N/A"
-    },
-    "CatalogueDate": {
+    "nomisma_obverse_uri": {
       "type": "string"
     },
-    "obverseFile": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "obverse_legend": {
+      "type": "string",
+      "required": true,
+      "default": "N/A"
     },
-    "reverseFile": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "reverse_type": {
+      "type": "string",
+      "default": "N/A",
+      "required": true
+    },
+    "nomisma_reverse_uri": {
+      "type": "string"
+    },
+    "reverse_legend": {
+      "type": "string",
+      "default": "N/A",
+      "required": true
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "Greek",
+        "Latin",
+        "Aramaic",
+        "Syriac",
+        "Hebrew",
+        "Phoenician",
+        "Other"
+      ],
+      "required": true,
+      "default": "Other"
+    },
+    "type_category": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.type-category",
+      "required": true
+    },
+    "obverse_file": {
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "reverse_file": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

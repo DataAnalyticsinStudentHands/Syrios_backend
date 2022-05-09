@@ -50,6 +50,30 @@
     "past_student_research_assistants": {
       "type": "richtext",
       "required": true
+    },
+    "stable_id": {
+      "type": "string"
+    },
+    "wikidata": {
+      "type": "string"
+    },
+    "is_image": {
+      "type": "boolean",
+      "required": true
+    },
+    "source_image": {
+      "type": "string"
+    },
+    "rights_holder": {
+      "type": "string",
+      "required": true,
+      "default": "N/A"
+    },
+    "reference1": {
+      "type": "string"
+    },
+    "reference2": {
+      "type": "string"
     }
   }
 }

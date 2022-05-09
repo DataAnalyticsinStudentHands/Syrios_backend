@@ -10,8 +10,9 @@ module.exports = createCoreController('api::coin.coin', ({ strapi }) => ({
   async findOne(ctx) {
     ctx.query = {
       populate: [
-        'obverseFile',
-        'reverseFile',
+        'obverse_file',
+        'reverse_file',
+        'type_category',
       ],
       ...ctx.query
     };
@@ -24,8 +25,9 @@ module.exports = createCoreController('api::coin.coin', ({ strapi }) => ({
   async find(ctx) {
     ctx.query = {
       populate: [
-        'obverseFile',
-        'reverseFile',
+        'obverse_file',
+        'reverse_file',
+        'type_category',
       ],
       ...ctx.query
     };
