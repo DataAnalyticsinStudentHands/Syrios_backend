@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_miscellaneous_type_categories",
+  "info": {
+    "displayName": "type_category",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "type_category": {
+      "type": "enumeration",
+      "enum": [
+        "God",
+        "Ruler",
+        "Female",
+        "Idea",
+        "Animal",
+        "Object",
+        "Nature",
+        "War/Weapon",
+        "Letter",
+        "Building",
+        "Other"
+      ],
+      "required": true,
+      "default": "Other"
+    }
+  }
+}
