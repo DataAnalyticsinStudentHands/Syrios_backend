@@ -14,7 +14,8 @@
   "attributes": {
     "coin_id": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "modern_country": {
       "type": "enumeration",
