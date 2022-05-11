@@ -1,8 +1,9 @@
 {
   "collectionName": "components_miscellaneous_type_categories",
   "info": {
-    "displayName": "type_category",
-    "icon": "ad"
+    "displayName": "coin_categories",
+    "icon": "ad",
+    "description": ""
   },
   "options": {},
   "attributes": {
