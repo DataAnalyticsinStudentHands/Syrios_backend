@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_timeline_objects_single_coins",
+  "info": {
+    "displayName": "single_coin",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "coin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "x": {
+      "type": "integer",
+      "max": 100,
+      "min": 0
+    },
+    "y": {
+      "type": "integer"
+    }
+  }
+}
