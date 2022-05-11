@@ -20,9 +20,9 @@
     "zone": {
       "type": "dynamiczone",
       "components": [
-        "timeline-objects.coin",
         "timeline-objects.connected-coins",
-        "timeline-objects.event"
+        "timeline-objects.event",
+        "timeline-objects.single-coin"
       ]
     }
   }
