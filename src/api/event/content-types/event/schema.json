@@ -22,7 +22,7 @@
     "text": {
       "type": "richtext"
     },
-    "TypeCategory": {
+    "type_category": {
       "type": "richtext"
     },
     "color": {
