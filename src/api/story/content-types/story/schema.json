@@ -4,7 +4,8 @@
   "info": {
     "singularName": "story",
     "pluralName": "stories",
-    "displayName": "story"
+    "displayName": "story",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "credits_and_references": {
       "type": "component",
@@ -38,9 +39,6 @@
         "frame.5",
         "frame.6",
         "frame.7",
-        "frame.8",
-        "frame.9",
-        "frame.10",
         "frame.11",
         "frame.12",
         "frame.13",
