@@ -1,15 +1,16 @@
 module.exports = [
   'strapi::errors',
+  // https://www.tiny.cloud/docs/advanced/security/
   {
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'script-src-elem':["'self'", 'https:'],
-          'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https://sp.tinymce.com/'],
-          'media-src': ["'self'", 'data:', 'blob:', 'https://sp.tinymce.com/'],
+          'script-src': ["'self'", "'unsafe-inline'", '*.tinymce.com','*.tiny.cloud'],
+          'connect-src': ["'self'"],
+          'img-src': ["'self'", 'data:', 'blob:'],
+          'media-src': ["'self'", 'data:', 'blob:'],
           upgradeInsecureRequests: null,
         },
       },
