@@ -25,7 +25,8 @@
       "displayName": "head",
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     }
   }
 }

@@ -12,7 +12,8 @@
       "repeatable": true,
       "component": "subcomponents.image-size-link-detail",
       "required": true,
-      "max": 6
+      "max": 6,
+      "min": 4
     },
     "background": {
       "type": "media",

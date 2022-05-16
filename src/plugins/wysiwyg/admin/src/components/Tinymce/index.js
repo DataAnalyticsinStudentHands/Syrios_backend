@@ -53,10 +53,10 @@ const TinyEditor = ({
                       icon:'link',
                       onAction: function () {
                         editor.insertContent(`
-                                              <a class='Link ExternalLink' href='#'>
-                                                External link
-                                                <em class='demo-icon icon-coin-scale Icon ExternalIcon'>&#xe818;</em>
-                                              </a>&nbsp;`);
+                          <a class='Link ExternalLink' href='#'>
+                            External link
+                            <em class='demo-icon icon-coin-scale Icon ExternalIcon'>&#xe818;</em>
+                          </a>&nbsp;`);
                       }
                     },
                     {
@@ -65,10 +65,10 @@ const TinyEditor = ({
                       icon:'link',
                       onAction: function () {
                         editor.insertContent(`
-                                              <a class='Link NomisamaLink' href='#'>
-                                                NOMISMA link 
-                                                <em class='demo-icon icon-coin-scale Icon NomisamaIcon'>&#xe814;</em>
-                                              </a>&nbsp;`);
+                          <a class='Link NomisamaLink' href='#'>
+                            NOMISMA link 
+                            <em class='demo-icon icon-coin-scale Icon NomisamaIcon'>&#xe814;</em>
+                          </a>&nbsp;`);
                       }
                     },
                     {
@@ -77,14 +77,14 @@ const TinyEditor = ({
                       icon:'link',
                       onAction: function () {
                         editor.insertContent(`
-                                              <a class='Link GlossaryLink' href='#'>
-                                                Glossery link 
-                                                <sup>
-                                                  <em class='demo-icon icon-coin-scale Icon GlosseryIcon'>
-                                                    &#xe817;
-                                                  </em>
-                                                </sup>
-                                              </a>&nbsp;`);
+                          <a class='Link GlossaryLink' href='#'>
+                            Glossery link 
+                            <sup>
+                              <em class='demo-icon icon-coin-scale Icon GlosseryIcon'>
+                                &#xe817;
+                              </em>
+                            </sup>
+                          </a>&nbsp;`);
                       }
                     },
                     {
@@ -93,12 +93,12 @@ const TinyEditor = ({
                       icon:'link',
                       onAction: function () {
                         editor.insertContent(`
-                                              <a class='Link InternalLink' href='#'>
-                                                Internal link
-                                                <sup class='InternalNumber'>
-                                                  [1]
-                                                </sup>
-                                              </a>&nbsp;`);
+                          <a class='Link InternalLink' href='#'>
+                            Internal link
+                            <sup class='InternalNumber'>
+                              [1]
+                            </sup>
+                          </a>&nbsp;`);
                       }
                     },
                   ];
