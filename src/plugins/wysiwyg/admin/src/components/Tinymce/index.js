@@ -31,10 +31,10 @@ const TinyEditor = ({
         init={{
           height: 250,
           menubar: false,
-          toolbar: 'customInsert | undo redo | formatselect | ' +
-            'bold italic backcolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist outdent indent | ' +
-            'removeformat | help link',
+          plugins:[
+            'link','wordcount'
+          ],
+          toolbar: 'customInsert| bold italic underline link| removeformat | undo redo',
             
             setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
@@ -43,7 +43,7 @@ const TinyEditor = ({
           
               /* example, adding a toolbar menu button */
               editor.ui.registry.addMenuButton('customInsert', {
-                text: 'customLinks',
+                text: 'CustomLinks',
                 icon:'plus',
                 fetch: function (callback) {
                   var items = [
