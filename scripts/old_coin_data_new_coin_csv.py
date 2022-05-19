@@ -68,7 +68,7 @@ for row in csv_data:
 
     # Parse reverse type for coin id
     reverse_type_coin_id = row["ReverseType"][0:row["ReverseType"].find(' ') if row["ReverseType"].find(' ') != -1 else len(row["ReverseType"])]
-    coin_id = row["Mint"].lower() + '_' + material_for_coin_id + '_' + era_for_coin_id + '_' + reverse_type_coin_id
+    coin_id = row["Mint"].lower() + '_' + material_for_coin_id + '_' + era_for_coin_id + '_' + reverse_type_coin_id + '_(' + row["Bibliography"] + ')'
     # END coin_id PARSING ****************************************************************************************
 
     # mint_modern_name
@@ -113,8 +113,8 @@ for row in csv_data:
             "mint": row["Mint"],
             "mint_nomisma_uri": None,
             "mint_modern_name": mint_modern_name,
-            "longitude": None,
-            "latitude": None,
+            "longitude": 36.2025,
+            "latitude": 36.160556,
             "date_range": row["Date"],
             "from_date": row["FromDate"],
             "to_date": row["ToDate"],
@@ -146,6 +146,15 @@ for row in csv_data:
 
     new_csv_data.append(new_row)
 
+num_of_duplicates = 0
+for index, row in enumerate(new_csv_data):
+    coin_id = row["coin_id"]
+    for check_index, check_coin_id_row in enumerate(new_csv_data):
+        if check_index != index and coin_id.strip() == check_coin_id_row["coin_id"].strip():
+            new_csv_data[index]["coin_id"] = "duplicate_" + coin_id
+            num_of_duplicates += 1
+
+print("Number of duplicate coin_ids:", num_of_duplicates)
 
 import time
 
