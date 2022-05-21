@@ -45,8 +45,7 @@
         "third",
         "quarter",
         "two",
-        "three",
-        "four"
+        "three"
       ],
       "required": true,
       "default": "half"

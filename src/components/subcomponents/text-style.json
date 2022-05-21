@@ -13,24 +13,23 @@
     "text_color": {
       "type": "enumeration",
       "enum": [
-        "OrangeText",
-        "BlueText",
-        "GrayText",
-        "BlackText",
-        "DarkBlueText"
+        "orange-text",
+        "gray-text",
+        "blue-text",
+        "dark-blue-text"
       ],
-      "default": "BlueText",
-      "required": true
+      "required": true,
+      "default": "gray-text"
     },
     "font_size": {
       "type": "enumeration",
       "enum": [
-        "MainText",
-        "BigSubText ",
-        "SubText",
-        "CaptionText"
+        "main-text",
+        "big-sub-text ",
+        "sub-text",
+        "caption-text"
       ],
-      "default": "SubText",
+      "default": "sub-text",
       "required": true
     }
   }
