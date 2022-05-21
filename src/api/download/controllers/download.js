@@ -21,14 +21,14 @@ module.exports = createCoreController('api::download.download', ({ strapi }) => 
   },
 
   async send(ctx) {    
-    const from =ctx.request.body.from    
+    const email =ctx.request.body.email    
     const fullName =ctx.request.body.fullName    
     
     strapi.service('api::download.download').send(
-      from,       
+      email,       
       'shaotianhao1997@gmail.com',       
       'Strapi Download Data',       
-      `${fullName} request download data, and the email is ${from}` 
+      `${fullName} request download data, and the email is ${email}` 
     );
  
     // Send response to the server.    
