@@ -3,13 +3,15 @@
 import csv
 import sys
 
+csv_file_name = ""
 if len(sys.argv) < 2:
-    print("No enough arguments. Please provide a csv file to parse")
-    print("Example program call python old_coin_data_new_coin_csv.py csv_file.csv")
-    exit(1)
+    print("No file name given. Input file name to parse.")
+    csv_file_name = input()
+else:
+    csvfile = sys.argv[1].strip()
 
 csv_data = []
-with open(sys.argv[1], newline='') as csvfile:
+with open(csv_file_name, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         csv_data.append(row)
@@ -137,7 +139,7 @@ for row in csv_data:
             "obverse_file_uri": row["obverseFile"],
             "reverse_file_uri": row["reverseFile"],
             "obverse_file_name": obverse_file_name,
-            "reveres_file_name": reverse_file_name,
+            "reverse_file_name": reverse_file_name,
             "source_image": row["SourceImage"],
             "rights_holder": row["RightsHolder"],
             "reference1": None,
