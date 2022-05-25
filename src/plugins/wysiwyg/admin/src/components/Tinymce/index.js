@@ -34,9 +34,8 @@ const TinyEditor = ({
           plugins:[
             'link','wordcount'
           ],
-          toolbar: 'customInsert| bold italic underline link| removeformat | undo redo',
-            
-            setup: function (editor) {
+          toolbar: 'customInsert| bold italic underline link | fontsize | removeformat | undo redo',
+          setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
               // var toggleState = false;
@@ -107,7 +106,7 @@ const TinyEditor = ({
               });
           
             },
-          content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+          content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:18px }',
         }}
       />
 
