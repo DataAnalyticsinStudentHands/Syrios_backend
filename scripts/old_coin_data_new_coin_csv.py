@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
     print("No file name given. Input file name to parse.")
     csv_file_name = input()
 else:
-    csvfile = sys.argv[1].strip()
+    csv_file_name = sys.argv[1].strip()
 
 csv_data = []
 with open(csv_file_name, newline='') as csvfile:
@@ -52,8 +52,21 @@ def is_roman_number(num):
 new_csv_data = []
 
 for row in csv_data:
+    # material parse
+    material = row["Material"]
+    if "gold" in material.lower():
+        material = "Gold"
+    elif "silver" in material.lower():
+        material = "Silver"
+    elif "bronze" in material.lower():
+        material = "Bronze"
+    elif "orichalcum" in material.lower():
+        material = "Orichalcum"
+    elif "uncertain" in material.lower() or "n/a" in material.lower():
+        material = "Uncertain"
+
     # coin_id PARSING ********************************************************************************************
-    material_for_coin_id = row["Material"][row["Material"].index('(')+1:row["Material"].index(')')]
+    material_for_coin_id = material
     # Gonna parse era with this variable
     era_for_coin_id = row["Era"]
     split_era_for_coin_id = era_for_coin_id.split(' ')
@@ -106,6 +119,37 @@ for row in csv_data:
         obverse_file_name = obverse_file_uri[obverse_file_uri.rfind("/")+1:len(obverse_file_uri)]
         reverse_file_name = reverse_file_uri[reverse_file_uri.rfind("/")+1:len(reverse_file_uri)]
 
+
+    # type category
+    type_category = ""
+    for val in row["TypeCategory"].split(','):
+        val = val.strip().lower()
+        if "god" in val:
+            type_category += "God,"
+        elif "ruler" in val:
+            type_category += "Ruler,"
+        elif "female" in val:
+            type_category += "Female,"
+        elif "idea" in val:
+            type_category += "Idea,"
+        elif "animal" in val:
+            type_category += "Animal,"
+        elif "object" in val:
+            type_category += "Object,"
+        elif "nature" in val:
+            type_category += "Nature,"
+        elif "war" in val or "weapon" in val:
+            type_category += "War/Weapon,"
+        elif "letter" in val:
+            type_category += "Letter,"
+        elif "building" in val:
+            type_category += "Building,"
+        else:
+            type_category += "Other,"
+
+    if type_category[-1] == ",":
+        type_category = type_category[0:-1]
+
     new_row = {
             "is_incomplete": True,
             "object_type": "Coin",
@@ -117,22 +161,22 @@ for row in csv_data:
             "mint_modern_name": mint_modern_name,
             "longitude": 36.2025,
             "latitude": 36.160556,
-            "date_range": row["Date"],
+            "date_range": '"' + row["Date"] + '"',
             "from_date": row["FromDate"],
             "to_date": row["ToDate"],
-            "material": row["Material"],
-            "denomination": row["Denomination"],
+            "material": material,
+            "denomination": row["Denomination"].capitalize(),
             "diameter_mm": diameter_mm,
             "governing_power": row["State"],
             "issuing_authority": row["IssuingAuthority"],
-            "obverse_type": row["ObverseType"],
+            "obverse_type": '"' + row["ObverseType"] + '"',
             "nomisma_obverse_uri": None,
-            "obverse_legend": row["ObverseLegend"],
-            "reverse_type": row["ReverseType"],
+            "obverse_legend": '"' + row["ObverseLegend"] + '"',
+            "reverse_type": '"' + row["ReverseType"] + '"',
             "nomisma_reverse_uri": None,
-            "reverse_legend": row["ReverseLegend"],
+            "reverse_legend": '"' + row["ReverseLegend"] + '"',
             "language": "N/A",
-            "type_category": row["TypeCategory"],
+            "type_category": type_category,
             "stable_id": None,
             "wikidata": None,
             "image": has_image,

@@ -123,14 +123,25 @@ for coin in coins_content:
 cursor.execute("BEGIN;")
 
 for coin in csv_data:
+    if coin["date_range"][0] == '"' and coin["date_range"][-1] == '"':
+        coin["date_range"] = coin["date_range"][1:-1]
+    if coin["obverse_type"][0] == '"' and coin["obverse_type"][-1] == '"':
+        coin["obverse_type"] = coin["obverse_type"][1:-1]
+    if coin["obverse_legend"][0] == '"' and coin["obverse_legend"][-1] == '"':
+        coin["obverse_legend"] = coin["obverse_legend"][1:-1]
+    if coin["reverse_type"][0] == '"' and coin["reverse_type"][-1] == '"':
+        coin["reverse_type"] = coin["reverse_type"][1:-1]
+    if coin["reverse_legend"][0] == '"' and coin["reverse_legend"][-1] == '"':
+        coin["reverse_legend"] = coin["reverse_legend"][1:-1]
     cursor.execute("""
     INSERT INTO coins
-    (coin_id, modern_country, ancient_territory, mint, mint_nomisma_uri, longitude, latitude, date_range, from_date, to_date, material, denomination, diameter, governing_power, issuing_authority, obverse_type, nomisma_obverse_uri, obverse_legend, reverse_type, nomisma_reverse_uri, reverse_legend, language, stable_id, wikidata, has_image, source_image, right_holder, ref_1, ref_2)
+    (coin_id, modern_country, ancient_territory, mint, mint_nomisma_uri, mint_modern_name, longitude, latitude, date_range, from_date, to_date, material, denomination, diameter, governing_power, issuing_authority, obverse_type, nomisma_obverse_uri, obverse_legend, reverse_type, nomisma_reverse_uri, reverse_legend, language, stable_id, wikidata, has_image, source_image, right_holder, ref_1, ref_2)
     VALUES ('""" + coin["coin_id"] + "', '" + 
     coin["modern_country"] + "', '" +
     coin["ancient_territory"] + "', '" +
     coin["mint"] + "', '" +
     coin["mint_nomisma_uri"] + "', '" +
+    coin["mint_modern_name"] + "', '" +
     coin["longitude"] + "', '" + 
     coin["latitude"] + "', '" + 
     coin["date_range"] + "', '" + 
