@@ -24,10 +24,12 @@
       ]
     },
     "emailSubject": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "emailTo": {
-      "type": "email"
+      "type": "email",
+      "required": true
     }
   }
 }
