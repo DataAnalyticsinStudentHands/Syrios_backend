@@ -35,7 +35,6 @@ module.exports = createCoreController('api::contact-us.contact-us', ({ strapi })
       `
       ${message}
 
-
       ${name}
       ${phone}
       ${email}
