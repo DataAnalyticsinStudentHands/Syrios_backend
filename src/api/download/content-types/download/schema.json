@@ -27,6 +27,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "emailSubject": {
+      "type": "text",
+      "required": true
+    },
+    "emailTo": {
+      "type": "email",
+      "required": true
     }
   }
 }

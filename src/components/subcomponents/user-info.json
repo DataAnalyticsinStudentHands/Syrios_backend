@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_subcomponents_user_infos",
+  "info": {
+    "displayName": "user_info",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}
