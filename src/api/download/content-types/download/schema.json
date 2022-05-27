@@ -35,6 +35,17 @@
     "emailTo": {
       "type": "email",
       "required": true
+    },
+    "coinData": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

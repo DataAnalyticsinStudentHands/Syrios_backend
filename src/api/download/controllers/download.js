@@ -11,6 +11,7 @@ module.exports = createCoreController('api::download.download', ({ strapi }) => 
     ctx.query = {
       populate: [
         'image',
+        'coinData'
       ],
       ...ctx.query
     };
