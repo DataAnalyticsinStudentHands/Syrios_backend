@@ -1,17 +1,17 @@
-# Strapi application
+# Syrios backend
 
-Strapi is a frontend GUI interface to update the Syrios backend so that the Syrios frontend can pull relevant and updated data via axios calls.
+The backend for Syrios Project is based on [Strapi](https://strapi.io/) - a lightweight Content Management System (CMS) in Javascript.
+
+Strapi provides a GUI interface to for editors to create and manage content for the Syrios website.
 
 # Installation
 
-Download the most recent version of the Syrios database (agz file) and import it.
 clone
 `npm install`
 
 You can either run:
-`npm run start`
+`npm run start` (staging)
 or
-`npm run develop`
+`npm run develop` (development)
 
-`run develop` is for developing the strapi UI
-`run start` is for deployment
+
