@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_miscellaneous_tag_subcategory1s",
+  "info": {
+    "displayName": "tag_subcategory1"
+  },
+  "options": {},
+  "attributes": {
+    "subcategory1": {
+      "type": "enumeration",
+      "enum": [
+        "Roman Republic",
+        "Roman Principate",
+        "Seleucid",
+        "Ptolemaic",
+        "Alexander the Great",
+        "Attalid",
+        "Parthian",
+        "Hasmonean",
+        "Armenian",
+        "Sasanian",
+        "Herodian",
+        "Nabataean",
+        "Emesene",
+        "Commagenian",
+        "Syrian",
+        "Palmyrene"
+      ]
+    }
+  }
+}
