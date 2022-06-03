@@ -47,6 +47,11 @@
         "frame.end",
         "frame.title"
       ]
+    },
+    "tag_subcategory2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "miscellaneous.tag-subcategory2"
     }
   }
 }

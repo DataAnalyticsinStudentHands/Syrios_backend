@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossaries",
+  "info": {
+    "singularName": "glossary",
+    "pluralName": "glossaries",
+    "displayName": "glossary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "term": {
+      "type": "string"
+    },
+    "foreign": {
+      "type": "boolean",
+      "default": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "adjective",
+        "noun",
+        "verb"
+      ]
+    },
+    "syllabication": {
+      "type": "string"
+    },
+    "sounds_like": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "richtext"
+    },
+    "context": {
+      "type": "richtext"
+    },
+    "glossaries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::glossary.glossary"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "glossary_pages",
+  "info": {
+    "singularName": "glossary-page",
+    "pluralName": "glossary-pages",
+    "displayName": "glossary_page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro_text": {
+      "type": "richtext"
+    }
+  }
+}
