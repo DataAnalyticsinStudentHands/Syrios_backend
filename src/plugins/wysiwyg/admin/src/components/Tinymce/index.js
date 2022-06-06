@@ -31,10 +31,8 @@ const TinyEditor = ({
         init={{
           height: 250,
           menubar: false,
-          plugins:[
-            'link','wordcount'
-          ],
-          toolbar: 'customInsert| bold italic underline link | fontsize | removeformat | undo redo',
+          plugins:'link wordcount advlist lists',
+          toolbar: 'customInsert | bold italic underline strikethrough |  numlist bullist link | undo redo',
           setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
