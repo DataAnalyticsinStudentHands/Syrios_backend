@@ -19,7 +19,7 @@
       ]
     },
     "additional_link": {
-      "type": "text"
+      "type": "string"
     },
     "size": {
       "type": "enumeration",
@@ -42,8 +42,8 @@
       "type": "enumeration",
       "enum": [
         "null",
-        "light blue background",
-        "light yellow background"
+        "light-blue-background",
+        "light-yellow-background"
       ],
       "default": "null",
       "required": true
@@ -52,6 +52,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::coin.coin"
+    },
+    "reverse_or_obverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "caption_or_both": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
