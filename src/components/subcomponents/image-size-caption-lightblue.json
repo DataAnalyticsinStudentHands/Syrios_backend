@@ -2,17 +2,18 @@
   "collectionName": "components_subcomponents_image_size_caption_lightblues",
   "info": {
     "displayName": "image_size_caption_lightblue",
-    "icon": "angle-double-left"
+    "icon": "angle-double-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "size": {
       "type": "enumeration",
