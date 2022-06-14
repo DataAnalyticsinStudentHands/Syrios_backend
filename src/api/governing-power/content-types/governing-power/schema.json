@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "governing_powers",
+  "info": {
+    "singularName": "governing-power",
+    "pluralName": "governing-powers",
+    "displayName": "governing_power",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "governing_power": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
