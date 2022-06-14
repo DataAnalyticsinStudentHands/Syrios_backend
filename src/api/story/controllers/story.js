@@ -74,9 +74,16 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.image8',
         'zone.image8.image',
         'zone.image8.coin',
+        'zone.image8.coin.obverse_file',
+        'zone.image8.coin.reverse_file',
+        'zone.image8.coin.type_category',
         'zone.images8',
         'zone.images8.image',
         'zone.images8.coin',
+        'zone.images8.coin.obverse_file',
+        'zone.images8.coin.reverse_file',
+        'zone.images8.coin.type_category',
+
 
         // Frame 9's middle image component
         // 'zone.mid.image',
