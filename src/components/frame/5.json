@@ -7,19 +7,19 @@
   },
   "options": {},
   "attributes": {
-    "left": {
+    "image5_left": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
       "required": true
     },
-    "middle": {
+    "text5_middle": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.text-caption-lightblue",
       "required": true
     },
-    "right": {
+    "image5_right": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",

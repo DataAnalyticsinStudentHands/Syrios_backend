@@ -10,27 +10,16 @@
     "text": {
       "type": "richtext"
     },
-    "text_color": {
+    "text_class": {
       "type": "enumeration",
       "enum": [
-        "orange-text",
-        "gray-text",
-        "blue-text",
-        "dark-blue-text"
+        "story-h2",
+        "story-h3",
+        "story-text",
+        "story-caption"
       ],
       "required": true,
-      "default": "gray-text"
-    },
-    "font_size": {
-      "type": "enumeration",
-      "enum": [
-        "main-text",
-        "big-sub-text ",
-        "sub-text",
-        "caption-text"
-      ],
-      "default": "sub-text",
-      "required": true
+      "default": "story-h2"
     }
   }
 }
