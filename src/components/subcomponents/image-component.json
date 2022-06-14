@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_subcomponents_image_components",
+  "info": {
+    "displayName": "image_component",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "additional_link": {
+      "type": "text"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "Smallest",
+        "Smaller",
+        "Small",
+        "Regular",
+        "BIg",
+        "Bigger",
+        "Biggest"
+      ]
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "background_color": {
+      "type": "enumeration",
+      "enum": [
+        "null",
+        "light blue background",
+        "light yellow background"
+      ],
+      "default": "null",
+      "required": true
+    }
+  }
+}

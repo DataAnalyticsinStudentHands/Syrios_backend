@@ -18,22 +18,22 @@
     "size": {
       "type": "enumeration",
       "enum": [
-        "XXS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
+        "Smallest",
+        "Smaller",
+        "Small",
+        "Regular",
+        "BIg",
+        "Bigger",
+        "Biggest"
       ],
-      "default": "S",
+      "default": "Regular",
       "required": true
     },
     "link": {
       "type": "string"
     },
-    "brief_detail": {
-      "type": "string"
+    "caption": {
+      "type": "richtext"
     }
   }
 }

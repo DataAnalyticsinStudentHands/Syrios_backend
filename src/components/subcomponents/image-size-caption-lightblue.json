@@ -18,16 +18,16 @@
     "size": {
       "type": "enumeration",
       "enum": [
-        "XXS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
+        "Smallest",
+        "Smaller",
+        "Small",
+        "Regular",
+        "BIg",
+        "Bigger",
+        "Biggest"
       ],
       "required": true,
-      "default": "S"
+      "default": "Regular"
     },
     "caption": {
       "type": "richtext",

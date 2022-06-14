@@ -13,7 +13,7 @@
       "component": "subcomponents.head",
       "required": true
     },
-    "left": {
+    "image7_left": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.image-size-caption-lightblue",
@@ -26,7 +26,7 @@
       "component": "subcomponents.text-style",
       "required": true
     },
-    "right": {
+    "text7_right": {
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.text-caption-lightblue",
