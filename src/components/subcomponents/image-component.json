@@ -18,11 +18,6 @@
         "audios"
       ]
     },
-    "coin": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::coin.coin"
-    },
     "additional_link": {
       "type": "text"
     },
@@ -36,7 +31,9 @@
         "BIg",
         "Bigger",
         "Biggest"
-      ]
+      ],
+      "required": true,
+      "default": "Regular"
     },
     "caption": {
       "type": "richtext"
@@ -50,6 +47,11 @@
       ],
       "default": "null",
       "required": true
+    },
+    "coin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
     }
   }
 }
