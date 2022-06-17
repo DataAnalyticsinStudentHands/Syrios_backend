@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_frame_image_text_images",
+  "info": {
+    "displayName": "image_text_image",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "iti_image_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-component",
+      "required": true
+    },
+    "iti_text_middle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "iti_image_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-component",
+      "required": true
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

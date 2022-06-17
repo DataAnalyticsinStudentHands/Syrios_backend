@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_frame_text_texts",
+  "info": {
+    "displayName": "text_text",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "tt_text_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "tt_text_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

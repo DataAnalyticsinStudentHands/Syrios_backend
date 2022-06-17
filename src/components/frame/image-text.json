@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_frame_image_texts",
+  "info": {
+    "displayName": "image_text",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "it_image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-component",
+      "required": true
+    },
+    "it_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "left_right_switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid_option": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "required": true,
+      "default": "half"
+    }
+  }
+}
