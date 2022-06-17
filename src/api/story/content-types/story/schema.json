@@ -33,20 +33,25 @@
       "type": "dynamiczone",
       "components": [
         "frame.1",
+        "frame.11",
+        "frame.12",
+        "frame.13",
+        "frame.14",
+        "frame.15",
         "frame.2",
         "frame.3",
         "frame.4",
         "frame.5",
         "frame.6",
         "frame.7",
-        "frame.11",
-        "frame.12",
-        "frame.13",
-        "frame.14",
-        "frame.15",
+        "frame.8",
         "frame.end",
         "frame.title",
-        "frame.8"
+        "frame.image-text-image",
+        "frame.image-text-text",
+        "frame.image-text",
+        "frame.images",
+        "frame.text-text"
       ]
     },
     "tag_subcategory2": {

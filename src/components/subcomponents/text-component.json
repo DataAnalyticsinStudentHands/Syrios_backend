@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_subcomponents_text_components",
+  "info": {
+    "displayName": "text_component",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "background_color": {
+      "type": "enumeration",
+      "enum": [
+        "null",
+        "light-blue-background",
+        "light-yellow-background"
+      ],
+      "default": "null",
+      "required": true
+    }
+  }
+}

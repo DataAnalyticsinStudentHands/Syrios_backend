@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_frame_image_text_texts",
+  "info": {
+    "displayName": "image_text_text",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "itt_image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.image-component",
+      "required": true
+    },
+    "itt_texts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "itt_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-style",
+      "required": true
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

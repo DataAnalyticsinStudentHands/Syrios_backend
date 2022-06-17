@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_frame_images",
+  "info": {
+    "displayName": "images",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.image-component",
+      "required": true,
+      "min": 1,
+      "max": 6
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
