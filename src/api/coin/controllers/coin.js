@@ -13,6 +13,7 @@ module.exports = createCoreController('api::coin.coin', ({ strapi }) => ({
         'obverse_file',
         'reverse_file',
         'type_category',
+        'governing_power',
       ],
       ...ctx.query
     };
@@ -28,6 +29,7 @@ module.exports = createCoreController('api::coin.coin', ({ strapi }) => ({
         'obverse_file',
         'reverse_file',
         'type_category',
+        'governing_power',
       ],
       ...ctx.query
     };

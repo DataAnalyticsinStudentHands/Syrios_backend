@@ -109,29 +109,6 @@
     "diameter": {
       "type": "integer"
     },
-    "governing_power": {
-      "type": "enumeration",
-      "enum": [
-        "Roman Republic",
-        "Seleucid",
-        "Ptolemaic",
-        "Parthian",
-        "Alexander the Great",
-        "Attalid",
-        "Hasmonean",
-        "Armenian",
-        "Roman Principate",
-        "Sasanian",
-        "Palmyrene",
-        "Herodian",
-        "Nabataean",
-        "Emesene",
-        "Commagenian",
-        "N/A"
-      ],
-      "default": "N/A",
-      "required": true
-    },
     "issuing_authority": {
       "type": "enumeration",
       "enum": [
@@ -230,6 +207,11 @@
     },
     "ref2": {
       "type": "string"
+    },
+    "governing_power": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::governing-power.governing-power"
     }
   }
 }
