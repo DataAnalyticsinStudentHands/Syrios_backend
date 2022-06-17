@@ -41,6 +41,21 @@
         "videos",
         "audios"
       ]
+    },
+    "left_right_switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid_option": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "default": "half",
+      "required": true
     }
   }
 }
