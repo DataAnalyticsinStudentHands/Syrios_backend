@@ -41,6 +41,8 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.head',
 
         // image_text
+        'zone.it_text',
+        
         'zone.it_image',
         'zone.it_image.image',
         'zone.it_image.coin',
@@ -56,6 +58,7 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.iti_image_left.coin.type_category',
 
         'zone.iti_text_middle',
+
         'zone.iti_image_right',
         'zone.iti_image_right.image',
         'zone.iti_image_right.coin',
