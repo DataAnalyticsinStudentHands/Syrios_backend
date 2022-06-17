@@ -16,14 +16,17 @@ module.exports = createCoreController('api::timeline-info.timeline-info', ({ str
         'zone.coin.reverse_file',
         'zone.coin.obverse_file',
         'zone.coin.type_category',
+        'zone.coin.governing_power',
         'zone.coin_a',
         'zone.coin_a.reverse_file',
         'zone.coin_a.obverse_file',
         'zone.coin_a.type_category',
+        'zone.coin_a.governing_power',
         'zone.coin_b',
         'zone.coin_b.reverse_file',
         'zone.coin_b.obverse_file',
         'zone.coin_b.type_category',
+        'zone.coin_b.governing_power',
       ],
       // Allow ctx.query to overwrite default behavior
       ...ctx.query
