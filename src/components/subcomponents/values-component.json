@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_subcomponents_values_components",
+  "info": {
+    "displayName": "fade_component",
+    "icon": "angle-double-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin_left": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "coin_right": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "image_left": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_right": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text_left_front": {
+      "type": "richtext"
+    },
+    "text_left_back": {
+      "type": "richtext"
+    },
+    "text_right_fornt": {
+      "type": "richtext"
+    },
+    "text_right_back": {
+      "type": "richtext"
+    },
+    "caption_or_all": {
+      "type": "boolean"
+    },
+    "topic": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

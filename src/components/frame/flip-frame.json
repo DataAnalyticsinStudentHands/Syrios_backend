@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_frame_flip_frames",
+  "info": {
+    "displayName": "flip_frame",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "flip_coin_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.dynamic-coin-component",
+      "required": true
+    },
+    "flip_coin_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.dynamic-coin-component",
+      "required": true
+    },
+    "text_top": {
+      "type": "richtext"
+    },
+    "text_down": {
+      "type": "richtext"
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

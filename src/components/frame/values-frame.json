@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_frame_values_frames",
+  "info": {
+    "displayName": "fade_frame",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head"
+    },
+    "fades": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.values-component",
+      "required": true,
+      "max": 4,
+      "min": 1
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
