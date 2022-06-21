@@ -20,16 +20,8 @@
       "default": false,
       "required": true
     },
-    "additional_link": {
-      "type": "text"
-    },
-    "dynamic_images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "caption_back": {
+      "type": "richtext"
     }
   }
 }
