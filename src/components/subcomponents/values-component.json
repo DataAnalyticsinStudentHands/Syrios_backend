@@ -17,38 +17,10 @@
       "relation": "oneToOne",
       "target": "api::coin.coin"
     },
-    "image_left": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "image_right": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "text_left_front": {
+    "caption_left": {
       "type": "richtext"
     },
-    "text_left_back": {
-      "type": "richtext"
-    },
-    "text_right_fornt": {
-      "type": "richtext"
-    },
-    "text_right_back": {
+    "caption_right": {
       "type": "richtext"
     },
     "caption_or_all": {
@@ -57,6 +29,9 @@
     "topic": {
       "type": "string",
       "required": true
+    },
+    "caption": {
+      "type": "richtext"
     }
   }
 }

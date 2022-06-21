@@ -10,7 +10,8 @@
     "head": {
       "type": "component",
       "repeatable": false,
-      "component": "subcomponents.head"
+      "component": "subcomponents.head",
+      "required": true
     },
     "fades": {
       "type": "component",
@@ -21,14 +22,15 @@
       "min": 1
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
