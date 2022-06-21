@@ -32,6 +32,16 @@
     },
     "caption": {
       "type": "richtext"
+    },
+    "left_coin_obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "right_coin_obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

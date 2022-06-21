@@ -22,6 +22,11 @@
     },
     "caption_back": {
       "type": "richtext"
+    },
+    "obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
