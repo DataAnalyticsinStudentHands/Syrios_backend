@@ -32,7 +32,8 @@ const TinyEditor = ({
           height: 250,
           menubar: false,
           plugins:'link wordcount advlist lists',
-          toolbar: 'customInsert | bold italic underline strikethrough superscript | numlist bullist link | undo redo',
+          // toolbar: 'customInsert | bold italic underline strikethrough superscript | numlist bullist link | undo redo',
+          toolbar: 'customInsert | numlist bullist link',
           setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
@@ -40,27 +41,47 @@ const TinyEditor = ({
           
               /* example, adding a toolbar menu button */
               editor.ui.registry.addMenuButton('customInsert', {
-                text: 'Icons',
+                text: 'Custom links with icon',
                 icon:'template',
                 fetch: function (callback) {
                   var items = [
                     {
                       type: 'menuitem',
-                      text: 'References Text Icon (External Link)',
+                      text: 'External Link',
                       icon:'new-tab',
                       onAction: function () {
-                        editor.insertContent(`<em class='story-text-external-link-icon'>&#xe818;</em>`);
+                        editor.insertContent(`
+                        <a href="" title='' >
+                          <em>
+                            <strong>
+                            External 
+                            </strong>
+                          </em>
+                          <small class='story-icon'>&#xe818;</small>
+                        </a>
+                        `);
                       }
                     },
                     {
                       type: 'menuitem',
-                      text: 'Story Text Definition Icon (Glossery Link)',
+                      text: 'Glossary link',
                       icon:'info',
                       onAction: function () {
-                        editor.insertContent(`<em class='story-text-definition-icon'>&#xe817;</em>`);
+                        editor.insertContent(`
+                        <a href="/" title="">
+                          <em>
+                            <strong>
+                              Glossary
+                            </strong>
+                          </em>
+                          <sup>
+                            <small class='story-icon'>&#xe817;</small>
+                          </sup>
+                        </a>
+                      `);
                       }
                     },
-                  ];
+                  ]; 
                   callback(items);
                 }
               });
