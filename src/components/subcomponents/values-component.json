@@ -24,7 +24,9 @@
       "type": "richtext"
     },
     "caption_or_all": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "topic": {
       "type": "string",
