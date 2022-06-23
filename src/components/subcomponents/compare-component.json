@@ -19,6 +19,20 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "Smallest",
+        "Smaller",
+        "Small",
+        "Regular",
+        "Big",
+        "Bigger",
+        "Biggest"
+      ],
+      "default": "Small",
+      "required": true
     }
   }
 }
