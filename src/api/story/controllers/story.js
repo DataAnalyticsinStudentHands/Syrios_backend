@@ -118,19 +118,23 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
 
         //flip frame
         'zone.flip_coin_left',
-        'zone.flip_coin_left.dynamic_images',
         'zone.flip_coin_left.coin',
         'zone.flip_coin_left.coin.obverse_file',
         'zone.flip_coin_left.coin.reverse_file',
         'zone.flip_coin_left.coin.type_category',
 
-        'zone.flip_coin_right.dynamic_images',
         'zone.flip_coin_right.coin',
         'zone.flip_coin_right.coin.obverse_file',
         'zone.flip_coin_right.coin.reverse_file',
         'zone.flip_coin_right.coin.type_category',
 
-
+        //compare frame
+        'zone.cc_coin',
+        'zone.cc_text',
+        'zone.cc_coin.coin',
+        'zone.cc_coin.coin.obverse_file',
+        'zone.cc_coin.coin.reverse_file',
+        'zone.cc_coin.coin.type_category',
         ////Frame 1's, Frame 4's, Frame 5's, left and right components
         // 'zone.left',
         // 'zone.right',

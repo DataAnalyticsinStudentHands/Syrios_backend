@@ -54,7 +54,8 @@
         "frame.title",
         "frame.scale-frame",
         "frame.flip-frame",
-        "frame.values-frame"
+        "frame.values-frame",
+        "frame.coin-compare"
       ]
     },
     "tag_subcategory2": {
