@@ -46,12 +46,16 @@
         "frame.7",
         "frame.8",
         "frame.end",
-        "frame.title",
+        "frame.image-text",
         "frame.image-text-image",
         "frame.image-text-text",
-        "frame.image-text",
         "frame.images",
-        "frame.text-text"
+        "frame.text-text",
+        "frame.title",
+        "frame.scale-frame",
+        "frame.flip-frame",
+        "frame.values-frame",
+        "frame.coin-compare"
       ]
     },
     "tag_subcategory2": {

@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_frame_scale_frames",
+  "info": {
+    "displayName": "scale_frame",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "scale_coin_left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.dynamic-coin-component",
+      "required": true
+    },
+    "scale_coin_right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.dynamic-coin-component",
+      "required": true
+    },
+    "text_front": {
+      "type": "richtext"
+    },
+    "text_back": {
+      "type": "richtext"
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

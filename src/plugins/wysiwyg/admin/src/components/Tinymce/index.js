@@ -32,7 +32,8 @@ const TinyEditor = ({
           height: 250,
           menubar: false,
           plugins:'link wordcount advlist lists',
-          toolbar: 'customInsert | bold italic underline strikethrough |  numlist bullist link | undo redo',
+          // toolbar: 'customInsert | bold italic underline strikethrough superscript | numlist bullist link | undo redo',
+          toolbar: 'customInsert | numlist bullist link',
           setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
@@ -40,65 +41,47 @@ const TinyEditor = ({
           
               /* example, adding a toolbar menu button */
               editor.ui.registry.addMenuButton('customInsert', {
-                text: 'CustomLinks',
-                icon:'plus',
+                text: 'Custom links with icon',
+                icon:'template',
                 fetch: function (callback) {
                   var items = [
                     {
                       type: 'menuitem',
                       text: 'External Link',
-                      icon:'link',
+                      icon:'new-tab',
                       onAction: function () {
                         editor.insertContent(`
-                          <a class='Link ExternalLink' href='#'>
-                            External link
-                            <em class='demo-icon icon-coin-scale Icon ExternalIcon'>&#xe818;</em>
-                          </a>&nbsp;`);
+                        <a href="" title='' >
+                          <em>
+                            <strong>
+                            External 
+                            </strong>
+                          </em>
+                          <small class='story-icon'>&#xe818;</small>
+                        </a>
+                        `);
                       }
                     },
                     {
                       type: 'menuitem',
-                      text: 'NOMISMA',
-                      icon:'link',
+                      text: 'Glossary link',
+                      icon:'info',
                       onAction: function () {
                         editor.insertContent(`
-                          <a class='Link NomisamaLink' href='#'>
-                            NOMISMA link 
-                            <em class='demo-icon icon-coin-scale Icon NomisamaIcon'>&#xe814;</em>
-                          </a>&nbsp;`);
+                        <a href="/" title="">
+                          <em>
+                            <strong>
+                              Glossary
+                            </strong>
+                          </em>
+                          <sup>
+                            <small class='story-icon'>&#xe817;</small>
+                          </sup>
+                        </a>
+                      `);
                       }
                     },
-                    {
-                      type: 'menuitem',
-                      text: 'Glossery Link',
-                      icon:'link',
-                      onAction: function () {
-                        editor.insertContent(`
-                          <a class='Link GlossaryLink' href='#'>
-                            Glossery link 
-                            <sup>
-                              <em class='demo-icon icon-coin-scale Icon GlosseryIcon'>
-                                &#xe817;
-                              </em>
-                            </sup>
-                          </a>&nbsp;`);
-                      }
-                    },
-                    {
-                      type: 'menuitem',
-                      text: 'Internal Link',
-                      icon:'link',
-                      onAction: function () {
-                        editor.insertContent(`
-                          <a class='Link InternalLink' href='#'>
-                            Internal link
-                            <sup class='InternalNumber'>
-                              [1]
-                            </sup>
-                          </a>&nbsp;`);
-                      }
-                    },
-                  ];
+                  ]; 
                   callback(items);
                 }
               });

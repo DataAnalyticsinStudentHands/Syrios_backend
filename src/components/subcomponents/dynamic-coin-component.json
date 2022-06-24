@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_subcomponents_dynamic_coin_components",
+  "info": {
+    "displayName": "dynamic_coin_component",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "caption_or_all": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "caption_back": {
+      "type": "richtext"
+    },
+    "obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

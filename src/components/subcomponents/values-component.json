@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_subcomponents_values_components",
+  "info": {
+    "displayName": "fade_component",
+    "icon": "angle-double-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin_left": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "coin_right": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "caption_left": {
+      "type": "richtext"
+    },
+    "caption_right": {
+      "type": "richtext"
+    },
+    "caption_or_all": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "topic": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "left_coin_obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "right_coin_obverse_or_reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

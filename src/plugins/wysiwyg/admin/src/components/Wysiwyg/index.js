@@ -47,13 +47,13 @@ const Wysiwyg = ({
   const { components } = useLibrary();
 
   const MediaLibraryDialog = components['media-library'];
-  const handleTogglePopover = () => setVisiblePopover(prev => !prev);
+  // const handleTogglePopover = () => setVisiblePopover(prev => !prev);
 
   const [visiblePopover, setVisiblePopover] = useState(false);
 
   const handleToggleMediaLib = () => setMediaLibVisible(prev => !prev);
-  const handleTogglePreviewMode = () => setIsPreviewMode(prev => !prev);
-  const handleToggleExpand = () => setIsExpandMode(prev => !prev);
+  // const handleTogglePreviewMode = () => setIsPreviewMode(prev => !prev);
+  // const handleToggleExpand = () => setIsExpandMode(prev => !prev);
 
   const handleSelectAssets = files => {
     const formattedFiles = files.map(f => ({
@@ -93,7 +93,7 @@ const Wysiwyg = ({
 
         </Stack>
 
-        <IconButton
+        {/* <IconButton
                     onClick={() => {
                       handleTogglePopover();
                       handleToggleMediaLib();
@@ -102,7 +102,7 @@ const Wysiwyg = ({
                     label="Image"
                     name="Image"
                     icon={<Image />}
-                  />
+                  /> */}
 
         <TinyEditor
           disabled={disabled}

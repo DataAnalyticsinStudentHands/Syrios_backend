@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_frame_coin_compares",
+  "info": {
+    "displayName": "coin_compare",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.head",
+      "required": true
+    },
+    "cc_coin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.compare-component",
+      "required": true
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cc_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.text-component",
+      "required": true
+    },
+    "left_right_switch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "grid_option": {
+      "type": "enumeration",
+      "enum": [
+        "half",
+        "third",
+        "quarter"
+      ],
+      "default": "half",
+      "required": true
+    }
+  }
+}

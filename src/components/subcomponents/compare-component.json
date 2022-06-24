@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_subcomponents_compare_components",
+  "info": {
+    "displayName": "compare_component",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coin.coin"
+    },
+    "coin_caption": {
+      "type": "richtext"
+    },
+    "caption_background": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "Smallest",
+        "Smaller",
+        "Small",
+        "Regular",
+        "Big",
+        "Bigger",
+        "Biggest"
+      ],
+      "default": "Small",
+      "required": true
+    }
+  }
+}

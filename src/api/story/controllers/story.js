@@ -87,38 +87,89 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.images.coin.reverse_file',
         'zone.images.coin.type_category',
 
+        //sacle frame
+        'zone.scale_coin_left',
+        'zone.scale_coin_left.dynamic_images',
+        'zone.scale_coin_right.dynamic_images',
+
+        'zone.scale_coin_left.coin',
+        'zone.scale_coin_left.coin.obverse_file',
+        'zone.scale_coin_left.coin.reverse_file',
+        'zone.scale_coin_left.coin.type_category',
+
+        'zone.scale_coin_right',
+        'zone.scale_coin_right.coin',
+        'zone.scale_coin_right.coin.obverse_file',
+        'zone.scale_coin_right.coin.reverse_file',
+        'zone.scale_coin_right.coin.type_category',
+
+        // fade frame
+        'zone.fades',
+        'zone.fades.coin_left',
+        'zone.fades.coin_left.obverse_file',
+        'zone.fades.coin_left.reverse_file',
+        'zone.fades.coin_left.type_category',
+        'zone.fades.coin_right',
+        'zone.fades.coin_right.obverse_file',
+        'zone.fades.coin_right.reverse_file',
+        'zone.fades.coin_right.type_category',
+        'zone.fades.image_left',
+        'zone.fades.image_right',
+
+        //flip frame
+        'zone.flip_coin_left',
+        'zone.flip_coin_left.coin',
+        'zone.flip_coin_left.coin.obverse_file',
+        'zone.flip_coin_left.coin.reverse_file',
+        'zone.flip_coin_left.coin.type_category',
+
+        'zone.flip_coin_right.coin',
+        'zone.flip_coin_right.coin.obverse_file',
+        'zone.flip_coin_right.coin.reverse_file',
+        'zone.flip_coin_right.coin.type_category',
+
+        //compare frame
+        'zone.cc_coin',
+        'zone.cc_text',
+        'zone.cc_coin.coin',
+        'zone.cc_coin.coin.obverse_file',
+        'zone.cc_coin.coin.reverse_file',
+        'zone.cc_coin.coin.type_category',
         ////Frame 1's, Frame 4's, Frame 5's, left and right components
-        'zone.left',
-        'zone.right',
+        // 'zone.left',
+        // 'zone.right',
         ////Frame 2's image component
-        'zone.image2',
-        'zone.image2.image',
+        // 'zone.image2',
+        // 'zone.image2.image',
         ////Frame 3's multiple images
-        'zone.images',
-        'zone.images.image',
+        // 'zone.images',
+        // 'zone.images.image',
         ////Frame 4's three image
-        'zone.image_left',
-        'zone.image_left.image',
-        'zone.image_middle',
-        'zone.image_middle.image',
-        'zone.image_right',
-        'zone.image_right.image',
+        // 'zone.image_left',
+        // 'zone.image_left.image',
+        // 'zone.image_middle',
+        // 'zone.image_middle.image',
+        // 'zone.image_right',
+        // 'zone.image_right.image',
         ////Frame 5's image component inside of left and right, and middle text
-        'zone.image5_left',
-        'zone.text5_middle',
-        'zone.image5_right',
-        'zone.image5_left.image',
-        'zone.image5_right.image',
+        // 'zone.image5_left',
+        // 'zone.text5_middle',
+        // 'zone.image5_right',
+        // 'zone.image5_left.image',
+        // 'zone.image5_right.image',
 
         ////Frame 6's text component
-        'zone.text6',
-        'zone.image6',
-        'zone.image6.image',
+        // 'zone.text6',
+        // 'zone.image6',
+        // 'zone.image6.image',
         ////Frame 7
-        'zone.text7',
-        'zone.text7_right',
-        'zone.image7_left',
-        'zone.image7_left.image',
+        // 'zone.text7',
+        // 'zone.text7_right',
+        // 'zone.image7_left',
+        // 'zone.image7_left.image',
+
+
+
         // Frame 8's text element
         // 'zone.image8',
         // 'zone.image8.image',
