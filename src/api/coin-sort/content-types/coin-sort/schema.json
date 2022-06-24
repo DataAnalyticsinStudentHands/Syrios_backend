@@ -22,6 +22,24 @@
     },
     "tutorial_text": {
       "type": "richtext"
+    },
+    "arrangement_tips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-sort.arrangement-tips",
+      "required": true
+    },
+    "sorting_tips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-sort.sorting-tips",
+      "required": true
+    },
+    "filtering_tips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-sort.filtering-tips",
+      "required": true
     }
   }
 }
