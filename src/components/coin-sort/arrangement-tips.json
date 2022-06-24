@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_coin_sort_arrangement_tips",
+  "info": {
+    "displayName": "arrangement_tips",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "TOOL TIP: ARRANGEMENT OPTIONS"
+    },
+    "grid_1x1": {
+      "type": "text",
+      "required": true
+    },
+    "grid_2x1": {
+      "type": "text",
+      "required": true
+    },
+    "grid_3x1": {
+      "type": "text",
+      "required": true
+    },
+    "grid_2x2": {
+      "type": "text",
+      "required": true
+    },
+    "grid_3x2": {
+      "type": "text",
+      "required": true
+    },
+    "grid_6x3": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

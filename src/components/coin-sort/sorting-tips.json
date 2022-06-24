@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_coin_sort_sorting_tips",
+  "info": {
+    "displayName": "sorting_tips",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "TOOL TIP: SORTING OPTIONS"
+    },
+    "sub_title": {
+      "type": "text"
+    },
+    "minting_date": {
+      "type": "text",
+      "required": true
+    },
+    "material": {
+      "type": "text",
+      "required": true
+    },
+    "issuing_authority": {
+      "type": "text",
+      "required": true
+    },
+    "governing_power": {
+      "type": "text",
+      "required": true
+    },
+    "size": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
