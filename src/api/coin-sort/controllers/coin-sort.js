@@ -13,6 +13,8 @@ module.exports = createCoreController('api::coin-sort.coin-sort', ({ strapi }) =
         'arrangement_tips',
         'sorting_tips',
         'filtering_tips',
+        'main_text',
+        'no_result_from_query_text',
       ],
       ...ctx.query
     };

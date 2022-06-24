@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_coin_sort_title_and_texts",
+  "info": {
+    "displayName": "title_and_text",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "<Missing Title>"
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

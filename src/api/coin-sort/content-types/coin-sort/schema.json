@@ -17,12 +17,6 @@
       "default": "COIN SORT",
       "required": true
     },
-    "tutorial_text_title": {
-      "type": "string"
-    },
-    "tutorial_text": {
-      "type": "richtext"
-    },
     "arrangement_tips": {
       "type": "component",
       "repeatable": false,
@@ -39,6 +33,18 @@
       "type": "component",
       "repeatable": false,
       "component": "coin-sort.filtering-tips",
+      "required": true
+    },
+    "main_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-sort.title-and-text",
+      "required": true
+    },
+    "no_result_from_query_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-sort.title-and-text",
       "required": true
     }
   }
