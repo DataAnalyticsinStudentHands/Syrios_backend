@@ -16,6 +16,12 @@
       "type": "string",
       "default": "COIN SORT",
       "required": true
+    },
+    "tutorial_text_title": {
+      "type": "string"
+    },
+    "tutorial_text": {
+      "type": "richtext"
     }
   }
 }
