@@ -45,23 +45,29 @@
         "frame.6",
         "frame.7",
         "frame.8",
+        "frame.coin-compare",
         "frame.end",
+        "frame.flip-frame",
         "frame.image-text",
         "frame.image-text-image",
         "frame.image-text-text",
         "frame.images",
+        "frame.scale-frame",
         "frame.text-text",
         "frame.title",
-        "frame.scale-frame",
-        "frame.flip-frame",
-        "frame.values-frame",
-        "frame.coin-compare"
+        "frame.values-frame"
       ]
     },
     "tag_subcategory2": {
       "type": "component",
       "repeatable": true,
       "component": "miscellaneous.tag-subcategory2"
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference",
+      "mappedBy": "story"
     }
   }
 }
