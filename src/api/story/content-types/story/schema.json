@@ -66,8 +66,7 @@
     "references": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::reference.reference",
-      "mappedBy": "story"
+      "target": "api::reference.reference"
     }
   }
 }

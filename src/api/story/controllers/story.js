@@ -28,6 +28,7 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
       populate: [
         // story info
         'image',
+        'references',
         'credits_and_references',
         'credits_and_references.source_material',
         'credits_and_references.read_more',

@@ -46,6 +46,11 @@
       "repeatable": false,
       "component": "coin-sort.title-and-text",
       "required": true
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
     }
   }
 }

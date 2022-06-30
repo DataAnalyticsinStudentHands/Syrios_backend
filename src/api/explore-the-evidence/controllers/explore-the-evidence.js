@@ -12,7 +12,8 @@ module.exports = createCoreController('api::explore-the-evidence.explore-the-evi
       populate: [
         'sort.image',
         'map.image',
-        'timeline.image'
+        'timeline.image',
+        'references',
       ],
       ...ctx.query
     };

@@ -51,7 +51,7 @@ const TinyEditor = ({
                       icon:'new-tab',
                       onAction: function () {
                         editor.insertContent(`
-                        <a href="" title='' >
+                        <a href="" title=''>
                           <em>
                             <strong>
                             External 
@@ -68,7 +68,7 @@ const TinyEditor = ({
                       icon:'info',
                       onAction: function () {
                         editor.insertContent(`
-                        <a href="/" title="">
+                        <a href="" title="">
                           <em>
                             <strong>
                               Glossary

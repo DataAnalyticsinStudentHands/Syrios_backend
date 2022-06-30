@@ -43,6 +43,11 @@
     "download_caption": {
       "type": "richtext",
       "required": true
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
     }
   }
 }

@@ -22,12 +22,6 @@
     "name": {
       "type": "string"
     },
-    "story": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::story.story",
-      "inversedBy": "references"
-    },
     "authorLastName": {
       "type": "string"
     }

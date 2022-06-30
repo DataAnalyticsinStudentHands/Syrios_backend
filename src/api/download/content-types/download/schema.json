@@ -46,6 +46,11 @@
         "videos",
         "audios"
       ]
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
     }
   }
 }

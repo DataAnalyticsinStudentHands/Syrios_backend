@@ -13,6 +13,7 @@
     "@strapi/plugin-i18n": "4.2.0",
     "@strapi/plugin-users-permissions": "4.2.0",
     "@strapi/strapi": "4.2.0",
+    "axios": "^0.27.2",
     "nodemailer": "^6.7.5",
     "pg": "8.7.3"
   },

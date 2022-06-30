@@ -20,26 +20,25 @@
     "zone": {
       "type": "dynamiczone",
       "components": [
-        "frame.1",
-        "frame.2",
-        "frame.3",
-        "frame.4",
-        "frame.5",
-        "frame.6",
-        "frame.7",
-        "frame.8",
-        "frame.9",
-        "frame.10",
-        "frame.11",
-        "frame.12",
-        "frame.13",
-        "frame.14",
-        "frame.15",
         "frame.end",
-        "frame.title"
+        "frame.title",
+        "frame.coin-compare",
+        "frame.flip-frame",
+        "frame.image-text-image",
+        "frame.image-text-text",
+        "frame.image-text",
+        "frame.images",
+        "frame.scale-frame",
+        "frame.text-text",
+        "frame.values-frame"
       ],
       "required": true,
       "min": 1
+    },
+    "references": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reference.reference"
     }
   }
 }
