@@ -23,7 +23,27 @@ const wysiwygRequests = {
       method: "GET",
     });
   },
-  
+  createReference: async (item_key) => {
+    return await request(`/content-manager/collection-types/api::reference.reference`, {
+      method: "POST",
+      body:{item_key:item_key}
+    });
+  },
+  publicReference: async (id) => {
+    return await request(`/content-manager/collection-types/api::reference.reference/${id}/actions/publish`, {
+      method: "POST",
+    });
+  },
+
+  findZoteroTopitems: async()=>{
+      return await axios(`${baseURL}/groups/4721497/items/top`,{
+        method:'GET',
+        headers: {
+            'Zotero-API-Version': '3',
+            'Zotero-API-Key':'QtlUSBKdwlVRuIJzNaCbi9VD'
+        },
+    })
+  },
   getZoteroOneItem: async(itemKey)=>{
       return await axios(`${baseURL}/groups/4721497/items/${itemKey}`,{
           method:'GET',
@@ -45,6 +65,7 @@ const wysiwygRequests = {
           }
       })
   },
+
 };
 
 export default wysiwygRequests;

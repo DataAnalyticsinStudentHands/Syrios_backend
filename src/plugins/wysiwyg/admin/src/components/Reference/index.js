@@ -35,7 +35,6 @@ const Reference = ({
     async function fetchContentType(){
         if(isLoading === false) setIsLoading(true);
         const data = await wysiwygRequests.findContentTypes()
-        console.log(data)
         let dataObj = []
         let dataArray = {}
         data.data.forEach((content)=>{
