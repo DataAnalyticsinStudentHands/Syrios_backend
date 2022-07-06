@@ -12,14 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "logo": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -32,48 +28,34 @@
       "type": "component",
       "repeatable": true,
       "component": "miscellaneous.about-us",
-      "required": true,
-      "min": 1
+      "required": false
     },
     "media_content_team": {
       "type": "component",
       "repeatable": true,
       "component": "miscellaneous.about-us",
-      "required": true,
-      "min": 1
-    },
-    "acknowledgements": {
-      "type": "component",
-      "repeatable": true,
-      "component": "subcomponents.rich-text-component"
+      "required": false
     },
     "past_student_research_assistants": {
       "type": "richtext",
       "required": true
     },
-    "stable_id": {
-      "type": "string"
+    "acknowledgment_left": {
+      "type": "richtext"
     },
-    "wikidata": {
-      "type": "string"
+    "acknowledgment_right": {
+      "type": "richtext"
     },
-    "is_real_coin_image": {
-      "type": "boolean",
-      "required": true
+    "acknowledgment_left_link": {
+      "displayName": "acknowledgment",
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.acknowledgment"
     },
-    "source_image": {
-      "type": "string"
-    },
-    "rights_holder": {
-      "type": "string",
-      "required": true,
-      "default": "N/A"
-    },
-    "reference1": {
-      "type": "string"
-    },
-    "reference2": {
-      "type": "string"
+    "acknowledgment_right_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.acknowledgment"
     }
   }
 }

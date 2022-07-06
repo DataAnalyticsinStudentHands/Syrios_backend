@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_subcomponents_acknowledgments",
+  "info": {
+    "displayName": "acknowledgment",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
