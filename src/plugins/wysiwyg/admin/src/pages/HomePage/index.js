@@ -96,7 +96,7 @@ const HomePage = () => {
           <>
           <EmptyStateLayout
             icon={<Illo />}
-            content="You don't have any new References needs to insert..."
+            content="You don't have any new References that need to insert..."
             action={
               <>
               <Stack spacing={4} horizontal padding={4}>
@@ -112,7 +112,7 @@ const HomePage = () => {
                 <Button
                   variant="ghost"
                 >
-                All References is Published !</Button>
+                All the References are Published!</Button>
                 </>):(
                 <>
                   <Button
