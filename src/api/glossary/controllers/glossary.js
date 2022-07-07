@@ -10,7 +10,8 @@ module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
     async find(ctx) {
         ctx.query = {
           populate: [
-            ''
+            'glossaries',
+            'glossary_tag'
           ],
           pagination: {
             pageSize: 2147483647,
@@ -26,7 +27,8 @@ module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
       async findOne(ctx) {
         ctx.query = {
           populate: [
-            'glossaries', 'glossary_tag'
+            'glossaries', 
+            'glossary_tag'
           ],
           ...ctx.query
         };
