@@ -1,12 +1,12 @@
 'use strict';
 
 /**
- *  glossary controller
+ *  glossary-tag controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
+module.exports = createCoreController('api::glossary-tag.glossary-tag',({strapi})=>({
     async find(ctx) {
         ctx.query = {
           populate: [
@@ -26,7 +26,7 @@ module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
       async findOne(ctx) {
         ctx.query = {
           populate: [
-            'glossaries', 'glossary_tag'
+            'glossaries'
           ],
           ...ctx.query
         };

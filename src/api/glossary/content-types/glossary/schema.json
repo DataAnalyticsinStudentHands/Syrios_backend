@@ -43,6 +43,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::glossary.glossary"
+    },
+    "glossary_tag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::glossary-tag.glossary-tag",
+      "inversedBy": "glossaries"
     }
   }
 }
