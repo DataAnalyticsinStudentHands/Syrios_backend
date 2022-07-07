@@ -15,6 +15,7 @@ module.exports = createCoreController('api::about-us.about-us', ({ strapi }) => 
         'project_directors.picture',
         'media_content_team',
         'media_content_team.picture',
+        'past_student_research_assistants',
         'acknowledgment_left_link',
         'acknowledgment_right_link',
       ],

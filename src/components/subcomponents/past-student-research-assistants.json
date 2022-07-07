@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponents_past_student_research_assistants",
+  "info": {
+    "displayName": "past_student_research_assistants",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "student": {
+      "type": "richtext"
+    }
+  }
+}

@@ -36,10 +36,6 @@
       "component": "miscellaneous.about-us",
       "required": false
     },
-    "past_student_research_assistants": {
-      "type": "richtext",
-      "required": true
-    },
     "acknowledgment_left": {
       "type": "richtext"
     },
@@ -56,6 +52,12 @@
       "type": "component",
       "repeatable": true,
       "component": "subcomponents.acknowledgment"
+    },
+    "past_student_research_assistants": {
+      "displayName": "past_student_research_assistants",
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.past-student-research-assistants"
     }
   }
 }
