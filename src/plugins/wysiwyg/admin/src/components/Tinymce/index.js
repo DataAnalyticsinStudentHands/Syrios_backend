@@ -20,7 +20,6 @@ const TinyEditor = ({
     const content = editor.getContent();
     onChangeRef.current({ target: { name, value: content, type: 'wysiwyg' } });
   }
-
   return (
     <>
       <Editor        
@@ -31,15 +30,16 @@ const TinyEditor = ({
         init={{
           height: 250,
           menubar: false,
-          plugins:'link wordcount advlist lists',
-          // toolbar: 'customInsert | bold italic underline strikethrough superscript | numlist bullist link | undo redo',
-          toolbar: 'customInsert | numlist bullist link',
+          plugins:'link wordcount advlist lists code',
+          valid_elements : '*[*]',
+          toolbar: 'customInsert | numlist bullist link | code',
           setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
               // var toggleState = false;
           
               /* example, adding a toolbar menu button */
+
               editor.ui.registry.addMenuButton('customInsert', {
                 text: 'Custom links with icon',
                 icon:'template',
@@ -52,11 +52,7 @@ const TinyEditor = ({
                       onAction: function () {
                         editor.insertContent(`
                         <a href="" title=''>
-                          <em>
-                            <strong>
-                            External 
-                            </strong>
-                          </em>
+                          <em><strong>External</strong></em>
                           <small class='story-icon'>&#xe818;</small>
                         </a>
                         `);
@@ -69,18 +65,13 @@ const TinyEditor = ({
                       onAction: function () {
                         editor.insertContent(`
                         <a href="" title="">
-                          <em>
-                            <strong>
-                              Glossary
-                            </strong>
-                          </em>
-                          <sup>
-                            <small class='story-icon'>&#xe817;</small>
-                          </sup>
+                          <em><strong>Glossary</strong></em>
+                          <sup><small class='story-icon'>&#xe817;</small></sup>
                         </a>
                       `);
                       }
                     },
+
                   ]; 
                   callback(items);
                 }

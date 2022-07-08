@@ -116,65 +116,51 @@ const Reference = ({
 
     return(
         <>
-        <Grid>
-            <GridItem padding={1} col={6} s={12}>
-                {contentType.length === 0 ? (
-                    <></>
-                ):(
-                    <Select 
-                        id="collection-type" 
-                        aria-label="collection-types" 
-                        hint="Select collection types to seach references" 
-                        onClear={() => {
-                            setCollectionName('')
-                            setCollectionType([])
-                            setCollectionNumber('')
-                            setJsonference([])
-                            }
-                        }
-                        value={collectionName} 
-                        onChange={setCollectionName} 
-                        disabled={disabled}
-                        >
-                        {contentType.map((o)=>{
-                            return(
-                                <Option key={o} value={o}>{o}</Option>
-                            );
-                        })
-                        }
-                    </Select>
-                )}
-                
-            </GridItem>
-            <GridItem padding={1} col={6} s={12}>
-                <Stack>
-                    {collectionType.length === 0 ? (
-                        <></>
-                    ):(
+            <Grid>
+                <GridItem padding={1} col={6} s={12}>
+                    {contentType.length === 0 ? (<></>):(
                         <Select 
-                            id="reference" 
-                            aria-label="Select Reference" 
-                            hint="Select collection ID" 
+                            id="collection-type" 
+                            aria-label="collection-types" 
+                            hint="Select collection types to seach references" 
                             onClear={() => {
+                                setCollectionName('')
+                                setCollectionType([])
                                 setCollectionNumber('')
                                 setJsonference([])
-                            }} 
-                            value={collectionNumber} 
-                            onChange={setCollectionNumber} 
+                                }
+                            }
+                            value={collectionName} 
+                            onChange={setCollectionName} 
                             disabled={disabled}
-                        >
-                            {collectionType.map((o)=>{return(<Option key={o.id} value={o.id.toString()}>{o.name}</Option>);})}
+                            >
+                            {contentType.map((o)=>{return(<Option key={o} value={o}>{o}</Option>);})}
                         </Select>
                     )}
-
-                </Stack>
-            </GridItem>
-        </Grid>
-        <Stack>
-                {jsonReference.length === 0 ?(
-                    <>
-                    </>
-                ):(
+                </GridItem>
+                <GridItem padding={1} col={6} s={12}>
+                    <Stack>
+                        {collectionType.length === 0 ? (<></>):(
+                            <Select 
+                                id="reference" 
+                                aria-label="Select Reference" 
+                                hint="Select collection ID" 
+                                onClear={() => {
+                                    setCollectionNumber('')
+                                    setJsonference([])
+                                }} 
+                                value={collectionNumber} 
+                                onChange={setCollectionNumber} 
+                                disabled={disabled}
+                            >
+                                {collectionType.map((o)=>{return(<Option key={o.id} value={o.id.toString()}>{o.name}</Option>);})}
+                            </Select>
+                        )}
+                    </Stack>
+                </GridItem>
+            </Grid>
+            <Stack>
+                {jsonReference.length === 0 ?(<></>):(
                     <>
                     <Stack>
                         <Typography variant="beta" id="trophy-champions">Select Reference</Typography>
@@ -189,9 +175,7 @@ const Reference = ({
                     </Stack>
                     </>
                 )}
-        </Stack>
-
-
+            </Stack>
         </>
     )
 }
