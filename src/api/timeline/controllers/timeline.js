@@ -9,6 +9,7 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::timeline.timeline', ({ strapi }) => ({
   async find(ctx) {
     ctx.query = {
+      sort: 'y_date',
       pagination: {
         pageSize: 2147483647,
       },
