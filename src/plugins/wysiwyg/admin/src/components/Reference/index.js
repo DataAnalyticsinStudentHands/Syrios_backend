@@ -107,7 +107,7 @@ const Reference = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`<a href="" title=""><em><strong>reference</strong></em><sup>${itemKeyOrder[selectRadio]}</sup></a>`
+        let referenceContent=`<span><button class='reference-tag' onClick={props.toggleBottom}>Reference<sup>${itemKeyOrder[selectRadio]}</sup></button></span>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
       };
