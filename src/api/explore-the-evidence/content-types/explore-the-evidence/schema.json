@@ -24,7 +24,7 @@
       "component": "miscellaneous.explore-the-evidence-subcomponent",
       "required": true
     },
-    "timeline": {
+    "coin_catalog": {
       "type": "component",
       "repeatable": false,
       "component": "miscellaneous.explore-the-evidence-subcomponent",

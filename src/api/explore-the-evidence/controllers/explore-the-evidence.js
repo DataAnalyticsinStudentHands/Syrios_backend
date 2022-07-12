@@ -12,7 +12,7 @@ module.exports = createCoreController('api::explore-the-evidence.explore-the-evi
       populate: [
         'coin_sort.image',
         'coin_map.image',
-        'timeline.image',
+        'coin_catalog.image',
         'download.image',
       ],
       ...ctx.query
