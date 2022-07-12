@@ -108,7 +108,7 @@ const Reference = ({
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
         let referenceContent=`
-            <button class='reference-tag' onclick=toggleBottom()>
+            <button class='reference-tag'>
                 Reference
                 <sup>${itemKeyOrder[selectRadio]}</sup>
             </button>
