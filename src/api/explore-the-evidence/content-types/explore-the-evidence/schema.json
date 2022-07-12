@@ -12,18 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "text",
-      "required": true,
-      "default": "Explore the Evidence"
-    },
-    "sort": {
+    "coin_sort": {
       "type": "component",
       "repeatable": false,
       "component": "miscellaneous.explore-the-evidence-subcomponent",
       "required": true
     },
-    "map": {
+    "coin_map": {
       "type": "component",
       "repeatable": false,
       "component": "miscellaneous.explore-the-evidence-subcomponent",
@@ -35,19 +30,10 @@
       "component": "miscellaneous.explore-the-evidence-subcomponent",
       "required": true
     },
-    "download_title": {
-      "type": "richtext",
-      "default": "DOWNLOAD THE DATASET",
-      "required": true
-    },
-    "download_caption": {
-      "type": "richtext",
-      "required": true
-    },
-    "references": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reference.reference"
+    "download": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent"
     }
   }
 }

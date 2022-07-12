@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "tool_boxes",
+  "info": {
+    "singularName": "tool-box",
+    "pluralName": "tool-boxes",
+    "displayName": "tool_box",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "read_coin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    },
+    "video_library": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    },
+    "glossary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    }
+  }
+}
