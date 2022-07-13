@@ -7,6 +7,14 @@ module.exports = {
             config: { 
                 auth: false 
             }
+        },
+        { 
+            method: "GET", 
+            path: "/glossry/by-term/:term", 
+            handler: "glossary.findByTerm", 
+            config: { 
+                auth: false 
+            }
         }
     ],
   };
