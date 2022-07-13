@@ -7,7 +7,7 @@
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
-    async find(ctx) {
+      async find(ctx) {
         ctx.query = {
           populate: [
             'glossaries',
@@ -36,5 +36,32 @@ module.exports = createCoreController('api::glossary.glossary', ({strapi})=>({
         const { data, meta } = await super.findOne(ctx);
     
         return { data, meta };
-      }
+      },
+
+      async findStartWith(ctx) {
+        // console.log(ctx.params.alphabet.toUpperCase())
+        const entries = await strapi.db.query('api::glossary.glossary').findMany({
+          where: {
+            $or:[
+              {
+                term:{
+                  $startsWith: ctx.params.alphabet.toLowerCase()
+                }
+              }, 
+              {
+                term:{
+                  $startsWith: ctx.params.alphabet.toUpperCase()
+                }
+              },             
+            ],
+          },
+          populate:[
+            'glossaries'
+          ],
+          orderBy:'term',
+        });
+
+        ctx.body = entries
+      },
+
 }));
