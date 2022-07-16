@@ -30,11 +30,13 @@
     },
     "emailSubject": {
       "type": "text",
-      "required": true
+      "required": true,
+      "private": true
     },
     "emailTo": {
       "type": "email",
-      "required": true
+      "required": true,
+      "private": true
     },
     "coinData": {
       "type": "media",
