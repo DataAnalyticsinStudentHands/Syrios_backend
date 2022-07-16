@@ -27,7 +27,7 @@ const Reference = ({
 
     const [itemKeyOrder, setItemKeyOrder] = useState([]);
 
-    const [selectRadio, setSelectRadio] = useState()
+    const [selectRadio, setSelectRadio] = useState('')
 
     // async function fetchContentType(){
     //     if(isLoading === false) setIsLoading(true);
@@ -124,13 +124,14 @@ const Reference = ({
         `
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
+        setSelectRadio("")
       };
 
     // if (isLoading) return <LoadingIndicatorPage />
 
     return(
         <>
-            <Stack horizontal spacing={3}>
+            <Stack horizontal spacing={3} padding={3}>
                 <Button variant='secondary' onClick={(e)=>{fetchReferenceData(e.target.formAction.split('/admin/content-manager')[1])}}>Reference</Button>
             </Stack>
 
@@ -181,16 +182,18 @@ const Reference = ({
             {jsonReference.length === 0 ?(<></>):(
                 <Box background="neutral0" hasRadius={true} shadow="filterShadow">
                     <Stack padding={3} spacing={3}>
-                        <Typography variant="beta" id="trophy-champions">Select Reference</Typography>
                         <RadioGroup labelledBy="trophy-champions" onChange={e => setSelectRadio(e.target.value)} value={selectRadio} name="meal">
                             {jsonReference.map((o)=>{return(<Radio key={o.key} value={o.key}>{o.data.title}</Radio> );})}
                         </RadioGroup>
                     </Stack>
-                    <Stack horizontal spacing={3} justifyContent="center">
-                        <Button size="S" onClick={()=>{handleInsert()}}>
-                            Inster into Editor
-                        </Button>
-                    </Stack>
+                    { selectRadio.length === 0 ?(<></>):(
+                        <Stack horizontal spacing={3} justifyContent="center">
+                            <Button size="S" onClick={()=>{handleInsert()}}>
+                                Inster into Editor
+                            </Button>
+                        </Stack>
+                    )}
+
                 </Box>
             )}
         </>
