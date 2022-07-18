@@ -20,7 +20,7 @@ const Glossary = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" class='story-icon'>${value} &#xe817;</a>`
+        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" class="glossary-tag">${value}<i class='story-icon'> &#xe817;</i></a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue("")
@@ -28,7 +28,6 @@ const Glossary = ({
     
     async function fetchGlossary(){
         const result = await wysiwygRequests.findCollectionTypes('glossary')
-        console.log(result.results)
         setGlossaryData(result.results)
     }
 
