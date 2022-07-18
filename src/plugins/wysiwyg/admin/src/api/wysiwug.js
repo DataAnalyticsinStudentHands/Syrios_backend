@@ -19,7 +19,7 @@ const wysiwygRequests = {
     });
   },
   findCollectionTypes:async(collection)=>{
-    return await request(`/content-manager/collection-types/api::${collection}.${collection}`, {
+    return await request(`/content-manager/collection-types/api::${collection}.${collection}?pageSize=100`, {
       method: "GET",
     });
   },

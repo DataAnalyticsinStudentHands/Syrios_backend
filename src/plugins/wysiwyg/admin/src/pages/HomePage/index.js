@@ -29,17 +29,8 @@ const HomePage = () => {
 
   const fetchData = async () =>{
     if(isLoading === false) setIsLoading(true);
-
     const zoteroResults = await wysiwygRequests.findZoteroTopitems();
     const serverResult = await wysiwygRequests.findCollectionTypes('reference')
-
-    // let zarr = []
-    // zoteroResults.data.forEach((arr=>{zarr.push(arr.key)}))
-    // let sarr = []
-    // serverResult.results.forEach((arr=>{sarr.push(arr.item_key)}))
-    // let difference = zarr.filter(x=> !sarr.includes(x)).concat(sarr.filter(x=>!zarr.includes(x)))
-    // console.log(difference)
-    // console.log('before',serverResult)
 
     function getDifference(zotero, server) {
       return zotero.filter(object1 => {
@@ -48,16 +39,10 @@ const HomePage = () => {
         });
       });
     }
-    // console.log(getDifference(zoteroResults.data,serverResult.results))
     setNewReference(getDifference(zoteroResults.data,serverResult.results))
 
-    // let result = await wysiwygRequests.findCollectionTypes('reference')
     let unpublish = 0
-    serverResult.results.forEach(async(ref)=>{
-      if(ref.publishedAt === null){
-        unpublish++
-      }
-    })
+    serverResult.results.forEach(async(ref)=>{if(ref.publishedAt === null){unpublish++}})
     setUnpublish(unpublish)
     setIsLoading(false);
   }
@@ -68,75 +53,40 @@ const HomePage = () => {
 
   async function addReference(){
     setShowLoading(true)
-    newReference.forEach(async(reference)=>{
-      await wysiwygRequests.createReference(reference)
-    })
+    newReference.forEach(async(reference)=>{await wysiwygRequests.createReference(reference)})
     setShowLoading(false)
     await fetchData();
   }
 
   async function publichReference(){
     let result = await wysiwygRequests.findCollectionTypes('reference')
-    result.results.forEach(async(ref)=>{
-      if(ref.publishedAt === null){
-        await wysiwygRequests.publicReference(ref.id)
-      }
-    })
+    result.results.forEach(async(ref)=>{if(ref.publishedAt === null){await wysiwygRequests.publicReference(ref.id)}})
     setUnpublish(0)
   }
 
   return (
     <Layout>
-      <BaseHeaderLayout
-        title='New Zotero Reference'
-        subtitle='Add new references from Zotero'
-        as='h2'/>
+      <BaseHeaderLayout title='New Zotero Reference' subtitle='Add new references from Zotero' as='h2'/>
       <ContentLayout>
         {newReference.length===0 ?(
-          <>
-          <EmptyStateLayout
-            icon={<Illo />}
-            content="You don't have any new References that need to insert..."
+          <EmptyStateLayout icon={<Illo />} content="You don't have any new References that need to insert..."
             action={
-              <>
               <Stack spacing={4} horizontal padding={4}>
                 <Button
                   onClick={fetchData}
                   variant="secondary"
-                  startIcon={<Refresh />}
-                >
-                  Refresh the Table
-                </Button>
-                {unpublish===0?(
-                <>
-                <Button
-                  variant="ghost"
-                >
-                All the References are Published!</Button>
-                </>):(
-                <>
+                  startIcon={<Refresh />}>Refresh the Table</Button>
+                {unpublish===0?(<Button variant="ghost">All the References are Published!</Button>):(
                   <Button
                     onClick={publichReference}
                     variant="secondary"
                     endIcon={<Check />}
-                    loading ={showLoading}
-                  >
-                    {unpublish} References need to be Published
-                  </Button>
-                </>)}
-              </Stack>
-              </>
-            }
-          />
-          </>
-        ):(
-          <>
+                    loading ={showLoading}>{unpublish} References need to be Published</Button>)}
+              </Stack>}
+          />):(<>
             <ReferenceCount count={newReference.length} addReference={addReference}/>
-            <ReferenceTable
-              referenceData = {newReference}
-            />
-          </>
-        )}
+            <ReferenceTable referenceData = {newReference}/>
+          </>)}
       </ContentLayout>
     </Layout>
   );
