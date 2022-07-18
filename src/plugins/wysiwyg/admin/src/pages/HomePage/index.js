@@ -39,6 +39,7 @@ const HomePage = () => {
     // serverResult.results.forEach((arr=>{sarr.push(arr.item_key)}))
     // let difference = zarr.filter(x=> !sarr.includes(x)).concat(sarr.filter(x=>!zarr.includes(x)))
     // console.log(difference)
+    // console.log('before',serverResult)
 
     function getDifference(zotero, server) {
       return zotero.filter(object1 => {
@@ -49,10 +50,10 @@ const HomePage = () => {
     }
     // console.log(getDifference(zoteroResults.data,serverResult.results))
     setNewReference(getDifference(zoteroResults.data,serverResult.results))
-    
-    let result = await wysiwygRequests.findCollectionTypes('reference')
+
+    // let result = await wysiwygRequests.findCollectionTypes('reference')
     let unpublish = 0
-    result.results.forEach(async(ref)=>{
+    serverResult.results.forEach(async(ref)=>{
       if(ref.publishedAt === null){
         unpublish++
       }
@@ -68,7 +69,7 @@ const HomePage = () => {
   async function addReference(){
     setShowLoading(true)
     newReference.forEach(async(reference)=>{
-      await wysiwygRequests.createReference(reference.key)
+      await wysiwygRequests.createReference(reference)
     })
     setShowLoading(false)
     await fetchData();

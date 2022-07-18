@@ -33,10 +33,14 @@ const wysiwygRequests = {
       method: "GET",
     });
   },
-  createReference: async (item_key) => {
+  createReference: async (reference) => {
     return await request(`/content-manager/collection-types/api::reference.reference`, {
       method: "POST",
-      body:{item_key:item_key}
+      body:{
+        item_key:reference.key,
+        title:reference.data.title,
+        authorLastName:reference.data.creators[0].lastName
+      }
     });
   },
   publicReference: async (id) => {
