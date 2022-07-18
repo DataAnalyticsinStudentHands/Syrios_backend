@@ -20,7 +20,7 @@ const Glossary = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" className='story-icon'>${value} &#xe817;</a>`
+        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" class='story-icon'>${value} &#xe817;</a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue("")
@@ -37,20 +37,16 @@ const Glossary = ({
         <>
             <Stack horizontal spacing={3} padding={3}>
                 <Button variant='secondary' onClick={()=>{fetchGlossary()}}>Glossary</Button>
-                {value.length === 0 ? (<></>):(
-                <Button size="S" onClick={()=>{handleInsert()}}>
-                    Inster into Editor
-                </Button>)}
+                {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Inster into Editor</Button>)}
             </Stack>
             
             {glossaryData.length === 0 ? (<></>):(
                 <Select id="select1"
-                placeholder="Select Glossary term"
-                onClear={() => setValue("")} clearLabel="Clear the meal" 
-                // error={error} 
-                value={value} 
-                onChange={setValue} 
-                >
+                    placeholder="Select Glossary term"
+                    onClear={() => setValue("")} clearLabel="Clear the meal" 
+                    // error={error} 
+                    value={value} 
+                    onChange={setValue}>
                     {glossaryData.map((term)=>{return(<Option value={term.term} key={term.id}>{term.term}</Option>)})}
                 </Select>
             )}

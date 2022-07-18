@@ -23,7 +23,8 @@ const Reference = ({
         else if(url.split("/api::")[0] === '/collectionType'){referenceData = await wysiwygRequests.fetchCollectData(url.split("/api::")[1])}
 
         if (referenceData.references != undefined){
-            let itemkeys = referenceData.references.forEach((reference)=>{itemkeys.push(reference.item_key)})
+            let itemkeys = []
+            referenceData.references.forEach((reference)=>{itemkeys.push(reference.item_key)})
             //fetch data from Zotoer
             let zoteroReference = []
             for (const itemkey of itemkeys){
@@ -49,7 +50,6 @@ const Reference = ({
     const insertReference = (editor) => {
         let referenceContent=`
             <button class='reference-tag'>
-                Reference
                 <sup>${itemKeyOrder[selectRadio]}</sup>
             </button>
         `
@@ -62,17 +62,18 @@ const Reference = ({
         <>
             <Stack horizontal spacing={3} padding={3}>
                 <Button variant='secondary' onClick={(e)=>{fetchReferenceData(e.target.formAction.split('/admin/content-manager')[1])}}>Reference</Button>
-                { selectRadio.length === 0 ?(<></>):(<Stack horizontal spacing={3} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Inster into Editor</Button></Stack>)}
+                { selectRadio.length === 0 ?(<></>):(<Stack horizontal spacing={3} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Insert</Button></Stack>)}
             </Stack>
 
             {jsonReference.length === 0 ?(<></>):(
-                <Box background="neutral0" hasRadius={true} shadow="filterShadow">
+                // <Box background="neutral0" hasRadius={true} shadow="filterShadow">
                     <Stack padding={3} spacing={3}>
                         <RadioGroup labelledBy="trophy-champions" onChange={e => setSelectRadio(e.target.value)} value={selectRadio} name="meal">
-                            {jsonReference.map((o)=>{return(<Radio key={o.key} value={o.key}>{o.data.title}</Radio> );})}
+                            {jsonReference.map((o)=>{
+                                return(<Radio key={o.key} value={o.key}>{o.data.creators[0].lastName} - {o.data.title}</Radio> );})}
                         </RadioGroup>
                     </Stack>
-                </Box>
+                // </Box>
             )}
         </>
     )
