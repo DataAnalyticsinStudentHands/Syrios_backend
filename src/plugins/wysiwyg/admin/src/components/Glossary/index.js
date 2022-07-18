@@ -50,8 +50,6 @@ const Glossary = ({
                 // error={error} 
                 value={value} 
                 onChange={setValue} 
-                // disabled={disabled}
-                // onClick={fetchGlossary}
                 >
                     {glossaryData.map((term)=>{return(<Option value={term.term} key={term.id}>{term.term}</Option>)})}
                 </Select>
