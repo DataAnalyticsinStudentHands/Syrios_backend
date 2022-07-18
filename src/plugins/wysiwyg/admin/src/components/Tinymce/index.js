@@ -32,7 +32,7 @@ const TinyEditor = ({
           menubar: false,
           plugins:'link wordcount advlist lists code',
           valid_elements : '*[*]',
-          toolbar: 'customInsert | numlist bullist link | code',
+          toolbar: 'customInsert| bold italic underline | numlist bullist link | code',
           setup: function (editor) {
               /* Menu items are recreated when the menu is closed and opened, so we need
                  a variable to store the toggle menu item state. */
