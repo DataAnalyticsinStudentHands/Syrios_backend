@@ -51,27 +51,26 @@ const TinyEditor = ({
                       icon:'new-tab',
                       onAction: function () {
                         editor.insertContent(`
-                        <a href="" title=''>
-                          <em><strong>External</strong></em>
+                        <a href="" title='' target="_blank" rel="noopener noreferrer" class="external-tag">
+                          External
                           <small class='story-icon'>&#xe818;</small>
                         </a>
                         `);
                       }
                     },
-                    {
-                      type: 'menuitem',
-                      text: 'Glossary link',
-                      icon:'info',
-                      onAction: function () {
-                        editor.insertContent(`
-                        <a href="" title="">
-                          <em><strong>Glossary</strong></em>
-                          <sup><small class='story-icon'>&#xe817;</small></sup>
-                        </a>
-                      `);
-                      }
-                    },
-
+                    // {
+                    //   type: 'menuitem',
+                    //   text: 'Glossary link',
+                    //   icon:'info',
+                    //   onAction: function () {
+                    //     editor.insertContent(`
+                    //     <a href="" title="">
+                    //       <em><strong>Glossary</strong></em>
+                    //       <sup><small class='story-icon'>&#xe817;</small></sup>
+                    //     </a>
+                    //   `);
+                    //   }
+                    // },
                   ]; 
                   callback(items);
                 }
