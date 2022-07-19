@@ -24,11 +24,6 @@
         "images"
       ]
     },
-    "credits_and_references": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.credits-and-references"
-    },
     "zone": {
       "type": "dynamiczone",
       "components": [
