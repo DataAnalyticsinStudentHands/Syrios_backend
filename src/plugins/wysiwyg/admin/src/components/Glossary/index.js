@@ -16,7 +16,7 @@ const Glossary = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`<a href="/Toolbox/Glossary/term/${value}" class="glossary-tag">${value}<sup class='story-icon'> &#xe817;</sup></a>`
+        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" class="glossary-tag">${value}<sup class='story-icon'> &#xe817;</sup></a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue("")
