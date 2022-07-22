@@ -37,12 +37,12 @@
     },
     "left_coin_obverse_or_reverse": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "right_coin_obverse_or_reverse": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     }
   }

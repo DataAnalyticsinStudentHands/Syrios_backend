@@ -25,7 +25,7 @@
     },
     "obverse_or_reverse": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     }
   }

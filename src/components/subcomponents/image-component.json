@@ -55,7 +55,7 @@
     },
     "reverse_or_obverse": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": true
     },
     "caption_or_both": {
