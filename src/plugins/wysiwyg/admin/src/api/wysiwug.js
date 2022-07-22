@@ -50,7 +50,7 @@ const wysiwygRequests = {
   },
 
   findZoteroTopitems: async()=>{
-      return await axios(`${baseURL}/groups/4721497/items/top`,{
+      return await axios(`${baseURL}/groups/4740395/items/top`,{
         method:'GET',
         headers: {
             'Zotero-API-Version': '3',
@@ -59,7 +59,7 @@ const wysiwygRequests = {
     })
   },
   getZoteroOneItem: async(itemKey)=>{
-      return await axios(`${baseURL}/groups/4721497/items/${itemKey}`,{
+      return await axios(`${baseURL}/groups/4740395/items/${itemKey}`,{
           method:'GET',
           headers: {
               'Zotero-API-Version': '3',
@@ -68,7 +68,7 @@ const wysiwygRequests = {
       })
   },
   getZoteroOneItemBib: async(itemKey)=>{
-      return await axios(`${baseURL}/groups/4721497/items/${itemKey}`,{
+      return await axios(`${baseURL}/groups/4740395/items/${itemKey}`,{
           method:'GET',
           headers: {
               'Zotero-API-Version': '3',
