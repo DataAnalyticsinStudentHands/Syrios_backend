@@ -11,15 +11,15 @@ const Glossary = ({
     name,
     onChange,
 })=>{
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState([]);
     const [glossaryData, setGlossaryData] = useState([])
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value}" class="glossary-tag">${value}<sup class='story-icon'> &#xe817;</sup></a>`
+        let referenceContent=`<a href="/dev/Toolbox/Glossary/term/${value.term}" class="glossary-tag" data-title="${value.definition.replace(/<[^>]+>/g, '')}">${value.term}<sup class='story-icon'> &#xe817;</sup></a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
-        setValue("")
+        setValue([])
       };
 
     async function fetchGlossary(){
@@ -45,7 +45,7 @@ const Glossary = ({
                     onClear={() => setValue("")}
                     value={value} 
                     onChange={setValue}>
-                    {glossaryData.map((term)=>{return(<Option value={term.term} key={term.id}>{term.term}</Option>)})}
+                    {glossaryData.map((term)=>{return(<Option value={term} key={term.id}>{term.term}</Option>)})}
                 </Select>
             )}
         </>
