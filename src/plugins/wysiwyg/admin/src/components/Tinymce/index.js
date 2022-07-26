@@ -41,17 +41,15 @@ const TinyEditor = ({
               /* example, adding a toolbar menu button */
 
               editor.ui.registry.addMenuButton('customInsert', {
-                text: 'Custom links with icon',
+                text: 'Icons',
                 icon:'template',
                 fetch: function (callback) {
                   var items = [
                     {
                       type: 'menuitem',
-                      text: 'External Link',
+                      text: 'External Icon',
                       icon:'new-tab',
-                      onAction: function () {
-                        editor.insertContent(`<a href="" title='' target="_blank" rel="noopener noreferrer" class="external-tag"><span class='story-icon'>&#xe818;</span></a>`);
-                      }
+                      onAction: function () {editor.insertContent(`<span class='story-icon'>&nbsp;&#xe818;</span>`);}
                     },
                     // {
                     //   type: 'menuitem',
