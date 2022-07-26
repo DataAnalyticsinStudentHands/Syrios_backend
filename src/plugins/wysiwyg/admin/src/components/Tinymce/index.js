@@ -50,12 +50,7 @@ const TinyEditor = ({
                       text: 'External Link',
                       icon:'new-tab',
                       onAction: function () {
-                        editor.insertContent(`
-                        <a href="" title='' target="_blank" rel="noopener noreferrer" class="external-tag">
-                          External
-                          <small class='story-icon'>&#xe818;</small>
-                        </a>
-                        `);
+                        editor.insertContent(`<a href="" title='' target="_blank" rel="noopener noreferrer" class="external-tag"><span class='story-icon'>&#xe818;</span></a>`);
                       }
                     },
                     // {
