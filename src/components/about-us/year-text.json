@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_us_year_texts",
+  "info": {
+    "displayName": "year-text",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_us_student_collaborators",
+  "info": {
+    "displayName": "student_collaborator",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "string"
+    },
+    "subcaption": {
+      "type": "text"
+    },
+    "descriotion": {
+      "type": "richtext"
+    }
+  }
+}

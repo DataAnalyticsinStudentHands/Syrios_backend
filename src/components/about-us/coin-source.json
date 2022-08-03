@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_about_us_coin_sources",
+  "info": {
+    "displayName": "coin_source",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "museums_organizations": {
+      "type": "richtext"
+    }
+  }
+}

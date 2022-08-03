@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subcomponents_contentlinks",
+  "info": {
+    "displayName": "contentlinks",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -43,6 +43,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::glossary.glossary"
+    },
+    "contextlinks": {
+      "displayName": "contentlinks",
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.contentlinks"
     }
   }
 }
