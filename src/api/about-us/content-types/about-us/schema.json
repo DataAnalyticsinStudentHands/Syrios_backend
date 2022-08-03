@@ -46,27 +46,17 @@
       "repeatable": true,
       "component": "about-us.student-collaborator"
     },
-    "external_funding": {
+    "grants_and_funding": {
       "displayName": "year-text",
       "type": "component",
       "repeatable": true,
       "component": "about-us.year-text"
     },
-    "internal_funding": {
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.year-text"
-    },
-    "coin_source": {
+    "museums_and_organizations": {
       "displayName": "coin_source",
       "type": "component",
       "repeatable": true,
       "component": "about-us.coin-source"
-    },
-    "present_mus_org": {
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.year-text"
     }
   }
 }

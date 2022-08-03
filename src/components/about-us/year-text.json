@@ -2,7 +2,8 @@
   "collectionName": "components_about_us_year_texts",
   "info": {
     "displayName": "year-text",
-    "icon": "apple-alt"
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,11 @@
     },
     "organization": {
       "type": "text"
+    },
+    "external_or_internal": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

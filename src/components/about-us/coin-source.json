@@ -2,12 +2,19 @@
   "collectionName": "components_about_us_coin_sources",
   "info": {
     "displayName": "coin_source",
-    "icon": "allergies"
+    "icon": "allergies",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "museums_organizations": {
+    "coin_souce": {
       "type": "richtext"
+    },
+    "year": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "text"
     }
   }
 }
