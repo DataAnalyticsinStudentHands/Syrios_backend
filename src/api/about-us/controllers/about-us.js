@@ -13,11 +13,14 @@ module.exports = createCoreController('api::about-us.about-us', ({ strapi }) => 
         'logo',
         'project_directors',
         'project_directors.picture',
-        'media_content_team',
-        'media_content_team.picture',
-        'past_student_research_assistants',
-        'acknowledgment_left_link',
-        'acknowledgment_right_link',
+        'student_lead',
+        'student_lead.picture',
+        'student_collaborators',
+        'humanities_advisors',
+        'external_funding',
+        'internal_funding',
+        'coin_source',
+        'present_mus_org'
       ],
       ...ctx.query
     };
