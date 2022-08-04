@@ -16,19 +16,8 @@
       "type": "string",
       "required": true
     },
-    "tags": {
-      "type": "string"
-    },
     "text": {
       "type": "richtext"
-    },
-    "type_category": {
-      "type": "richtext"
-    },
-    "color": {
-      "type": "string",
-      "default": "#f8f8ff",
-      "required": true
     },
     "tag_subcategory1": {
       "type": "component",
