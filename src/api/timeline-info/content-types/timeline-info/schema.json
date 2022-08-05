@@ -24,6 +24,9 @@
         "timeline-objects.event",
         "timeline-objects.single-coin"
       ]
+    },
+    "subtext": {
+      "type": "richtext"
     }
   }
 }

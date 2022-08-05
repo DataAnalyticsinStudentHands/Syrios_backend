@@ -12,6 +12,9 @@ module.exports = createCoreController('api::timeline-info.timeline-info', ({ str
       populate: [
         'zone',
         'zone.event',
+        'zone.event.tag_subcategory1',
+        'zone.event.tag_subcategory2',
+
         'zone.coin',
         'zone.coin.reverse_file',
         'zone.coin.obverse_file',
