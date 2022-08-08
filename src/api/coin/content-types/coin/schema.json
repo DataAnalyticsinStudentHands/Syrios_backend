@@ -17,6 +17,11 @@
       "required": true,
       "unique": true
     },
+    "catalog_coinsort_set": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
     "modern_country": {
       "type": "enumeration",
       "enum": [
