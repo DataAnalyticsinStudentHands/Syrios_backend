@@ -288,6 +288,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::governing-power.governing-power"
+    },
+    "catalog_coinsort_set": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
