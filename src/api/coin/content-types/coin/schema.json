@@ -238,9 +238,9 @@
         "Tetradrachm",
         "Didrachm",
         "Drachma",
-        "Cistophorus", 
-        "Nummus", 
-        "Diobol", 
+        "Cistophorus",
+        "Nummus",
+        "Diobol",
         "Obol",
         "Radiate",
         "Denarius",
@@ -360,6 +360,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::governing-power.governing-power"
+    },
+    "reverse_obverse": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
