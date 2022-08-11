@@ -2,7 +2,8 @@
   "collectionName": "components_timeline_objects_connected_coins",
   "info": {
     "displayName": "connected_coins",
-    "icon": "arrow-right"
+    "icon": "arrow-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -34,6 +35,15 @@
     },
     "coin_b_y": {
       "type": "integer",
+      "required": true
+    },
+    "strokeline": {
+      "type": "enumeration",
+      "enum": [
+        "solid",
+        "dash"
+      ],
+      "default": "solid",
       "required": true
     }
   }
