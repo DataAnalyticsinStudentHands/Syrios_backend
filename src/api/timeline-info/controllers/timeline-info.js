@@ -20,7 +20,6 @@ module.exports = createCoreController('api::timeline-info.timeline-info', ({ str
         'zone.coin.obverse_file',
         'zone.coin.type_category',
         'zone.coin.governing_power',
-        'zone.strokeline',
         'zone.coin_a',
         'zone.coin_a.reverse_file',
         'zone.coin_a.obverse_file',
