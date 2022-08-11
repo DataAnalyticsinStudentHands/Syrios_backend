@@ -1,7 +1,8 @@
 {
   "collectionName": "components_miscellaneous_tag_subcategory1s",
   "info": {
-    "displayName": "tag_subcategory1"
+    "displayName": "tag_subcategory1",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -23,7 +24,10 @@
         "Emesene",
         "Commagenian",
         "Syrian",
-        "Palmyrene"
+        "Palmyrene",
+        "Persian (Achaemenid)",
+        "Greek",
+        "Roman Late Antique"
       ]
     }
   }
