@@ -22,11 +22,6 @@
       "repeatable": false,
       "component": "miscellaneous.explore-the-evidence-subcomponent"
     },
-    "timeline": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
-    },
     "glossary": {
       "type": "component",
       "repeatable": false,

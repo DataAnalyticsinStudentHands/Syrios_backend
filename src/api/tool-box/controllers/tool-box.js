@@ -12,7 +12,6 @@ module.exports = createCoreController('api::tool-box.tool-box',({strapi})=>({
           populate: [
             'read_coin.image',
             'video_library.image',
-            'timeline.image',
             'glossary.image',
           ],
           ...ctx.query

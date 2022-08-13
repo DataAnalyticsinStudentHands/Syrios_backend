@@ -14,6 +14,7 @@ module.exports = createCoreController('api::explore-the-evidence.explore-the-evi
         'coin_map.image',
         'coin_catalog.image',
         'download.image',
+        'timeline.image',
       ],
       ...ctx.query
     };
