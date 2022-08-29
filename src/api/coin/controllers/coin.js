@@ -31,6 +31,9 @@ module.exports = createCoreController('api::coin.coin', ({ strapi }) => ({
         'type_category',
         'governing_power',
       ],
+      filters:{
+        catalog_coinsort_set:true
+      },
       ...ctx.query
     };
 
