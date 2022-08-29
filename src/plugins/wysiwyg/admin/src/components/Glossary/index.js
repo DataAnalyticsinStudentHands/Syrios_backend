@@ -18,7 +18,7 @@ const Glossary = ({
     const insertReference = (editor) => {
         let referenceContent=`
         <a 
-            href="Toolbox/Glossary/term/${value.term}" 
+            href="/Toolbox/Glossary/term/${value.term}" 
             class="glossary-tag" 
             data-title="${value.definition.replace(/<[^>]+>/g, '').trim().split("\n")[0]}">
             ${value.term}<sup class='story-icon'> &#xe817;</sup>
