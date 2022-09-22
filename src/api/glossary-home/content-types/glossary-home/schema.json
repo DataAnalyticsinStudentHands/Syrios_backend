@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "glossary_homes",
+  "info": {
+    "singularName": "glossary-home",
+    "pluralName": "glossary-homes",
+    "displayName": "glossary_home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "sub_text": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
