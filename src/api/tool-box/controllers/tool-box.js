@@ -10,9 +10,8 @@ module.exports = createCoreController('api::tool-box.tool-box',({strapi})=>({
     async find(ctx) {
         ctx.query = {
           populate: [
-            'read_coin.image',
-            'video_library.image',
-            'glossary.image',
+            'image_icons',
+            'image_icons.image',
           ],
           ...ctx.query
         };

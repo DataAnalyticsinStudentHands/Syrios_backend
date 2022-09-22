@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_image_icons",
+  "info": {
+    "displayName": "image_icons"
+  },
+  "options": {},
+  "attributes": {
+    "url_path": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -12,33 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "coin_sort": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent",
-      "required": true
+    "title": {
+      "type": "string"
     },
-    "coin_map": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent",
-      "required": true
+    "text": {
+      "type": "text"
     },
-    "coin_catalog": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent",
-      "required": true
+    "subtext": {
+      "type": "text"
     },
-    "download": {
+    "image_icon": {
       "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
-    },
-    "timeline": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
+      "repeatable": true,
+      "component": "overview.image-icon",
+      "required": true,
+      "max": 5,
+      "min": 5
     }
   }
 }

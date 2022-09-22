@@ -12,20 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "read_coin": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    "title": {
+      "type": "string"
     },
-    "video_library": {
-      "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
+    "text": {
+      "type": "text"
     },
-    "glossary": {
+    "image_icons": {
       "type": "component",
-      "repeatable": false,
-      "component": "miscellaneous.explore-the-evidence-subcomponent"
+      "repeatable": true,
+      "component": "overview.image-icon",
+      "required": true,
+      "max": 5,
+      "min": 5
+    },
+    "subtext": {
+      "type": "text"
     }
   }
 }

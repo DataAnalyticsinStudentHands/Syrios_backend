@@ -10,17 +10,12 @@ module.exports = createCoreController('api::explore-the-evidence.explore-the-evi
   async find(ctx) {
     ctx.query = {
       populate: [
-        'coin_sort.image',
-        'coin_map.image',
-        'coin_catalog.image',
-        'download.image',
-        'timeline.image',
+        'image_icons',
+        'image_icons.image',
       ],
       ...ctx.query
     };
-
     const { data, meta } = await super.find(ctx);
-
     return { data, meta };
   }
 }));

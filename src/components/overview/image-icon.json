@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_overview_image_icons",
+  "info": {
+    "displayName": "image_icon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url_path": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "size": {
+      "type": "integer",
+      "max": 100,
+      "min": 1,
+      "default": 15,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtext": {
+      "type": "text"
+    }
+  }
+}
