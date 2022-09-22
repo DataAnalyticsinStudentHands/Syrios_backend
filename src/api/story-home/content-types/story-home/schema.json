@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "story_homes",
+  "info": {
+    "singularName": "story-home",
+    "pluralName": "story-homes",
+    "displayName": "story_home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "head": {
+      "type": "text"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "sub_text": {
+      "type": "richtext"
+    }
+  }
+}
