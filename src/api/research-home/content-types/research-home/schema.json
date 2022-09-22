@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "research_homes",
+  "info": {
+    "singularName": "research-home",
+    "pluralName": "research-homes",
+    "displayName": "research_home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "bookcover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "book_description": {
+      "type": "richtext"
+    }
+  }
+}
