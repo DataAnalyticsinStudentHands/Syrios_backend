@@ -10,8 +10,8 @@ module.exports = createCoreController('api::explore-the-evidence.explore-the-evi
   async find(ctx) {
     ctx.query = {
       populate: [
-        'image_icons',
-        'image_icons.image',
+        'image_icon',
+        'image_icon.image',
       ],
       ...ctx.query
     };
