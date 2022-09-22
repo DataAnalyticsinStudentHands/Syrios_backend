@@ -4,7 +4,8 @@
   "info": {
     "singularName": "landing-page",
     "pluralName": "landing-pages",
-    "displayName": "landing_page"
+    "displayName": "landing_page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -21,6 +22,15 @@
     },
     "video_link": {
       "type": "string",
+      "required": true
+    },
+    "image_icons": {
+      "displayName": "image_icons",
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page.image-icons",
+      "max": 4,
+      "min": 4,
       "required": true
     }
   }
