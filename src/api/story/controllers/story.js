@@ -9,11 +9,11 @@ const { createCoreController } = require('@strapi/strapi').factories;
 module.exports = createCoreController('api::story.story', ({ strapi }) => ({
   async find(ctx) {
     const position = ctx.request.url.search('env=development')
-    let state = undefined
-    position === -1 ? state = 'Production': state = undefined
+    let Status = undefined
+    position === -1 ? Status = true: Status = undefined
     ctx.query = {
       filters:{
-        Status: state
+        contentStatus: Status
       },
       populate: [
         'image'
