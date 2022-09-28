@@ -8,7 +8,13 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::story.story', ({ strapi }) => ({
   async find(ctx) {
+    const position = ctx.request.url.search('env=development')
+    let state = undefined
+    position === -1 ? state = 'Production': state = undefined
     ctx.query = {
+      filters:{
+        Status: state
+      },
       populate: [
         'image'
       ],
@@ -17,6 +23,7 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
       },
       ...ctx.query
     };
+
 
     const { data, meta } = await super.find(ctx);
 
@@ -137,7 +144,6 @@ module.exports = createCoreController('api::story.story', ({ strapi }) => ({
         'zone.cc_coin.coin.reverse_file',
         'zone.cc_coin.coin.type_category',
       ],
-
       // If a request with a different populate strategy, it'll replace the default population strategy
       ...ctx.query
     };

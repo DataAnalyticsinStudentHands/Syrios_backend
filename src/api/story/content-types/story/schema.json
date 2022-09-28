@@ -62,6 +62,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reference.reference"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Development",
+        "Production"
+      ],
+      "default": "Development",
+      "required": true
     }
   }
 }
