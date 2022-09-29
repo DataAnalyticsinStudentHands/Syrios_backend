@@ -14,6 +14,7 @@ import {LoadingIndicatorPage} from "@strapi/helper-plugin";
 import TinyEditor from '../Tinymce';
 import Reference from '../Reference';
 import Glossary from '../Glossary';
+import Story from '../StoryButton';
 
 import wysiwygRequests from '../../api/wysiwug';
 import { TextInput } from '@strapi/design-system/TextInput';
@@ -68,17 +69,10 @@ const Wysiwyg = ({
         </Stack>
 
 
-      <Stack>
-      <Glossary
-          disabled={disabled}
-          editorRef={editorRef}
-          name={name}
-        />
-        <Reference
-          disabled={disabled}
-          editorRef={editorRef}
-          name={name}
-        />
+      <Stack horizontal spacing={5}>
+        <Glossary disabled={disabled} editorRef={editorRef} name={name}/>
+        <Reference disabled={disabled} editorRef={editorRef}name={name}/>
+        <Story disabled={disabled} editorRef={editorRef} name={name}/>
       </Stack>
 
         <TinyEditor

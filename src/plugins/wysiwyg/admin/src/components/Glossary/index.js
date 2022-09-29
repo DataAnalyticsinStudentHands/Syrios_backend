@@ -26,6 +26,7 @@ const Glossary = ({
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue([])
+        setGlossaryData([])
       };
 
     async function fetchGlossary(){
@@ -35,25 +36,27 @@ const Glossary = ({
             if ( a.term  > b.term  ){return 1;}
             return 0;}
         result = result.results.sort(compare)
+        console.log(result)
         setGlossaryData(result)
     }
 
     return(
         <>
-            <Stack horizontal spacing={3} padding={3}>
+            <Stack spacing={3} padding={3}>
                 <Button variant='secondary' onClick={()=>{fetchGlossary()}}>Glossary</Button>
+                {glossaryData.length === 0 ? (<></>):(
+                    <Select id="select1"
+                        placeholder="Select Glossary term"
+                        onClear={() => setValue("")}
+                        value={value} 
+                        onChange={setValue}>
+                        {glossaryData.map((term)=>{
+                            console.log(term)
+                            return(<Option value={term} key={term.id}>{term.term}</Option>)})}
+                    </Select>
+                )}
                 {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Instert</Button>)}
             </Stack>
-            
-            {glossaryData.length === 0 ? (<></>):(
-                <Select id="select1"
-                    placeholder="Select Glossary term"
-                    onClear={() => setValue("")}
-                    value={value} 
-                    onChange={setValue}>
-                    {glossaryData.map((term)=>{return(<Option value={term} key={term.id}>{term.term}</Option>)})}
-                </Select>
-            )}
         </>
     )
 }
