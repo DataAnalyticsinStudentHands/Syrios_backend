@@ -15,6 +15,7 @@ import TinyEditor from '../Tinymce';
 import Reference from '../Reference';
 import Glossary from '../Glossary';
 import Story from '../StoryButton';
+import Timeline from '../Timeline';
 
 import wysiwygRequests from '../../api/wysiwug';
 import { TextInput } from '@strapi/design-system/TextInput';
@@ -73,6 +74,8 @@ const Wysiwyg = ({
         <Glossary disabled={disabled} editorRef={editorRef} name={name}/>
         <Reference disabled={disabled} editorRef={editorRef}name={name}/>
         <Story disabled={disabled} editorRef={editorRef} name={name}/>
+        <Timeline disabled={disabled} editorRef={editorRef} name={name}/>
+
       </Stack>
 
         <TinyEditor

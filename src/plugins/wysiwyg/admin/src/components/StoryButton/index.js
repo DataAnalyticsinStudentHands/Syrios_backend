@@ -12,22 +12,16 @@ const Story = ({
     onChange,
 })=>{
     const [storyData, setStoryData] = useState([])
-    const [storyID, setStoryID] = useState('');
     const [story, setStory] = useState([])
     const [slideID, setSlideID] = useState('')
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
         let referenceContent = undefined
+
         slideID === 1 
-        ? referenceContent=`
-        <a href="/StoryReader?id=${storyID}">
-            ${story.name}-slides-${slideID}
-        </a>`
-        : referenceContent=`
-        <a href="/StoryReader?id=${storyID}#${story.name.replace(/\s/g, '')}-slides-${slideID}">
-            ${story.name}-slides-${slideID}
-        </a>`
+        ? referenceContent=`<a href="/StoryReader?id=${story.id}">${story.name}-slides-${slideID}</a>`
+        : referenceContent=`<a href="/StoryReader?id=${story.id}#${/\s/.test(story.name) ? story.name.replace(/\s/g, ''): story.name}-slides-${slideID}">${story.name}-slides-${slideID}</a>`
 
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
@@ -41,15 +35,6 @@ const Story = ({
         setStoryData(result.results)
     }
 
-
-    useEffect(()=>{
-        storyData.map((i)=>{
-            if(i.id === storyID){
-                console.log(i.zone)
-                setStory(i.zone) 
-            }
-        })
-    },[storyID])
     return(
         <>
             <Stack spacing={3} padding={3}>
@@ -57,24 +42,27 @@ const Story = ({
             {storyData.length === 0 ? (<></>):(
                 <Select id="selectStoryID"
                     placeholder="Select Story name"
-                    onClear={() => setStoryID("")}
-                    value={storyID} 
-                    onChange={setStoryID}>
+                    onClear={() => setStoryData([])}
+                    clearLabel="Clear the story" 
+                    value={story} 
+                    onChange={setStory}>
                     {storyData.map((i)=>{
                         return(
-                            <Option value={i.id} key={'story_'+i.id}>{i.name}</Option>
+                            <Option value={i} key={'story_'+i.id}>{i.name}</Option>
                         )
                     })}
                 </Select>
             )}
             {/* There is warning about the second select box, but it fine to use  */}
             {story.length === 0 ? (<></>):(
-                <Select id="selectStoryFrame"
+                <Select 
+                    id="selectStoryFrame"
                     placeholder="Select Story Frame"
-                    onClear={() => setSlideID("")}
+                    onClear={() => setStory([])}
+                    clearLabel="Clear the frame" 
                     value={slideID} 
                     onChange={setSlideID}>
-                    {story.map((s, index)=>{
+                    {story.zone.map((s, index)=>{
                         return(
                             <Option key={'slide_'+index+1} value={index+1}>{index+1}:{s.__component}</Option>
                         )
