@@ -16,6 +16,7 @@ import Reference from '../Reference';
 import Glossary from '../Glossary';
 import Story from '../StoryButton';
 import Timeline from '../Timeline';
+import SinglePage from '../SinglePage';
 
 import wysiwygRequests from '../../api/wysiwug';
 import { TextInput } from '@strapi/design-system/TextInput';
@@ -75,6 +76,7 @@ const Wysiwyg = ({
         <Reference disabled={disabled} editorRef={editorRef}name={name}/>
         <Story disabled={disabled} editorRef={editorRef} name={name}/>
         <Timeline disabled={disabled} editorRef={editorRef} name={name}/>
+        <SinglePage disabled={disabled} editorRef={editorRef} name={name}/>
 
       </Stack>
 
