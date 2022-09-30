@@ -19,16 +19,14 @@ const Timeline = ({
         setTimeout(() => editor.current.focus(), 0);
         setValue('')
       };
-
-      const timelineYear = [-450, -400, -350, -300, -250, -200, -150, -100, -50, 0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
-      
+    const timelineYear = [-450, -400, -350, -300, -250, -200, -150, -100, -50, 0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
     return(
         <>
             <Stack spacing={3} padding={3}>
                     <Select 
                         id="TimelineSelect" 
                         placeholder="Timeline" 
-                        onClear={() => setValue(undefined)} 
+                        onClear={() => setValue('')} 
                         clearLabel="Clear the year" 
                         value={value} 
                         onChange={setValue}>

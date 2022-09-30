@@ -16,13 +16,10 @@ const Glossary = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let referenceContent=`
-        <a 
-            href="/Toolbox/Glossary/term/${value.term}" 
-            class="glossary-tag" 
-            data-title="${value.definition.replace(/<[^>]+>/g, '').trim().split("\n")[0]}">
-            ${value.term}<sup class='story-icon'> &#xe817;</sup>
-        </a>`
+        let referenceContent= undefined
+        value.definition == null 
+        ?referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag" >${value.term}<sup class='story-icon'> &#xe817;</sup></a>`
+        :referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag" data-title="${/\s/.test(value.definition) ? value.definition.replace(/<[^>]+>/g, '').split("\n")[0] : value.definition.split("\n")[0]}">${value.term}<sup class='story-icon'> &#xe817;</sup></a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue([])
@@ -47,7 +44,7 @@ const Glossary = ({
                     <Select 
                         id="GlossarySelect"
                         placeholder="Select Glossary term"
-                        onClear={() => setValue("")}
+                        onClear={() => setGlossaryData([])}
                         clearLabel="Clear the Glossary term" 
                         value={value} 
                         onChange={setValue}>

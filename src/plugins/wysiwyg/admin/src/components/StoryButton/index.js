@@ -18,11 +18,9 @@ const Story = ({
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
         let referenceContent = undefined
-
         slideID === 1 
         ? referenceContent=`<a href="/StoryReader?id=${story.id}">${story.name}-slides-${slideID}</a>`
         : referenceContent=`<a href="/StoryReader?id=${story.id}#${/\s/.test(story.name) ? story.name.replace(/\s/g, ''): story.name}-slides-${slideID}">${story.name}-slides-${slideID}</a>`
-
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setStoryData([])
