@@ -11,7 +11,9 @@ module.exports = createCoreController('api::event.event', ({strapi})=>({
         ctx.query = {
           populate: [
             'tag_subcategory1',
-            'tag_subcategory2'
+            'tag_subcategory2',
+            'governing_powers',
+            'topics'
           ],
           pagination: {
             pageSize: 100,
@@ -26,7 +28,9 @@ module.exports = createCoreController('api::event.event', ({strapi})=>({
         ctx.query = {
           populate: [
             'tag_subcategory1',
-            'tag_subcategory2'
+            'tag_subcategory2',
+            'governing_powers',
+            'topics'
           ],
               ...ctx.query
         };
