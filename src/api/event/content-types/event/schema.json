@@ -32,6 +32,16 @@
     "color": {
       "type": "string",
       "required": true
+    },
+    "governing_powers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::governing-power.governing-power"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
     }
   }
 }
