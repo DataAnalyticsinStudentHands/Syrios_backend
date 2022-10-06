@@ -13,7 +13,7 @@ const Timeline = ({
 
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
-        let content=`<a href="/Evidence/Timeline#${value}" >${value}</a>`
+        let content=`<a href="/Evidence/Timeline#${value}" class="icon-syrios-coin-timeline">${value}</a>`
         editor.current.insertContent(content)
         setTimeout(() => editor.current.focus(), 0);
         setValue('')
@@ -34,7 +34,7 @@ const Timeline = ({
                                 else{return <Option key={year} value={`${Math.abs(year)}CE`}>{`${Math.abs(year)} CE`}</Option>}
                             })}
                     </Select>
-                    {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Instert</Button>)}
+                    {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Insert</Button>)}
 
             </Stack>
         </>

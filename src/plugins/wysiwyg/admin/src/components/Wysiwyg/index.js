@@ -1,28 +1,16 @@
-
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { useIntl } from 'react-intl';
 import { Typography } from '@strapi/design-system/Typography';
 import { Box } from '@strapi/design-system/Box';
 import { Stack } from '@strapi/design-system/Stack';
-import { prefixFileUrlWithBackendUrl, useLibrary } from '@strapi/helper-plugin';
-import { IconButtonGroup, IconButton } from '@strapi/design-system/IconButton';
-import Image from '@strapi/icons/Picture';
-import {LoadingIndicatorPage} from "@strapi/helper-plugin";
-
+import { Grid, GridItem } from '@strapi/design-system/Grid';
 import TinyEditor from '../Tinymce';
 import Reference from '../Reference';
 import Glossary from '../Glossary';
 import Story from '../StoryButton';
 import Timeline from '../Timeline';
 import SinglePage from '../SinglePage';
-
-import wysiwygRequests from '../../api/wysiwug';
-import { TextInput } from '@strapi/design-system/TextInput';
-import { Button } from '@strapi/design-system/Button';
-import { Select, Option } from '@strapi/design-system/Select';
-
 
 const Wysiwyg = ({
   description,
@@ -70,15 +58,13 @@ const Wysiwyg = ({
 
         </Stack>
 
-
-      <Stack horizontal spacing={5}>
-        <Glossary disabled={disabled} editorRef={editorRef} name={name}/>
-        <Reference disabled={disabled} editorRef={editorRef}name={name}/>
-        <Story disabled={disabled} editorRef={editorRef} name={name}/>
-        <Timeline disabled={disabled} editorRef={editorRef} name={name}/>
-        <SinglePage disabled={disabled} editorRef={editorRef} name={name}/>
-
-      </Stack>
+        <Grid gap={0}>
+          <GridItem col={6} s={12}><Reference disabled={disabled} editorRef={editorRef}name={name}/></GridItem>
+          <GridItem col={6} s={12}><Story disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
+          <GridItem col={6} s={12}><Glossary disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
+          <GridItem col={3} s={3} xs={6}><Timeline disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
+          <GridItem col={3} s={3} xs={6}><SinglePage disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
+        </Grid>
 
         <TinyEditor
           disabled={disabled}

@@ -18,8 +18,8 @@ const Glossary = ({
     const insertReference = (editor) => {
         let referenceContent= undefined
         value.definition == null 
-        ?referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag" >${value.term}<sup class='story-icon'> &#xe817;</sup></a>`
-        :referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag" data-title="${/\s/.test(value.definition) ? value.definition.replace(/<[^>]+>/g, '').split("\n")[0] : value.definition.split("\n")[0]}">${value.term}<sup class='story-icon'> &#xe817;</sup></a>`
+        ?referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag icon-entypo-info" >${value.term}</a>`
+        :referenceContent=`<a href="/Toolbox/Glossary/term/${value.term}" class="glossary-tag icon-entypo-info" data-title="${/\s/.test(value.definition) ? value.definition.replace(/<[^>]+>/g, '').split("\n")[0] : value.definition.split("\n")[0]}">${value.term}</a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setValue([])
@@ -51,7 +51,7 @@ const Glossary = ({
                         {glossaryData.map((term)=>{return <Option value={term} key={term.id}>{term.term}</Option>})}
                     </Select>
                 )}
-                {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Instert</Button>)}
+                {value.length === 0 ? (<></>):(<Button size="S" onClick={()=>{handleInsert()}}>Insert</Button>)}
             </Stack>
         </>
     )

@@ -18,9 +18,9 @@ const Story = ({
     const handleInsert = ()=>{insertReference(editorRef)}
     const insertReference = (editor) => {
         let referenceContent = undefined
-        slideID === 1 
-        ? referenceContent=`<a href="/StoryReader?id=${story.id}">${story.name}-slides-${slideID}</a>`
-        : referenceContent=`<a href="/StoryReader?id=${story.id}#${/\s/.test(story.name) ? story.name.replace(/\s/g, ''): story.name}-slides-${slideID}">${story.name}-slides-${slideID}</a>`
+        slideID == 1 
+        ? referenceContent=`<a href="/StoryReader?id=${story.id}" class="icon-syrios-stories-book">${story.name}-slides-${slideID}</a>`
+        : referenceContent=`<a href="/StoryReader?id=${story.id}#${/\s/.test(story.name) ? story.name.replace(/\s/g, ''): story.name}-slides-${slideID}" class="icon-syrios-stories-book">${story.name}-slides-${slideID}</a>`
         editor.current.insertContent(referenceContent)
         setTimeout(() => editor.current.focus(), 0);
         setStoryData([])
@@ -52,11 +52,11 @@ const Story = ({
                 </Select>
             )}
             {/* There is warning about the second select box, but it fine to use  */}
-            {story.length === 0 ? (<></>):(
+            {story.length === 0 || storyData.length === 0 ? (<></>):(
                 <Select 
                     id="selectStoryFrame"
                     placeholder="Select Story Frame"
-                    onClear={() => setStory([])}
+                    onClear={() => setSlideID('')}
                     clearLabel="Clear the frame" 
                     value={slideID} 
                     onChange={setSlideID}>
@@ -67,7 +67,7 @@ const Story = ({
                     })}
                 </Select>
             )}
-            {story.length === 0 ? (<></>):(<Stack horizontal spacing={6} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Instert</Button></Stack>)}
+            {story.length === 0 || storyData.length === 0 ? (<></>):(<Stack horizontal spacing={6} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Insert</Button></Stack>)}
 
             </Stack>
 
