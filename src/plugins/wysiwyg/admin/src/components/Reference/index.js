@@ -56,21 +56,20 @@ const Reference = ({
 
     return(
         <>
-            <Stack horizontal spacing={3} padding={3}>
+            <Stack spacing={3} padding={3}>
                 <Button variant='secondary' onClick={(e)=>{fetchReferenceData(e.target.formAction.split('/admin/content-manager')[1])}}>Reference</Button>
+                {jsonReference.length === 0 ?(<></>):(
+                        <Stack padding={3} spacing={3}>
+                            <RadioGroup labelledBy="trophy-champions" onChange={e => setSelectRadio(e.target.value)} value={selectRadio} name="meal">
+                                {jsonReference.map((o)=>{
+                                    return(<Radio key={o.key} value={o.key}>{o.data.creators[0].lastName} - {o.data.title}</Radio> );})}
+                            </RadioGroup>
+                        </Stack>
+                )}
                 { selectRadio.length === 0 ?(<></>):(<Stack horizontal spacing={3} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Insert</Button></Stack>)}
+
             </Stack>
 
-            {jsonReference.length === 0 ?(<></>):(
-                // <Box background="neutral0" hasRadius={true} shadow="filterShadow">
-                    <Stack padding={3} spacing={3}>
-                        <RadioGroup labelledBy="trophy-champions" onChange={e => setSelectRadio(e.target.value)} value={selectRadio} name="meal">
-                            {jsonReference.map((o)=>{
-                                return(<Radio key={o.key} value={o.key}>{o.data.creators[0].lastName} - {o.data.title}</Radio> );})}
-                        </RadioGroup>
-                    </Stack>
-                // </Box>
-            )}
         </>
     )
 }
