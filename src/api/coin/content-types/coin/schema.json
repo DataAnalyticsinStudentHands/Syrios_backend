@@ -365,6 +365,11 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "spotlight_on": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
