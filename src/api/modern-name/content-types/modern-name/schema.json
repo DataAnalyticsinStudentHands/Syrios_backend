@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modern_names",
+  "info": {
+    "singularName": "modern-name",
+    "pluralName": "modern-names",
+    "displayName": "modern_name"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "modern_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

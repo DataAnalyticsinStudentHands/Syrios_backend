@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_coin_collection_component_obverse_reverses",
+  "info": {
+    "displayName": "obverse_reverse"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "legend": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

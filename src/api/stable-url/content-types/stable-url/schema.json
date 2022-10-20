@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stable_urls",
+  "info": {
+    "singularName": "stable-url",
+    "pluralName": "stable-urls",
+    "displayName": "stable_url",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uri": {
+      "type": "string"
+    },
+    "stable_uri": {
+      "type": "string"
+    }
+  }
+}

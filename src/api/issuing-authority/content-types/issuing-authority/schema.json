@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issuing_authorities",
+  "info": {
+    "singularName": "issuing-authority",
+    "pluralName": "issuing-authorities",
+    "displayName": "issuing_authority"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "issuing_authority": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

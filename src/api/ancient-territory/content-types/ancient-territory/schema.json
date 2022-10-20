@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ancient_territories",
+  "info": {
+    "singularName": "ancient-territory",
+    "pluralName": "ancient-territories",
+    "displayName": "ancient_territory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ancient_territory": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

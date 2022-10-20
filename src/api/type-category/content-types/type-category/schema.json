@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_categories",
+  "info": {
+    "singularName": "type-category",
+    "pluralName": "type-categories",
+    "displayName": "type_category"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_category": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coin_collections",
+  "info": {
+    "singularName": "coin-collection",
+    "pluralName": "coin-collections",
+    "displayName": "coin_collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coin_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "stable_type_uri": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "reference": {
+      "type": "richtext"
+    },
+    "souce_image": {
+      "type": "string"
+    },
+    "obverse": {
+      "displayName": "obverse_reverse",
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-collection-component.obverse-reverse",
+      "required": true
+    },
+    "reverse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coin-collection-component.obverse-reverse",
+      "required": true
+    },
+    "from_year": {
+      "type": "integer"
+    },
+    "to_year": {
+      "type": "integer"
+    },
+    "diameter": {
+      "type": "integer"
+    },
+    "spotlight": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "appear_catalog_pile": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "obverse_uris": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stable-url.stable-url"
+    },
+    "reverse_uris": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stable-url.stable-url"
+    },
+    "ancient_territory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ancient-territory.ancient-territory"
+    },
+    "material": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::material.material"
+    },
+    "denomination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::denomination.denomination"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "issuing_authority": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::issuing-authority.issuing-authority"
+    },
+    "type_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-category.type-category"
+    },
+    "governing_power": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::governing-power.governing-power"
+    },
+    "mint": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mint.mint"
+    }
+  }
+}

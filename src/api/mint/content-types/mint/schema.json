@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mints",
+  "info": {
+    "singularName": "mint",
+    "pluralName": "mints",
+    "displayName": "mint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mint": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "stable_uri": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "modern_name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modern-name.modern-name"
+    },
+    "modern_country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modern-country.modern-country"
+    }
+  }
+}

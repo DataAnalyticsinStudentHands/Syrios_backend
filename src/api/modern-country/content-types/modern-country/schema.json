@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modern_countries",
+  "info": {
+    "singularName": "modern-country",
+    "pluralName": "modern-countries",
+    "displayName": "modern_country"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "modern_country": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

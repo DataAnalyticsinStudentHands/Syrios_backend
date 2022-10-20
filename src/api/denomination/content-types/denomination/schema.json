@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "denominations",
+  "info": {
+    "singularName": "denomination",
+    "pluralName": "denominations",
+    "displayName": "denomination"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "denomination": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
