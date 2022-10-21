@@ -28,19 +28,6 @@
     "souce_image": {
       "type": "string"
     },
-    "obverse": {
-      "displayName": "obverse_reverse",
-      "type": "component",
-      "repeatable": false,
-      "component": "coin-collection-component.obverse-reverse",
-      "required": true
-    },
-    "reverse": {
-      "type": "component",
-      "repeatable": false,
-      "component": "coin-collection-component.obverse-reverse",
-      "required": true
-    },
     "from_year": {
       "type": "integer"
     },
@@ -109,6 +96,37 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::mint.mint"
+    },
+    "obverse_type": {
+      "type": "string"
+    },
+    "obverse_legend": {
+      "type": "string"
+    },
+    "obverse_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "reverse_type": {
+      "type": "string"
+    },
+    "reverse_legend": {
+      "type": "string"
+    },
+    "reverse_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "right_holder": {
+      "type": "string"
     }
   }
 }
