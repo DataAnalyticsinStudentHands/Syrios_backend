@@ -35,6 +35,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::modern-country.modern-country"
+    },
+    "uri": {
+      "type": "string"
     }
   }
 }
