@@ -1,4 +1,4 @@
-module.exports = {
+module.exports =({env}) =>( {
     'wysiwyg': {
       enabled: true,
       resolve: './src/plugins/wysiwyg'
@@ -6,4 +6,12 @@ module.exports = {
     'import-export-entries': {
       enabled: true,
     },
+    email: {
+      provider: 'sendmail',
+      settings: {
+        defaultFrom: 'shaotianhao1997@gmail.com',
+        defaultReplyTo: 'shaotianhao1997@gmail.com',
+      },
+    },
   }
+)
