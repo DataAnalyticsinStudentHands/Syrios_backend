@@ -26,8 +26,9 @@ module.exports = createCoreController('api::download.download', ({ strapi }) => 
     const emailSubject = result['results'][0]['emailSubject']  
     const fullName =ctx.request.body.fullName    
     
+    //console.log('email:'+email, 'emailTo:'+emailTo, 'emailSubject:'+emailSubject, "fullName:"+fullName)
     strapi.service('api::download.download').send(
-      email,       
+      'syrioswebadmin@syrios.cs.uh.edu',       
       emailTo,       
       emailSubject,       
       `${fullName} request download data, and the email is ${email}` 
@@ -35,7 +36,8 @@ module.exports = createCoreController('api::download.download', ({ strapi }) => 
 
     // Send response to the server.    
     ctx.send({      
-      ok: true,    
+      ok: true,
+
     });  
   },
 
