@@ -82,9 +82,9 @@
       "relation": "oneToOne",
       "target": "api::issuing-authority.issuing-authority"
     },
-    "type_category": {
+    "type_categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::type-category.type-category"
     },
     "governing_power": {

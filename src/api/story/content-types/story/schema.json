@@ -40,11 +40,6 @@
         "frame.values-frame"
       ]
     },
-    "tag_subcategory2": {
-      "type": "component",
-      "repeatable": true,
-      "component": "miscellaneous.tag-subcategory2"
-    },
     "references": {
       "type": "relation",
       "relation": "oneToMany",
@@ -54,6 +49,11 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "type_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type-category.type-category"
     }
   }
 }
