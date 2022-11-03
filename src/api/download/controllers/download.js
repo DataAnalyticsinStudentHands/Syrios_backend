@@ -31,7 +31,7 @@ module.exports = createCoreController('api::download.download', ({ strapi }) => 
       'syrioswebadmin@syrios.cs.uh.edu',       
       emailTo,       
       emailSubject,       
-      `${fullName} request download data, and the email is ${email}` 
+      `${fullName} request download data, and the email is ${email}`,
     );
 
     // Send response to the server.    

@@ -2,7 +2,8 @@
   "collectionName": "components_subcomponents_text_components",
   "info": {
     "displayName": "text_component",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,8 +17,10 @@
       "type": "enumeration",
       "enum": [
         "null",
+        "light-white-background",
         "light-blue-background",
-        "light-yellow-background"
+        "light-yellow-background",
+        "light-green-background"
       ],
       "default": "null",
       "required": true

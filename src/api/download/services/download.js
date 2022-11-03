@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 module.exports = createCoreService('api::download.download',({strapi})=>({
     send(from, to, subject, text) {
         // Setup e-mail data.
-        const options = {from,to,subject,text,};
+        const options = {from,to,subject,text};
         // Return a promise of the function that sends the email.
         return transporter.sendMail(options);
     },
