@@ -11,7 +11,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.head",
-      "required": true
+      "required": false
     },
     "it_image": {
       "type": "component",
@@ -30,16 +30,6 @@
       "default": false,
       "required": true
     },
-    "grid_option": {
-      "type": "enumeration",
-      "enum": [
-        "half",
-        "third",
-        "quarter"
-      ],
-      "required": true,
-      "default": "half"
-    },
     "background": {
       "type": "media",
       "multiple": false,
@@ -47,6 +37,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "image_grid": {
+      "type": "integer",
+      "max": 12,
+      "min": 1,
+      "default": 6
     }
   }
 }

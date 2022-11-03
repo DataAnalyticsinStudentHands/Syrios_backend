@@ -11,7 +11,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.head",
-      "required": true
+      "required": false
     },
     "tt_text_left": {
       "type": "component",

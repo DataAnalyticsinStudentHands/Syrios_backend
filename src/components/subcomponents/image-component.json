@@ -62,6 +62,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "image_size": {
+      "type": "integer",
+      "max": 200,
+      "min": 1,
+      "default": 100
     }
   }
 }

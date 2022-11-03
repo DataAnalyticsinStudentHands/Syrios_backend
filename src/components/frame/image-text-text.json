@@ -11,7 +11,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.head",
-      "required": true
+      "required": false
     },
     "itt_image": {
       "type": "component",
@@ -47,15 +47,11 @@
       "default": false,
       "required": true
     },
-    "grid_option": {
-      "type": "enumeration",
-      "enum": [
-        "half",
-        "third",
-        "quarter"
-      ],
-      "default": "half",
-      "required": true
+    "image_grid": {
+      "type": "integer",
+      "default": 6,
+      "max": 12,
+      "min": 1
     }
   }
 }

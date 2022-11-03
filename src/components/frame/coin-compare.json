@@ -2,7 +2,8 @@
   "collectionName": "components_frame_coin_compares",
   "info": {
     "displayName": "coin_compare",
-    "icon": "arrows-alt-h"
+    "icon": "arrows-alt-h",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,7 +11,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.head",
-      "required": true
+      "required": false
     },
     "cc_coin": {
       "type": "component",
@@ -19,14 +20,15 @@
       "required": true
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "cc_text": {
       "type": "component",
@@ -36,17 +38,13 @@
     },
     "left_right_switch": {
       "type": "boolean",
-      "default": false,
-      "required": true
+      "default": false
     },
-    "grid_option": {
-      "type": "enumeration",
-      "enum": [
-        "half",
-        "third",
-        "quarter"
-      ],
-      "default": "half",
+    "image_grid": {
+      "type": "integer",
+      "max": 12,
+      "min": 1,
+      "default": 6,
       "required": true
     }
   }

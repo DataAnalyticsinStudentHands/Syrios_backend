@@ -11,7 +11,7 @@
       "type": "component",
       "repeatable": false,
       "component": "subcomponents.head",
-      "required": true
+      "required": false
     },
     "iti_image_left": {
       "type": "component",
