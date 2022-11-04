@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "emailservices",
+  "info": {
+    "singularName": "emailservice",
+    "pluralName": "emailservices",
+    "displayName": "emailservice"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": { 
+      "visible": false
+    },
+
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "emailFrom": {
+      "type": "string"
+    },
+    "emailTo": {
+      "type": "string"
+    },
+    "emailCC": {
+      "type": "string"
+    },
+    "emailSubject": {
+      "type": "string"
+    },
+    "emailTemp": {
+      "type": "richtext"
+    }
+  }
+}

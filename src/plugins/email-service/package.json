@@ -1,0 +1,27 @@
+{
+  "name": "email-service",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "email-service",
+    "description": "Description of Email Service plugin",
+    "kind": "plugin",
+    "displayName": "Email Service"
+  },
+  "dependencies": {
+    "nodemailer": "^6.8.0"
+  },
+  "author": {
+    "name": "Tianhao Shao"
+  },
+  "maintainers": [
+    {
+      "name": "Tianhao Shao"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

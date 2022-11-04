@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "emailservices",
+  "info": {
+    "singularName": "emailservice",
+    "pluralName": "emailservices",
+    "displayName": "emailservice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "emailCC": {
+      "type": "string"
+    },
+    "emailTemp": {
+      "type": "richtext"
+    },
+    "emailTo": {
+      "type": "string"
+    },
+    "emailFrom": {
+      "type": "string",
+      "default": "syrioswebadmin@syrios.cs.uh.edu"
+    },
+    "emailSubject": {
+      "type": "string"
+    }
+  }
+}

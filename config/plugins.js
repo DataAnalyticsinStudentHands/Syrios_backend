@@ -6,12 +6,9 @@ module.exports =({env}) =>( {
     'import-export-entries': {
       enabled: true,
     },
-    email: {
-      provider: 'sendmail',
-      settings: {
-        defaultFrom: 'shaotianhao1997@gmail.com',
-        defaultReplyTo: 'shaotianhao1997@gmail.com',
-      },
+    'email-service': {
+      enabled: true,
+      resolve: './src/plugins/email-service'
     },
   }
 )
