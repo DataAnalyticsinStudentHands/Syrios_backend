@@ -55,7 +55,6 @@ const Reference = ({
       };
 
     return(
-        <>
             <Stack spacing={3} padding={3}>
                 <Button variant='secondary' onClick={(e)=>{fetchReferenceData(e.target.formAction.split('/admin/content-manager')[1])}}>Reference</Button>
                 {jsonReference.length === 0 ?(<></>):(
@@ -67,10 +66,7 @@ const Reference = ({
                         </Stack>
                 )}
                 { selectRadio.length === 0 ?(<></>):(<Stack horizontal spacing={3} justifyContent="center"><Button size="S" onClick={()=>{handleInsert()}}>Insert</Button></Stack>)}
-
             </Stack>
-
-        </>
     )
 }
 

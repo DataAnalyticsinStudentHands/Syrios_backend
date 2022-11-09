@@ -8,11 +8,11 @@
     "kind": "plugin"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Tianhao Shao"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "Tianhao Shao"
     }
   ],
   "engines": {

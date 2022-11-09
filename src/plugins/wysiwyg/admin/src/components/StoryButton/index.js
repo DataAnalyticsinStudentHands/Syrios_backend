@@ -25,7 +25,7 @@ const Story = ({
         setTimeout(() => editor.current.focus(), 0);
         setStoryData([])
         setStory([])
-        slideID('')
+        setSlideID('')
       };
 
     async function fetchStory(){

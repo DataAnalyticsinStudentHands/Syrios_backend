@@ -28,50 +28,62 @@ const TinyEditor = ({
         onBlur={onBlur}
         initialValue={value}
         init={{
-          height: 250,
+          height: 300,
           menubar: false,
-          plugins:'link wordcount advlist lists code',
           valid_elements : '*[*]',
-          // toolbar: 'customInsert| bold italic underline | numlist bullist link | code',
-          toolbar: 'bold italic underline | numlist bullist link | code',
+          style_formats : [
+            // {title : 'Bold text', inline : 'strong'},
+            // {title : 'Red text', inline : 'span', styles : {color : '#ff0000'}},
+            // {title : 'Example 1', inline : 'span', classes : 'example1'},
+            {title : 'H1', block : 'h1', styles : {color : '#486678'}, classes : 'story-h1'},
+            {title : 'H2', block : 'h2', styles : {color : '#a85828'}, classes : 'story-h2'},
+            {title : 'H3', block : 'h3', styles : {color : '#737271'}, classes : 'story-h3'},
+            {title : 'H3-blue', block : 'h3', styles : {color : '#486678'}, classes : 'story-h3-blue'},
+            {title : 'H4', block : 'h4', styles : {color : '#a86818'}, classes : 'story-h4'},
+            {title : 'Paragraph', block : 'p'},
+          ],
+          plugins:'link wordcount advlist lists code',
+          toolbar: 'styles | bold italic underline | numlist bullist link | code',
+          paste_as_text: true,
+          toolbar_mode: 'floating',
 
-          setup: function (editor) {
-              /* Menu items are recreated when the menu is closed and opened, so we need
-                 a variable to store the toggle menu item state. */
-              // var toggleState = false;
+          // setup: function (editor) {
+          //     /* Menu items are recreated when the menu is closed and opened, so we need
+          //        a variable to store the toggle menu item state. */
+          //     // var toggleState = false;
           
-              /* example, adding a toolbar menu button */
+          //     /* example, adding a toolbar menu button */
 
-              editor.ui.registry.addMenuButton('customInsert', {
-                text: 'Icons',
-                icon:'template',
-                fetch: function (callback) {
-                  var items = [
-                    {
-                      type: 'menuitem',
-                      text: 'External Icon',
-                      icon:'new-tab',
-                      onAction: function () {editor.insertContent(`<span class='story-icon'>&nbsp;&#xe818;</span>`);}
-                    },
-                    // {
-                    //   type: 'menuitem',
-                    //   text: 'Glossary link',
-                    //   icon:'info',
-                    //   onAction: function () {
-                    //     editor.insertContent(`
-                    //     <a href="" title="">
-                    //       <em><strong>Glossary</strong></em>
-                    //       <sup><small class='story-icon'>&#xe817;</small></sup>
-                    //     </a>
-                    //   `);
-                    //   }
-                    // },
-                  ]; 
-                  callback(items);
-                }
-              });
+          //     editor.ui.registry.addMenuButton('customInsert', {
+          //       text: 'Icons',
+          //       icon:'template',
+          //       fetch: function (callback) {
+          //         var items = [
+          //           {
+          //             type: 'menuitem',
+          //             text: 'External Icon',
+          //             icon:'new-tab',
+          //             onAction: function () {editor.insertContent(`<span class='story-icon'>&nbsp;&#xe818;</span>`);}
+          //           },
+          //           // {
+          //           //   type: 'menuitem',
+          //           //   text: 'Glossary link',
+          //           //   icon:'info',
+          //           //   onAction: function () {
+          //           //     editor.insertContent(`
+          //           //     <a href="" title="">
+          //           //       <em><strong>Glossary</strong></em>
+          //           //       <sup><small class='story-icon'>&#xe817;</small></sup>
+          //           //     </a>
+          //           //   `);
+          //           //   }
+          //           // },
+          //         ]; 
+          //         callback(items);
+          //       }
+          //     });
           
-            },
+          //   },
           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:18px }',
         }}
       />

@@ -46,7 +46,6 @@ const Wysiwyg = ({
     )
     : name;
   
-  // if (isLoading) return <LoadingIndicatorPage />
   return (
     <>
       <Stack spacing={1}>
@@ -59,7 +58,11 @@ const Wysiwyg = ({
         </Stack>
 
         <Grid gap={0}>
-          <GridItem col={6} s={12}><Reference disabled={disabled} editorRef={editorRef}name={name}/></GridItem>
+          {
+            window.location.href.split(".")[1].substring(0,5) == 'story'
+            ? <GridItem col={6} s={12}><Reference disabled={disabled} editorRef={editorRef}name={name}/></GridItem>
+            : <></>
+          }
           <GridItem col={6} s={12}><Story disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
           <GridItem col={6} s={12}><Glossary disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
           <GridItem col={3} s={3} xs={6}><Timeline disabled={disabled} editorRef={editorRef} name={name}/></GridItem>
