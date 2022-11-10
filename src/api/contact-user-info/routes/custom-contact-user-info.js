@@ -10,5 +10,10 @@ module.exports = {
         path: '/user-download', 
         handler: 'contact-user-info.download',
       },
+      // {
+      //   method: 'POST',
+      //   path: '/user-contact-us', 
+      //   handler: 'contact-user-info.contactus',
+      // },
     ]
   }

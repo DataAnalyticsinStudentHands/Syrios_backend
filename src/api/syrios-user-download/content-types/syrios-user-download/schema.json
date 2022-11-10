@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "syrios_user_downloads",
+  "info": {
+    "singularName": "syrios-user-download",
+    "pluralName": "syrios-user-downloads",
+    "displayName": "syrios_user_download",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "syrios_user_info": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-user-info.contact-user-info",
+      "inversedBy": "syrios_user_downloads"
+    }
+  }
+}

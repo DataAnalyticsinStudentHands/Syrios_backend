@@ -22,21 +22,21 @@
     "phone": {
       "type": "string"
     },
-    "message": {
-      "displayName": "syrios_user_message",
-      "type": "component",
-      "repeatable": true,
-      "component": "user-component.syrios-user-message"
-    },
-    "download_info": {
-      "displayName": "syrios_user_download",
-      "type": "component",
-      "repeatable": true,
-      "component": "user-component.syrios-user-download"
-    },
     "subscription": {
       "type": "boolean",
       "default": false
+    },
+    "syrios_user_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::syrios-user-message.syrios-user-message",
+      "mappedBy": "syrios_user_info"
+    },
+    "syrios_user_downloads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::syrios-user-download.syrios-user-download",
+      "mappedBy": "syrios_user_info"
     }
   }
 }
