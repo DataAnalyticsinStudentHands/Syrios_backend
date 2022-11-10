@@ -21,16 +21,15 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
                 where:{email: ctx.request.body.data.email},
                 data:{ subscription:true}
             })
-
         //Email Send
-            const emailresult = await strapi.service('plugin::email-service.emailservice').find();
+            const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
             strapi.service('plugin::email-service.emailservice').send(
-                emailresult.emailFrom,       
+                emailconfig.emailFrom,       
                 ctx.request.body.data.email,
-                '', 
-                emailresult.emailBCC,   
-                emailresult.emailFooterSubscriptionSubject,
-                emailresult.emailFooterSubscriptionText
+                emailconfig.emailCC,   
+                emailconfig.emailBCC,   
+                emailconfig.emailFooterSubscriptionSubject,
+                emailconfig.emailFooterSubscriptionText
               );
 
             ctx.body = 'Thanks for follow us!';
@@ -45,7 +44,7 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
                 where: { email: ctx.request.body.data.email },
               });
 
-            async function hadnleNewUser(){
+            async function handleNewUser(){
                 await strapi.db.query('api::contact-user-info.contact-user-info').create({data: ctx.request.body.data})
                 var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
                     select: ['id'],
@@ -55,7 +54,7 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
                     syrios_user_info:userID.id
                 }})
             }
-            async function hadnleOldUser(){
+            async function handleOldUser(){
                 var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
                     select: ['id'],
                     where: { email: ctx.request.body.data.email },
@@ -67,28 +66,28 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
                     syrios_user_info:userID.id
                 }})
             }
-
             checkEmail == null 
-            ? hadnleNewUser()
-            : hadnleOldUser()
+            ? handleNewUser()
+            : handleOldUser()
 
         // Email Send
             const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
-            // console.log(emailconfig)
-            // var message = `
-            //     Dear ${ctx.request.body.data.name}
+            var message = 
+`
+Dear ${ctx.request.body.data.name}
 
-            // `
+${emailconfig.emailDownlaodText}
+`
             strapi.service('plugin::email-service.emailservice').send(
                 emailconfig.emailFrom,       
                 ctx.request.body.data.email,
-                '', 
+                emailconfig.emailCC,   
                 emailconfig.emailBCC,   
                 emailconfig.emailDownlaodSubject,
-                emailconfig.emailDownlaodText
+                message
               );
 
-            ctx.body = 'Thanks for follow us!';
+            ctx.body = 'Thanks for download the data';
         } catch (err) {
         ctx.body = err;
         }
@@ -137,18 +136,23 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
                 : handleOldUser()
     
             // Send Email
-                const emailresult = await strapi.service('plugin::email-service.emailservice').find();
-                console.log(emailresult)
+                const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
+                var message = 
+`
+Dear ${ctx.request.body.data.name}
+
+${emailconfig.emailContactUsText}
+`
                 strapi.service('plugin::email-service.emailservice').send(
-                    emailresult.emailFrom,       
+                    emailconfig.emailFrom,       
                     ctx.request.body.data.email,
-                    '', 
-                    emailresult.emailBCC,   
-                    emailresult.emailContactUsSubject,
-                    emailresult.emailContactUsText
+                    emailconfig.emailCC,   
+                    emailconfig.emailBCC,   
+                    emailconfig.emailContactUsSubject,
+                    message
                   );
     
-                ctx.body = 'Thanks for follow us!';
+                ctx.body = 'Thanks for contact us';
             } catch (err) {
             ctx.body = err;
             }
