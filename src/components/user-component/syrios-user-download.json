@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_user_component_syrios_user_downloads",
+  "info": {
+    "displayName": "syrios_user_download"
+  },
+  "options": {},
+  "attributes": {
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}
