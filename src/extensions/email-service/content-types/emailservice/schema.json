@@ -13,7 +13,7 @@
   },
   "pluginOptions": {
     "content-manager": {
-      "visible": false
+      "visible": true
     },
     "content-type-builder": {
       "visible": true
@@ -23,9 +23,6 @@
     "emailCC": {
       "type": "string"
     },
-    "emailTemp": {
-      "type": "richtext"
-    },
     "emailTo": {
       "type": "string"
     },
@@ -33,8 +30,29 @@
       "type": "string",
       "default": "syrioswebadmin@syrios.cs.uh.edu"
     },
-    "emailSubject": {
+    "emailTemp": {
+      "type": "richtext"
+    },
+    "emailFooterSubscriptionSubject": {
       "type": "string"
+    },
+    "emailBCC": {
+      "type": "string"
+    },
+    "emailFooterSubscriptionText": {
+      "type": "richtext"
+    },
+    "emailDownlaodSubject": {
+      "type": "string"
+    },
+    "emailDownlaodText": {
+      "type": "richtext"
+    },
+    "emailContactUsSubject": {
+      "type": "string"
+    },
+    "emailContactUsText": {
+      "type": "richtext"
     }
   }
 }

@@ -34,20 +34,15 @@ module.exports = createCoreController('plugin::email-service.emailservice', ({st
         const emailFrom = result.data.attributes.emailFrom
         const emailTo = result.data.attributes.emailTo
         const emailCC = result.data.attributes.emailCC
-        const emailSubject = result.data.attributes.emailSubject
-        const emailTemp = result.data.attributes.emailTemp
-
-        // console.log(ctx.request.body)
-        // const fullName = ctx.request.body.fullName
-        // const email = ctx.request.body.email
+        const emailBCC = result.data.attributes.emailBCC
 
         strapi.service('plugin::email-service.emailservice').send(
           emailFrom,       
           emailTo,
-          emailCC,   
-          emailSubject,
-          emailTemp
-          // `${fullName} request download data and the email is ${email}`
+          emailCC, 
+          emailBCC,  
+          'Syrios Strapi Email Test',
+          'The email service is working!'
         );
         ctx.send({
           ok:'email send'

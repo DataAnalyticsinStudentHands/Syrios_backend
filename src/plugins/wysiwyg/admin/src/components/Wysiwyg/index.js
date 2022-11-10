@@ -59,7 +59,7 @@ const Wysiwyg = ({
 
         <Grid gap={0}>
           {
-            window.location.href.split("api::")[1].substring(0,5) == 'story'
+            window.location.href.split("api::")??[1].substring(0,5) == 'story'
             ? <GridItem col={6} s={12}><Reference disabled={disabled} editorRef={editorRef}name={name}/></GridItem>
             : <></>
           }

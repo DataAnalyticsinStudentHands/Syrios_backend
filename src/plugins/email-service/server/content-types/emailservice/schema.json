@@ -10,15 +10,6 @@
     "draftAndPublish": false,
     "comment": ""
   },
-  "pluginOptions": {
-    "content-manager": { 
-      "visible": false
-    },
-
-    "content-type-builder": {
-      "visible": true
-    }
-  },
   "attributes": {
     "emailFrom": {
       "type": "string"
