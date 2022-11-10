@@ -12,17 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user_email": {
-      "type": "string"
-    },
-    "message": {
-      "type": "string"
-    },
     "syrios_user_info": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::contact-user-info.contact-user-info",
       "inversedBy": "syrios_user_messages"
+    },
+    "message": {
+      "type": "richtext"
     }
   }
 }

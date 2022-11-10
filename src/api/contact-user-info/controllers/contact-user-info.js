@@ -73,15 +73,19 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
             : hadnleOldUser()
 
         // Email Send
-            const emailresult = await strapi.service('plugin::email-service.emailservice').find();
-            // console.log(emailresult)
+            const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
+            // console.log(emailconfig)
+            // var message = `
+            //     Dear ${ctx.request.body.data.name}
+
+            // `
             strapi.service('plugin::email-service.emailservice').send(
-                emailresult.emailFrom,       
+                emailconfig.emailFrom,       
                 ctx.request.body.data.email,
                 '', 
-                emailresult.emailBCC,   
-                emailresult.emailDownlaodSubject,
-                emailresult.emailDownlaodText
+                emailconfig.emailBCC,   
+                emailconfig.emailDownlaodSubject,
+                emailconfig.emailDownlaodText
               );
 
             ctx.body = 'Thanks for follow us!';
@@ -89,36 +93,64 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
         ctx.body = err;
         }
     },
-    // async contactus(ctx) {
-    //     try {
-    //     //Data Check
-    //         console.log(ctx.request.body.data)
-    //         // const checkEmail = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
-    //         //     select: ['email' ],
-    //         //     where: { email: ctx.request.body.data.email },
-    //         //   });
-
-    //         // checkEmail == null 
-    //         // ?await strapi.db.query('api::contact-user-info.contact-user-info').create({data: ctx.request.body.data})
-    //         // :await strapi.db.query('api::contact-user-info.contact-user-info').update({
-    //         //     where:{email: ctx.request.body.data.email},
-    //         //     data: ctx.request.body.data
-    //         // })
-
-    //     // Email Send
-    //         // const emailresult = await strapi.service('plugin::email-service.emailservice').find();
-    //         // strapi.service('plugin::email-service.emailservice').send(
-    //         //     emailresult.emailFrom,       
-    //         //     ctx.request.body.data.email,
-    //         //     '', 
-    //         //     emailresult.emailBCC,   
-    //         //     emailresult.emailDownlaodSubject,
-    //         //     emailresult.emailDownlaodText
-    //         //   );
-
-    //         ctx.body = 'Thanks for follow us!';
-    //     } catch (err) {
-    //     ctx.body = err;
-    //     }
-    // },
+    async contactus(ctx) {
+        try {
+            //Data Check
+                const checkEmail = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
+                    where: { email: ctx.request.body.data.email },
+                  });
+    
+                async function handleNewUser(){
+                    //Creating New User
+                    await strapi.db.query('api::contact-user-info.contact-user-info').create({data: ctx.request.body.data})
+                    //Getting New User ID
+                    var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
+                        select: ['id'],
+                        where: { email: ctx.request.body.data.email },
+                    });
+                    //connect User with message
+                    await strapi.db.query('api::syrios-user-message.syrios-user-message').create({data: {
+                        syrios_user_info:userID.id,
+                        message:ctx.request.body.data.message
+                    }})
+                }
+                async function handleOldUser(){
+                    //Getting New User ID
+                    var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
+                        select: ['id'],
+                        where: { email: ctx.request.body.data.email },
+                      });
+                    //Update info
+                    await await strapi.entityService.update('api::contact-user-info.contact-user-info',userID.id,{data:{
+                        name:ctx.request.body.data.name,
+                        phone:ctx.request.body.data.phone
+                    }} )
+                    //connect User with message
+                    await strapi.db.query('api::syrios-user-message.syrios-user-message').create({data: {
+                        syrios_user_info:userID.id,
+                        message:ctx.request.body.data.message
+                    }})
+                }
+    
+                checkEmail == null 
+                ? handleNewUser()
+                : handleOldUser()
+    
+            // Send Email
+                const emailresult = await strapi.service('plugin::email-service.emailservice').find();
+                console.log(emailresult)
+                strapi.service('plugin::email-service.emailservice').send(
+                    emailresult.emailFrom,       
+                    ctx.request.body.data.email,
+                    '', 
+                    emailresult.emailBCC,   
+                    emailresult.emailContactUsSubject,
+                    emailresult.emailContactUsText
+                  );
+    
+                ctx.body = 'Thanks for follow us!';
+            } catch (err) {
+            ctx.body = err;
+            }
+    },
 }));
