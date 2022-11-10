@@ -1,9 +1,14 @@
 module.exports = {
     routes: [
-      { // Path defined with an URL parameter
+      {
         method: 'POST',
         path: '/user-subscription', 
         handler: 'contact-user-info.subscription',
-      }
+      },
+      {
+        method: 'POST',
+        path: '/user-download', 
+        handler: 'contact-user-info.download',
+      },
     ]
   }

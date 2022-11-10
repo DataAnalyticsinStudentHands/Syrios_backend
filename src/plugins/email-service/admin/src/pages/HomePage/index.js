@@ -84,7 +84,7 @@ const HomePage = () => {
         </Field>
         <Field name="emailCC">
           <Stack spacing={1}>
-            <FieldLabel>CC</FieldLabel>
+            <FieldLabel>CC - Optional</FieldLabel>
             <FieldInput type="text" value={emailCC} onChange={(e)=>{setEmailCC(e.target.value)}}/>
           </Stack>
         </Field>
