@@ -43,7 +43,8 @@ const TinyEditor = ({
             {title : 'Paragraph', block : 'p', classes : 'story-text'},
           ],
           plugins:'link wordcount advlist lists code',
-          toolbar: 'styles | bold italic underline | numlist bullist link | code',
+          toolbar: [`styles fontsize forecolor bold italic underline undo redo | link code numlist bullist outdent indent alignleft aligncenter alignright alignjustify lineheight pastetext`],
+
           paste_as_text: true,
           toolbar_mode: 'floating',
 
