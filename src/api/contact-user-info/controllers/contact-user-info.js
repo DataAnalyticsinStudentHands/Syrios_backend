@@ -72,8 +72,7 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
 
         // Email Send
             const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
-            var message = 
-`
+            var message = `
 Dear ${ctx.request.body.data.name}
 
 ${emailconfig.emailDownlaodText}
@@ -137,8 +136,7 @@ ${emailconfig.emailDownlaodText}
     
             // Send Email
                 const emailconfig = await strapi.service('plugin::email-service.emailservice').find();
-                var message = 
-`
+                var message = `
 Dear ${ctx.request.body.data.name}
 
 ${emailconfig.emailContactUsText}
