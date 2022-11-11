@@ -42,29 +42,12 @@
       "component": "about-us.student-collaborator"
     },
     "humanities_advisors": {
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.student-collaborator"
+      "type": "richtext"
     },
     "grants_and_funding": {
-      "displayName": "year-text",
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.year-text"
+      "type": "richtext"
     },
     "museums_and_organizations": {
-      "displayName": "coin_source",
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.coin-source"
-    },
-    "humanities__advisors": {
-      "type": "richtext"
-    },
-    "grants__and__funding": {
-      "type": "richtext"
-    },
-    "museums__and__organizations": {
       "type": "richtext"
     },
     "partner": {
