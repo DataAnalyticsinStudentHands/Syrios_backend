@@ -40,7 +40,7 @@ const TinyEditor = ({
             {title : 'H3', block : 'h3', styles : {color : '#737271'}, classes : 'story-h3'},
             {title : 'H3-blue', block : 'h3', styles : {color : '#486678'}, classes : 'story-h3-blue'},
             {title : 'H4', block : 'h4', styles : {color : '#a86818'}, classes : 'story-h4'},
-            {title : 'Paragraph', block : 'p'},
+            {title : 'Paragraph', block : 'p', classes : 'story-text'},
           ],
           plugins:'link wordcount advlist lists code',
           toolbar: 'styles | bold italic underline | numlist bullist link | code',
