@@ -58,16 +58,16 @@
       "repeatable": true,
       "component": "about-us.coin-source"
     },
-    "humanities_advisors_head": {
+    "humanities__advisors": {
       "type": "richtext"
     },
-    "grants_funding_head": {
+    "grants__and__funding": {
       "type": "richtext"
     },
-    "museums_organizations_head_1": {
+    "museums__and__organizations": {
       "type": "richtext"
     },
-    "museums_organizations_head_2": {
+    "partner": {
       "type": "richtext"
     }
   }
