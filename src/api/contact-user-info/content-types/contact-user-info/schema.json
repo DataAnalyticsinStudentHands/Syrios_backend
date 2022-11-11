@@ -4,11 +4,11 @@
   "info": {
     "singularName": "contact-user-info",
     "pluralName": "contact-user-infos",
-    "displayName": "contact_user_info",
+    "displayName": "syrios_user_info",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,13 +16,27 @@
       "type": "string"
     },
     "email": {
-      "type": "email"
+      "type": "email",
+      "unique": true
     },
     "phone": {
       "type": "string"
     },
-    "message": {
-      "type": "richtext"
+    "subscription": {
+      "type": "boolean",
+      "default": false
+    },
+    "syrios_user_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::syrios-user-message.syrios-user-message",
+      "mappedBy": "syrios_user_info"
+    },
+    "syrios_user_downloads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::syrios-user-download.syrios-user-download",
+      "mappedBy": "syrios_user_info"
     }
   }
 }

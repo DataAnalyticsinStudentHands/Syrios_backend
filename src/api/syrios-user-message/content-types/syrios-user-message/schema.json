@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "syrios_user_messages",
+  "info": {
+    "singularName": "syrios-user-message",
+    "pluralName": "syrios-user-messages",
+    "displayName": "syrios_user_message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "syrios_user_info": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-user-info.contact-user-info",
+      "inversedBy": "syrios_user_messages"
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_user_component_syrios_user_messages",
+  "info": {
+    "displayName": "syrios_user_message",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "timestamp": {
+      "type": "datetime"
+    }
+  }
+}

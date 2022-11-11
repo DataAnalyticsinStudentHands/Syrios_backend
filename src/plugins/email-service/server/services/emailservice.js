@@ -23,11 +23,12 @@ module.exports = createCoreService('plugin::email-service.emailservice',({strapi
       return entity;
     },
 
-    send(from,to,cc,subject,text){
+    send(from,to,cc,bcc,subject,text){
       const options = {
         from,
         to,
         cc,
+        bcc,
         subject,
         text
       };
