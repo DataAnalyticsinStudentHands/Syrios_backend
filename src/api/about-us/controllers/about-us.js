@@ -15,10 +15,7 @@ module.exports = createCoreController('api::about-us.about-us', ({ strapi }) => 
         'project_directors.picture',
         'student_lead',
         'student_lead.picture',
-        'student_collaborators',
-        'humanities_advisors',
-        'grants_and_funding',
-        'museums_and_organizations'
+        'student_collaborators'
       ],
       ...ctx.query
     };
