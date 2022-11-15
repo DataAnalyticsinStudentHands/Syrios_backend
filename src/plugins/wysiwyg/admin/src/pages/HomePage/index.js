@@ -58,11 +58,11 @@ const HomePage = () => {
     await fetchData();
   }
 
-  async function publichReference(){
-    let result = await wysiwygRequests.findCollectionTypes('reference')
-    result.results.forEach(async(ref)=>{if(ref.publishedAt === null){await wysiwygRequests.publicReference(ref.id)}})
-    setUnpublish(0)
-  }
+  // async function publichReference(){
+  //   let result = await wysiwygRequests.findCollectionTypes('reference')
+  //   result.results.forEach(async(ref)=>{if(ref.publishedAt === null){await wysiwygRequests.publicReference(ref.id)}})
+  //   setUnpublish(0)
+  // }
 
   return (
     <Layout>
@@ -76,14 +76,15 @@ const HomePage = () => {
                   onClick={fetchData}
                   variant="secondary"
                   startIcon={<Refresh />}>Refresh the Table</Button>
-                {unpublish===0?(<Button variant="ghost">All the References are Published!</Button>):(
+                {/* {unpublish===0?(<Button variant="ghost">All the References are Published!</Button>):(
                   <Button
                     onClick={publichReference}
                     variant="secondary"
                     endIcon={<Check />}
-                    loading ={showLoading}>{unpublish} References need to be Published</Button>)}
+                    loading ={showLoading}>{unpublish} References need to be Published</Button>)} */}
               </Stack>}
-          />):(<>
+          />
+          ):(<>
             <ReferenceCount count={newReference.length} addReference={addReference}/>
             <ReferenceTable referenceData = {newReference}/>
           </>)}

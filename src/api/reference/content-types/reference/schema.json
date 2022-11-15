@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -23,7 +23,8 @@
       "type": "text"
     },
     "authorLastName": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

@@ -39,7 +39,7 @@ const wysiwygRequests = {
       body:{
         item_key:reference.key,
         title:reference.data.title,
-        authorLastName:reference.data.creators[0].lastName
+        authorLastName:reference.data.creators[0].lastName + ': ' + reference.data.title.substr(0,20) + '...'
       }
     });
   },

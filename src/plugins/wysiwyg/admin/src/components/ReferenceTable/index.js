@@ -46,6 +46,9 @@ export default function ReferenceTable({
               <Typography variant="sigma">Item Key</Typography>
             </Th>
             <Th>
+              <Typography variant="sigma">author</Typography>
+            </Th>
+            <Th>
               <Typography variant="sigma">Title</Typography>
             </Th>
           </Tr>
@@ -57,6 +60,9 @@ export default function ReferenceTable({
               <Tr key={reference.key}>
                 <Td>
                   <Typography textColor="neutral800">{reference.key}</Typography>
+                </Td>
+                <Td>
+                  <Typography textColor="neutral800">{reference.data.creators[0].lastName}, {reference.data.creators[0].firstName}</Typography>
                 </Td>
                 <Td>
                     <Typography textColor="neutral800">{reference.data.title}</Typography>
