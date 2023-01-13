@@ -18,8 +18,6 @@ module.exports = createCoreController('plugin::email-service.emailservice', ({st
         }
       },
     async update(data) {
-        // console.log(ctx.request.body)
-        console.log(data)
         try {
             const response = await super.update(data);
             return response;

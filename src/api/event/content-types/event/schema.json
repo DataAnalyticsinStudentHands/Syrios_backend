@@ -19,16 +19,6 @@
     "text": {
       "type": "richtext"
     },
-    "tag_subcategory1": {
-      "type": "component",
-      "repeatable": true,
-      "component": "miscellaneous.tag-subcategory1"
-    },
-    "tag_subcategory2": {
-      "type": "component",
-      "repeatable": true,
-      "component": "miscellaneous.tag-subcategory2"
-    },
     "color": {
       "type": "string",
       "required": true
