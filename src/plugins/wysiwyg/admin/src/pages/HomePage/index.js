@@ -47,8 +47,8 @@ const HomePage = () => {
     setIsLoading(false);
   }
 
-  useEffect(async ()=>{
-    await fetchData();
+  useEffect(()=>{
+    fetchData();
   },[unpublish])
 
   async function addReference(){

@@ -50,8 +50,8 @@ const HomePage = () => {
     setIsLoading(false)
   }
 
-  useEffect(async ()=>{
-    await fetchData();
+  useEffect(()=>{
+    fetchData();
   },[])
 
   async function updateEmail(data){
