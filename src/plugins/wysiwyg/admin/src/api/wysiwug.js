@@ -8,16 +8,6 @@ const wysiwygRequests = {
       method: "GET",
     });
   },
-  fetchSingleData:async(url)=>{
-    return await request(`/content-manager/single-types/api::${url}`, {
-      method: "GET",
-    });
-  },
-  fetchCollectData:async(url)=>{
-    return await request(`/content-manager/collection-types/api::${url}`, {
-      method: "GET",
-    });
-  },
   findCollectionTypes:async(collection)=>{
     return await request(`/content-manager/collection-types/api::${collection}.${collection}?pageSize=100`, {
       method: "GET",

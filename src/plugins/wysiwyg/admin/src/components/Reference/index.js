@@ -58,7 +58,7 @@ const Reference = ({ disabled, editorRef, name, onChange }) => {
   return (
     <Stack>
       <Button variant="secondary" onClick={handleGetData}>
-        Test
+        Reference
       </Button>
       {jsonReference.length !== 0 && (
         <RadioGroup
