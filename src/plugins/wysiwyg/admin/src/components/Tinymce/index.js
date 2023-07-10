@@ -20,6 +20,7 @@ const TinyEditor = ({
     const content = editor.getContent();
     onChangeRef.current({ target: { name, value: content, type: 'wysiwyg' } });
   }
+
   return (
     <>
       <Editor        

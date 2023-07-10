@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@tinymce/tinymce-react": "^4.0.0"
+    "@tinymce/tinymce-react": "^4.2.0"
   }
 }

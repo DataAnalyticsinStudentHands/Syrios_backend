@@ -13,7 +13,6 @@ import { Stack } from '@strapi/design-system/Stack';
 import Check from "@strapi/icons/Check";
 import Refresh from '@strapi/icons/Refresh';
 import { Illo } from "../../components/Illo";
-import { Alert } from '@strapi/design-system/Alert';
 // import pluginId from '../../pluginId';
 import wysiwygRequests from '../../api/wysiwug';
 

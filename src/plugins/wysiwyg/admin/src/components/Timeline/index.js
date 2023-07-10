@@ -21,7 +21,7 @@ const Timeline = ({
     const timelineYear = [-450, -400, -350, -300, -250, -200, -150, -100, -50, 0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
     return(
         <>
-            <Stack spacing={3} padding={3}>
+            <Stack>
                     <Select 
                         id="TimelineSelect" 
                         placeholder="Timeline" 

@@ -35,7 +35,7 @@ const Story = ({
 
     return(
         <>
-            <Stack spacing={3} padding={3}>
+            <Stack>
                 <Button variant='secondary' onClick={()=>{fetchStory()}}>Story</Button>
             {storyData.length === 0 ? (<></>):(
                 <Select id="selectStoryID"

@@ -42,7 +42,7 @@ const SinglePage = ({
       };
     return(
         <>
-            <Stack spacing={3} padding={3}>
+            <Stack>
                     <Select 
                         id="OtherLinks" 
                         placeholder="Other Links" 

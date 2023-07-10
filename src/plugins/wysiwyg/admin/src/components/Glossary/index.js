@@ -38,7 +38,7 @@ const Glossary = ({
 
     return(
         <>
-            <Stack spacing={3} padding={3}>
+            <Stack>
                 <Button variant='secondary' onClick={()=>{fetchGlossary()}}>Glossary</Button>
                 {glossaryData.length === 0 ? (<></>):(
                     <Select 
