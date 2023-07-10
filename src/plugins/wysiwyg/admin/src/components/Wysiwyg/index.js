@@ -60,7 +60,7 @@ const Wysiwyg = ({
               />
             </GridItem>
           )}
-          <GridItem col={6} s={12}>
+          {/* <GridItem col={6} s={12}>
             <Story disabled={disabled} editorRef={editorRef} name={name} />
           </GridItem>
           <GridItem col={6} s={12}>
@@ -71,7 +71,7 @@ const Wysiwyg = ({
           </GridItem>
           <GridItem col={3} s={3} xs={6}>
             <SinglePage disabled={disabled} editorRef={editorRef} name={name} />
-          </GridItem>
+          </GridItem> */}
         </Grid>
 
         <TinyEditor
