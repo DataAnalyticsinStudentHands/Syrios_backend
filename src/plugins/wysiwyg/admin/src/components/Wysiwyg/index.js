@@ -7,10 +7,7 @@ import { Stack } from "@strapi/design-system/Stack";
 import { Grid, GridItem } from "@strapi/design-system/Grid";
 import TinyEditor from "../Tinymce";
 import Reference from "../Reference";
-import Glossary from "../Glossary";
-import Story from "../StoryButton";
-import Timeline from "../Timeline";
-import SinglePage from "../SinglePage";
+import { InsertButton } from "../InsertButton";
 
 const Wysiwyg = ({
   description,
@@ -60,18 +57,13 @@ const Wysiwyg = ({
               />
             </GridItem>
           )}
-          {/* <GridItem col={6} s={12}>
-            <Story disabled={disabled} editorRef={editorRef} name={name} />
-          </GridItem>
           <GridItem col={6} s={12}>
-            <Glossary disabled={disabled} editorRef={editorRef} name={name} />
+            <InsertButton
+              disabled={disabled}
+              editorRef={editorRef}
+              name={name}
+            />
           </GridItem>
-          <GridItem col={3} s={3} xs={6}>
-            <Timeline disabled={disabled} editorRef={editorRef} name={name} />
-          </GridItem>
-          <GridItem col={3} s={3} xs={6}>
-            <SinglePage disabled={disabled} editorRef={editorRef} name={name} />
-          </GridItem> */}
         </Grid>
 
         <TinyEditor
