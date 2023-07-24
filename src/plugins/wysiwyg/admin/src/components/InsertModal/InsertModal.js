@@ -14,6 +14,7 @@ import { Typography } from "@strapi/design-system/Typography";
 import React, { useState } from "react";
 import { Select, Option } from "@strapi/design-system/Select";
 import _ from "lodash";
+import { GlossarySarchBar } from "./glossaryBar";
 
 export const InsertModal = ({ onClose, setLinkValue }) => {
   const [value, setValue] = useState({});
@@ -39,7 +40,7 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
       Object.keys(classDir).forEach((key) => {
         if(_.startsWith(insertURL, 'Toolbox/Glossary/term')){
           setLinkValue(
-            `&nbsp;<a href="${insertURL}" class="${classDir['Toolbox/Glossary/term']}">${insertURL.split('/')[3]}</a>&nbsp;`
+            `&nbsp;<a href="${insertURL}" class="${classDir['Toolbox/Glossary/term']}" data-title='${title}'>${text}</a>&nbsp;`
           )
         } else if(_.startsWith(insertURL, 'Evidence/Timeline')){
           setLinkValue(
@@ -90,6 +91,7 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
         </ModalHeader>
         <ModalBody className="plugin-ie-import_modal_body">
           <Stack gap={3} spacing={4}>
+            <GlossarySarchBar setValue={setValue} value={value}/>
             <TextInput
               id="urlLink"
               label="URL"
@@ -100,9 +102,7 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
                   return { ...pre, url: e.target.value };
                 });
               }}
-              // error={error}
-              // helperText={helperText}
-              // disabled={isLoading}
+              hint="Paste URL from Syrios or other website"
               required
             />
             {value.url &&
@@ -155,34 +155,11 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
                   return { ...pre, text: e.target.value };
                 })
               }
-              // error={error}
-              // helperText={helperText}
-              // disabled={isLoading}
-              // required
             />
-            {/* <TextInput
-              label="Title"
-              placeholder="Example"
-              value={value.title}
-              onChange={(e) =>
-                setValue((pre) => {
-                  return { ...pre, title: e.target.value };
-                })
-              }
-            /> */}
+
           </Stack>
         </ModalBody>
         <ModalFooter
-          // startActions={
-          //   <>
-          //       <Button onClick={()=>{
-          //             console.log('Clicked Back');
-          //       }} variant="tertiary">
-          //         back
-          //       </Button>
-
-          //   </>
-          // }
           endActions={
             <>
               <Button variant="secondary" onClick={handleFinish}>

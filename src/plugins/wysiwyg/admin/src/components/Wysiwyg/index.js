@@ -46,6 +46,16 @@ const Wysiwyg = ({
   return (
     <>
       <Stack spacing={1}>
+        <Box>
+          <Typography variant="pi" fontWeight="bold">
+            {formatMessage(intlLabel)}
+          </Typography>
+          {required && (
+            <Typography variant="pi" fontWeight="bold" textColor="danger600">
+              *
+            </Typography>
+          )}
+        </Box>
         <Grid gap={3}>
           {window.location.href.split("api::")[1].substring(0, 5) ===
             "story" && (
