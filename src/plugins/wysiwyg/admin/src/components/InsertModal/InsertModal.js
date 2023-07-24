@@ -23,7 +23,7 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
     const { url, text, title, timeline } = value;
     const classDir = {
       "StoryReader": "icon-syrios-stories-book",
-      "Toolbox/Glossary/term": "glossary-tag icon-entypo-info",
+      "Toolbox/Glossary/term": "glossary-tag",
       "Evidence/Timeline": "icon-syrios-coin-timeline",
       "Evidence/MapCoins": "icon-syrios-coin-map",
       "Evidence/CoinSort": "icon-syrios-coin-hand",
@@ -40,7 +40,7 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
       Object.keys(classDir).forEach((key) => {
         if(_.startsWith(insertURL, 'Toolbox/Glossary/term')){
           setLinkValue(
-            `&nbsp;<a href="${insertURL}" class="${classDir['Toolbox/Glossary/term']}" data-title='${title}'>${text}</a>&nbsp;`
+            `&nbsp;<a href="${insertURL}" class="${classDir['Toolbox/Glossary/term']}" data-title='${title}'>${text}<span class="icon-entypo-info"/></a>&nbsp;`
           )
         } else if(_.startsWith(insertURL, 'Evidence/Timeline')){
           setLinkValue(
