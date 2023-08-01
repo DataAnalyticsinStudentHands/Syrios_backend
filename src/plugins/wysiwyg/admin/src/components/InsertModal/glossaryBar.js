@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   Flex,
-  Button,
   SingleSelect,
   SingleSelectOption,
 } from "@strapi/design-system";
@@ -29,7 +28,7 @@ export const GlossarySarchBar = ({setValue, value}) => {
 
             setValue({
                 text: glossary,
-                url: `https://syrios.uh.edu/dev/Toolbox/Glossary/term/${glossary}`,
+                url: `https://syrios.uh.edu/Toolbox/Glossary/term/${glossary}`,
                 title:dataTitle,
             })
         }
@@ -63,7 +62,6 @@ export const GlossarySarchBar = ({setValue, value}) => {
             setGlossary(v);
           }}
           hint="Only use for inserting glossary terms."
-        
       >
         {
 
