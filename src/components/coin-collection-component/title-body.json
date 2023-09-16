@@ -2,7 +2,8 @@
   "collectionName": "components_coin_collection_component_title_bodies",
   "info": {
     "displayName": "title-body",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,9 @@
     },
     "body": {
       "type": "text"
+    },
+    "anchor": {
+      "type": "string"
     }
   }
 }
