@@ -54,6 +54,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::type-category.type-category"
+    },
+    "image_caption": {
+      "type": "text"
+    },
+    "abstract": {
+      "type": "text"
     }
   }
 }

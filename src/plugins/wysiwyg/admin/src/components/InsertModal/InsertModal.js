@@ -36,7 +36,6 @@ export const InsertModal = ({ onClose, setLinkValue }) => {
 
       _.startsWith(insertURL, "/dev") && (insertURL = insertURL.split("/dev")[1])
 
-      console.log(insertURL);
       if(_.startsWith(insertURL, "/Toolbox/Glossary/term")){
         setLinkValue(
           `&nbsp;<a href="${insertURL}" class="${classDir['Toolbox/Glossary/term']}" data-title='${title}'>${text}<span class="icon-entypo-info"/></a>&nbsp;`
