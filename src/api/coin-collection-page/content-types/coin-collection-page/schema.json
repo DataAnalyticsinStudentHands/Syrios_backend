@@ -32,6 +32,11 @@
     },
     "video_url": {
       "type": "string"
+    },
+    "coin_of_the_day": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story.story"
     }
   }
 }
