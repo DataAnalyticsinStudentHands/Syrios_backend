@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "coin_collection_pages",
+  "info": {
+    "singularName": "coin-collection-page",
+    "pluralName": "coin-collection-pages",
+    "displayName": "coin_collection_page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "contents": {
+      "displayName": "title-body",
+      "type": "component",
+      "repeatable": true,
+      "component": "coin-collection-component.title-body",
+      "max": 5
+    },
+    "spotlight": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coin-collection.coin-collection"
+    },
+    "video_url": {
+      "type": "string"
+    }
+  }
+}

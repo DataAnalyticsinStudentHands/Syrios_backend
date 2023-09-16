@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_coin_collection_component_title_bodies",
+  "info": {
+    "displayName": "title-body",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}
