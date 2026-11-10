@@ -13,11 +13,18 @@ const transporter = nodemailer.createTransport({
     path: "/usr/sbin/sendmail",  
 });
 
-module.exports = createCoreService('api::download.download',({strapi})=>({
-    send(from, to, subject, text) {
-        // Setup e-mail data.
-        const options = {from,to,subject,text};
-        // Return a promise of the function that sends the email.
-        return transporter.sendMail(options);
-    },
+module.exports = createCoreService("api::download.download", ({ strapi }) => ({
+  async send(from, to, subject, text) {
+    if (process.env.EMAIL_DELIVERY_ENABLED !== "true") {
+      console.log(`[Email disabled] To: ${to}, Subject: ${subject}`);
+      return { messageId: "development-email-disabled" };
+    }
+
+    return transporter.sendMail({
+      from,
+      to,
+      subject,
+      text,
+    });
+  },
 }));
