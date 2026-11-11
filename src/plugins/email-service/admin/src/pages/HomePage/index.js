@@ -12,8 +12,8 @@ import { Box } from '@strapi/design-system/Box';
 import { Button } from '@strapi/design-system/Button';
 import { Tabs, Tab, TabGroup, TabPanels, TabPanel } from '@strapi/design-system/Tabs';
 
-import { LoadingIndicatorPage } from "@strapi/helper-plugin";
 import emailRequests from '../../api/emailservice';
+import { Page } from "@strapi/strapi/admin";
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [tagInt, setTagInt] = useState(0)
@@ -63,7 +63,7 @@ const HomePage = () => {
     await emailRequests.sendEmail();
   }
 
-  if(isLoading) return <LoadingIndicatorPage/>;
+  if(isLoading) return <Page.Loading/>;
   return (
     <Layout>
       <BaseHeaderLayout title='Custom Emails' subtitle='Edit Emials here' as='h2'/>

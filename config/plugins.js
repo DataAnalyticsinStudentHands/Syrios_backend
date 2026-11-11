@@ -1,13 +1,10 @@
 module.exports = ({ env }) => ({
   'wysiwyg': {
-    enabled: true,
+    enabled: false,
     resolve: './src/plugins/wysiwyg'
   },
-  "import-export-entries": {
-    enabled: true,
-  },
   "email-service": {
-    enabled: true,
+    enabled: false,
     resolve: "./src/plugins/email-service",
   }
 });

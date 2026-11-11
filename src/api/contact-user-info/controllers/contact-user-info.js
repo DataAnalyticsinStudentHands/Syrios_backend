@@ -56,12 +56,16 @@ module.exports = createCoreController('api::contact-user-info.contact-user-info'
             }
             async function handleOldUser(){
                 var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
-                    select: ['id'],
+                    select: ['id', 'documentId'],
                     where: { email: ctx.request.body.data.email },
                   });
-                await await strapi.entityService.update('api::contact-user-info.contact-user-info',userID.id,{data:{
-                    name:ctx.request.body.data.name
-                }} )
+                await strapi.documents('api::contact-user-info.contact-user-info').update({
+                    documentId: userID.documentId,
+
+                    data:{
+                        name:ctx.request.body.data.name
+                    }
+                })
                 await strapi.db.query('api::syrios-user-download.syrios-user-download').create({data: {
                     syrios_user_info:userID.id
                 }})
@@ -115,14 +119,18 @@ ${emailconfig.emailDownlaodText}
                 async function handleOldUser(){
                     //Getting New User ID
                     var userID = await strapi.db.query('api::contact-user-info.contact-user-info').findOne({
-                        select: ['id'],
+                        select: ['id', 'documentId'],
                         where: { email: ctx.request.body.data.email },
                       });
                     //Update info
-                    await await strapi.entityService.update('api::contact-user-info.contact-user-info',userID.id,{data:{
-                        name:ctx.request.body.data.name,
-                        phone:ctx.request.body.data.phone
-                    }} )
+                    await strapi.documents('api::contact-user-info.contact-user-info').update({
+                        documentId: userID.documentId,
+
+                        data:{
+                            name:ctx.request.body.data.name,
+                            phone:ctx.request.body.data.phone
+                        }
+                    })
                     //connect User with message
                     await strapi.db.query('api::syrios-user-message.syrios-user-message').create({data: {
                         syrios_user_info:userID.id,
